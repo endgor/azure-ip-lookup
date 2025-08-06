@@ -1,7 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { GetServerSideProps } from 'next';
 import useSWR from 'swr';
-import Link from 'next/link';
 import Layout from '@/components/Layout';
 import LookupForm from '@/components/LookupForm';
 import Results from '@/components/Results';

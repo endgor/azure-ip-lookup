@@ -78,8 +78,6 @@ export default async function handler(
   try {
     // Handle IP/domain lookup with optional filters
     if (ipOrDomainStr) {
-      let result
-      
       // Optimize single term lookup - try service and region in parallel
       if (!serviceStr && /^[a-zA-Z][a-zA-Z0-9]*$/.test(ipOrDomainStr)) {
         try {
@@ -118,7 +116,7 @@ export default async function handler(
       }
       
       // As a final option, try IP/domain lookup (which handles CIDR notation too)
-      result = await getAzureIpAddressList(ipOrDomainStr)
+      const result = await getAzureIpAddressList(ipOrDomainStr)
       
       if (!result) {
         return res.status(404).json({ error: `No Azure IP range or service found matching "${ipOrDomainStr}"` })

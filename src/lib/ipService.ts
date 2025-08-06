@@ -359,7 +359,7 @@ async function parseIpAddress(ipOrDomain: string): Promise<string | null> {
       // Try lookup first (uses getaddrinfo under the hood, respects host file)
       const addresses = await dns.lookup(ipOrDomain);
       return addresses.address;
-    } catch (lookupError) {
+    } catch {
       // Fallback to resolve4 which uses DNS protocol directly
       try {
         const addresses = await dns.resolve4(ipOrDomain);
@@ -367,7 +367,7 @@ async function parseIpAddress(ipOrDomain: string): Promise<string | null> {
           return addresses[0]; // Return the first IPv4 address
         }
         return null;
-      } catch (resolveError) {
+      } catch {
         console.error(`DNS resolution failed for ${ipOrDomain}`);
         return null;
       }
