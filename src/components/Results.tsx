@@ -1,6 +1,7 @@
 import { AzureIpAddress } from '@/types/azure';
 import { useState } from 'react';
 import Tooltip from './Tooltip';
+import ExportButton from './ExportButton';
 
 // Network features descriptions
 const networkFeaturesInfo = (
@@ -19,12 +20,15 @@ interface ResultsProps {
   results: AzureIpAddress[];
   query: string;
   total?: number;
+  region?: string;
+  service?: string;
+  allResults?: AzureIpAddress[]; // For exporting all results, not just current page
 }
 
 type SortField = 'serviceTagId' | 'ipAddressPrefix' | 'region' | 'systemService' | 'networkFeatures';
 type SortDirection = 'asc' | 'desc';
 
-export default function Results({ results, query, total }: ResultsProps) {
+export default function Results({ results, query, total, region, service, allResults }: ResultsProps) {
   const [sortField, setSortField] = useState<SortField>('serviceTagId');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   
@@ -71,12 +75,24 @@ export default function Results({ results, query, total }: ResultsProps) {
   return (
     <section className="bg-white rounded-lg shadow-md overflow-hidden mb-6" aria-label="Search Results">
       <header className="bg-blue-50 px-4 py-3 border-b border-blue-100">
-        <h2 className="text-lg font-semibold text-blue-800">
-          Results for {query}
-        </h2>
-        <p className="text-sm text-blue-600">
-          Found {totalDisplay} matching Azure IP {results.length === 1 ? 'range' : 'ranges'}
-        </p>
+        <div className="flex justify-between items-start">
+          <div>
+            <h2 className="text-lg font-semibold text-blue-800">
+              Results for {query}
+            </h2>
+            <p className="text-sm text-blue-600">
+              Found {totalDisplay} matching Azure IP {results.length === 1 ? 'range' : 'ranges'}
+            </p>
+          </div>
+          <div className="ml-4 flex-shrink-0">
+            <ExportButton 
+              data={allResults || results}
+              query={query}
+              region={region}
+              service={service}
+            />
+          </div>
+        </div>
       </header>
       
       <div className="overflow-x-auto w-full">

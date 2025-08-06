@@ -165,6 +165,8 @@ export default function Home({
               results={results} 
               query={pageTitle}
               total={totalResults}
+              region={initialRegion}
+              service={initialService}
             />
             
             {totalPages > 1 && (
