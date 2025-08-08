@@ -27,7 +27,7 @@ interface ResultsProps {
 type SortField = 'serviceTagId' | 'ipAddressPrefix' | 'region' | 'systemService' | 'networkFeatures';
 type SortDirection = 'asc' | 'desc';
 
-export default function Results({ results, query, total }: ResultsProps) {
+export default function Results({ results, query, total, topPagination, bottomPagination }: ResultsProps) {
   const [sortField, setSortField] = useState<SortField>('serviceTagId');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   
