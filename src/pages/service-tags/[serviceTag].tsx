@@ -27,12 +27,11 @@ interface ServiceTagDetailResponse {
   message?: string;
 }
 
-const PAGE_SIZE = 100;
-
 export default function ServiceTagDetail() {
   const router = useRouter();
   const { serviceTag } = router.query;
   const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(50);
   
   const { data, error, isLoading } = useSWR<ServiceTagDetailResponse>(
     serviceTag ? `/api/service-tags?serviceTag=${encodeURIComponent(serviceTag as string)}` : null,
@@ -42,13 +41,13 @@ export default function ServiceTagDetail() {
   // Paginate results
   const paginatedResults = useMemo(() => {
     if (!data?.ipRanges) return [];
-    
-    const startIndex = (currentPage - 1) * PAGE_SIZE;
-    const endIndex = startIndex + PAGE_SIZE;
-    return data.ipRanges.slice(startIndex, endIndex);
-  }, [data?.ipRanges, currentPage]);
 
-  const totalPages = Math.ceil((data?.ipRanges?.length || 0) / PAGE_SIZE);
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+    return data.ipRanges.slice(startIndex, endIndex);
+  }, [data?.ipRanges, currentPage, pageSize]);
+
+  const totalPages = Math.ceil((data?.ipRanges?.length || 0) / pageSize);
 
   if (!serviceTag) {
     return (
@@ -158,22 +157,37 @@ export default function ServiceTagDetail() {
             </div>
 
             {/* Results Table */}
-            <Results 
-              results={paginatedResults} 
+            <Results
+              results={paginatedResults}
               query={serviceTag as string}
               total={data.ipRanges.length}
+              topPagination={
+                <SimplePagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={setCurrentPage}
+                  totalItems={data.ipRanges.length}
+                  pageSize={pageSize}
+                  onPageSizeChange={(size) => {
+                    setPageSize(size);
+                    setCurrentPage(1);
+                  }}
+                />
+              }
+              bottomPagination={
+                <SimplePagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={setCurrentPage}
+                  totalItems={data.ipRanges.length}
+                  pageSize={pageSize}
+                  onPageSizeChange={(size) => {
+                    setPageSize(size);
+                    setCurrentPage(1);
+                  }}
+                />
+              }
             />
-
-            {/* Pagination */}
-            {totalPages > 1 && (
-              <SimplePagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                onPageChange={setCurrentPage}
-                totalItems={data.ipRanges.length}
-                pageSize={PAGE_SIZE}
-              />
-            )}
           </>
         )}
 

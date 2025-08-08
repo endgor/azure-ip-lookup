@@ -6,6 +6,7 @@ interface SimplePaginationProps {
   onPageChange: (page: number) => void;
   totalItems: number;
   pageSize: number;
+  onPageSizeChange?: (size: number) => void;
 }
 
 const SimplePagination: React.FC<SimplePaginationProps> = ({
@@ -13,10 +14,16 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
   totalPages,
   onPageChange,
   totalItems,
-  pageSize
+  pageSize,
+  onPageSizeChange
 }) => {
-  // Don't render pagination if we only have one page
-  if (totalPages <= 1) return null;
+  const handlePageSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    const newSize = value === 'all' ? totalItems : parseInt(value, 10);
+    onPageSizeChange?.(newSize);
+  };
+
+  const hasMultiplePages = totalPages > 1;
 
   // Calculate range of items being shown
   const startItem = (currentPage - 1) * pageSize + 1;
@@ -57,53 +64,72 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
 
   const pageNumbers = getPageNumbers();
 
+  const selectValue = pageSize >= totalItems ? 'all' : pageSize.toString();
+
   return (
     <nav className="flex justify-between items-center my-4" aria-label="Results pagination">
-      <div className="text-sm text-gray-700">
-        Showing items <span className="font-medium">{startItem}</span> to <span className="font-medium">{endItem}</span> of <span className="font-medium">{totalItems}</span>
+      <div className="text-sm text-gray-700 flex items-center gap-4">
+        <span>
+          Showing items <span className="font-medium">{startItem}</span> to <span className="font-medium">{endItem}</span> of <span className="font-medium">{totalItems}</span>
+        </span>
+        <label className="flex items-center gap-1">
+          Items per page:
+          <select
+            className="border-gray-300 rounded-md text-sm"
+            value={selectValue}
+            onChange={handlePageSizeChange}
+          >
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="all">All</option>
+          </select>
+        </label>
       </div>
 
       <div className="flex gap-2" role="navigation" aria-label="Pagination">
-        {/* Previous button */}
-        {currentPage > 1 && (
-          <button 
-            onClick={() => onPageChange(currentPage - 1)} 
-            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
-          >
-            Previous
-          </button>
-        )}
-        
-        {/* Page numbers */}
-        {pageNumbers.map((page, index) => {
-          if (page < 0) {
-            // Ellipsis
-            return <span key={`ellipsis-${index}`} className="px-3 py-1">...</span>;
-          }
-          
-          return (
-            <button
-              key={page}
-              onClick={() => onPageChange(page)}
-              className={`px-3 py-1 rounded-md text-sm ${
-                currentPage === page
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              {page}
-            </button>
-          );
-        })}
-        
-        {/* Next button */}
-        {currentPage < totalPages && (
-          <button 
-            onClick={() => onPageChange(currentPage + 1)} 
-            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
-          >
-            Next
-          </button>
+        {hasMultiplePages && (
+          <>
+            {currentPage > 1 && (
+              <button
+                onClick={() => onPageChange(currentPage - 1)}
+                className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
+              >
+                Previous
+              </button>
+            )}
+
+            {pageNumbers.map((page, index) => {
+              if (page < 0) {
+                // Ellipsis
+                return <span key={`ellipsis-${index}`} className="px-3 py-1">...</span>;
+              }
+
+              return (
+                <button
+                  key={page}
+                  onClick={() => onPageChange(page)}
+                  className={`px-3 py-1 rounded-md text-sm ${
+                    currentPage === page
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  {page}
+                </button>
+              );
+            })}
+
+            {currentPage < totalPages && (
+              <button
+                onClick={() => onPageChange(currentPage + 1)}
+                className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
+              >
+                Next
+              </button>
+            )}
+          </>
         )}
       </div>
     </nav>

@@ -28,6 +28,7 @@ interface HomeProps {
   initialRegion: string;
   initialService: string;
   initialPage: number;
+  initialPageSize: number;
 }
 
 interface ApiResponse {
@@ -45,11 +46,12 @@ interface ApiResponse {
   message?: string;
 }
 
-export default function Home({ 
-  initialQuery, 
-  initialRegion, 
+export default function Home({
+  initialQuery,
+  initialRegion,
   initialService,
-  initialPage 
+  initialPage,
+  initialPageSize
 }: HomeProps) {
   const [error, setError] = useState<string | null>(null);
   
@@ -65,10 +67,11 @@ export default function Home({
     if (initialRegion) params.append('region', initialRegion);
     if (initialService) params.append('service', initialService);
     if (initialPage > 1) params.append('page', initialPage.toString());
-    
+    if (initialPageSize !== 50) params.append('pageSize', initialPageSize.toString());
+
     const queryString = params.toString();
     return queryString ? `/api/ipAddress?${queryString}` : null;
-  }, [initialQuery, initialRegion, initialService, initialPage]);
+  }, [initialQuery, initialRegion, initialService, initialPage, initialPageSize]);
   
   const { data, isLoading } = useSWR<ApiResponse>(
     apiUrl,
@@ -92,7 +95,7 @@ export default function Home({
   const results = data && !isError && data.results ? data.results : [];
   const totalResults = data && !isError ? data.total || 0 : 0;
   const currentPage = data && !isError ? data.page || 1 : 1;
-  const pageSize = data && !isError ? data.pageSize || 50 : 50;
+  const pageSize = data && !isError ? data.pageSize || initialPageSize : initialPageSize;
   const totalPages = Math.ceil(totalResults / pageSize);
   
   // Generate page title based on query parameters
@@ -161,25 +164,37 @@ export default function Home({
         
         {!isLoading && !isError && results.length > 0 && (
           <>
-            <Results 
-              results={results} 
+            <Results
+              results={results}
               query={pageTitle}
               total={totalResults}
+              topPagination={
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  totalItems={totalResults}
+                  pageSize={pageSize}
+                  query={{
+                    ipOrDomain: initialQuery,
+                    region: initialRegion,
+                    service: initialService
+                  }}
+                />
+              }
+              bottomPagination={
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  totalItems={totalResults}
+                  pageSize={pageSize}
+                  query={{
+                    ipOrDomain: initialQuery,
+                    region: initialRegion,
+                    service: initialService
+                  }}
+                />
+              }
             />
-            
-            {totalPages > 1 && (
-              <Pagination 
-                currentPage={currentPage}
-                totalPages={totalPages}
-                totalItems={totalResults}
-                pageSize={pageSize}
-                query={{
-                  ipOrDomain: initialQuery,
-                  region: initialRegion,
-                  service: initialService
-                }}
-              />
-            )}
           </>
         )}
         
@@ -310,13 +325,15 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const initialRegion = query.region as string || '';
   const initialService = query.service as string || '';
   const initialPage = parseInt(query.page as string || '1', 10);
-  
+  const initialPageSize = parseInt(query.pageSize as string || '50', 10);
+
   return {
     props: {
       initialQuery,
       initialRegion,
       initialService,
-      initialPage: isNaN(initialPage) ? 1 : initialPage
+      initialPage: isNaN(initialPage) ? 1 : initialPage,
+      initialPageSize: isNaN(initialPageSize) ? 50 : initialPageSize
     },
   };
 };

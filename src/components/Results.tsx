@@ -1,5 +1,5 @@
 import { AzureIpAddress } from '@/types/azure';
-import { useState, useMemo } from 'react';
+import { useState, useMemo, type ReactNode } from 'react';
 import Tooltip from './Tooltip';
 import ExportDropdown from './ExportDropdown';
 
@@ -20,6 +20,8 @@ interface ResultsProps {
   results: AzureIpAddress[];
   query: string;
   total?: number;
+  topPagination?: ReactNode;
+  bottomPagination?: ReactNode;
 }
 
 type SortField = 'serviceTagId' | 'ipAddressPrefix' | 'region' | 'systemService' | 'networkFeatures';
@@ -29,10 +31,8 @@ export default function Results({ results, query, total }: ResultsProps) {
   const [sortField, setSortField] = useState<SortField>('serviceTagId');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
   
-  // Format the display for total results if we're showing a subset
-  const totalDisplay = total && total > results.length 
-    ? `${results.length} of ${total}` 
-    : results.length;
+  // Always show the total number of matching results
+  const totalDisplay = total ?? results.length;
   
   // Handle column sort
   const handleSort = (field: SortField) => {
@@ -82,7 +82,7 @@ export default function Results({ results, query, total }: ResultsProps) {
               Results for {query}
             </h2>
             <p className="text-sm text-blue-600">
-              Found {totalDisplay} matching Azure IP {results.length === 1 ? 'range' : 'ranges'}
+              Found {totalDisplay} matching Azure IP {totalDisplay === 1 ? 'range' : 'ranges'}
             </p>
           </div>
           <div className="flex-shrink-0">
@@ -90,7 +90,9 @@ export default function Results({ results, query, total }: ResultsProps) {
           </div>
         </div>
       </header>
-      
+
+      {topPagination}
+
       <div className="overflow-x-auto w-full">
         <table className="min-w-full divide-y divide-gray-200 table-fixed relative" aria-label="Azure IP Ranges">
           <thead className="bg-gray-50 relative">
@@ -164,6 +166,8 @@ export default function Results({ results, query, total }: ResultsProps) {
           </tbody>
         </table>
       </div>
+
+      {bottomPagination}
     </section>
   );
 }
