@@ -32,8 +32,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# GitHub Actions
-.github/workflows/*.yml
+# Note: GitHub Actions workflows are now tracked for Azure Static Web Apps deployment
 
 # Claude files
 CLAUDE.md
