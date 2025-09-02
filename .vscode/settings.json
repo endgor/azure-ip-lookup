@@ -1,0 +1,6 @@
+{
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/azure-static-web-apps-lemon-mud-068cd8703.yml",
+        ".github/workflows/update-ip-data.yml"
+    ]
+}
