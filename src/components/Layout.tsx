@@ -160,14 +160,14 @@ export default function Layout({ title = 'Azure IP Lookup', children }: LayoutPr
 
       
       <div className="min-h-screen flex flex-col">
-        <header className="bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg">
+        <header className="bg-white border-b border-gray-200 text-gray-800">
           <div className="container mx-auto px-4">
             <nav className="flex flex-col sm:flex-row justify-between items-center py-4">
               <Link href="/" className="flex items-center text-2xl font-bold mb-2 sm:mb-0" aria-label="Azure IP Lookup - Home">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="h-8 w-8 mr-2" 
-                  viewBox="0 0 24 24" 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 mr-2 text-blue-600"
+                  viewBox="0 0 24 24"
                   fill="currentColor"
                   role="img"
                   aria-label="Azure IP Lookup Logo - Eye icon representing network visibility"
@@ -178,45 +178,45 @@ export default function Layout({ title = 'Azure IP Lookup', children }: LayoutPr
                 <span>Azure IP Lookup</span>
               </Link>
               
-              <div className="flex items-center space-x-1">
-                <Link 
-                  href="/" 
-                  className={`px-3 py-2 rounded-md font-medium text-sm ${
-                    isActive('/') 
-                      ? 'bg-blue-800 text-white' 
-                      : 'text-blue-100 hover:bg-blue-600'
+              <div className="flex items-center space-x-1 text-sm">
+                <Link
+                  href="/"
+                  className={`px-3 py-2 rounded-md font-medium ${
+                    isActive('/')
+                      ? 'text-blue-600 underline'
+                      : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
                   Home
                 </Link>
                 
-                <Link 
-                  href="/service-tags" 
-                  className={`px-3 py-2 rounded-md font-medium text-sm ${
-                    isActive('/service-tags') || router.pathname.startsWith('/service-tags') 
-                      ? 'bg-blue-800 text-white' 
-                      : 'text-blue-100 hover:bg-blue-600'
+                <Link
+                  href="/service-tags"
+                  className={`px-3 py-2 rounded-md font-medium ${
+                    isActive('/service-tags') || router.pathname.startsWith('/service-tags')
+                      ? 'text-blue-600 underline'
+                      : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
                   Service Tags
                 </Link>
                 
-                <Link 
-                  href="/about" 
-                  className={`px-3 py-2 rounded-md font-medium text-sm ${
-                    isActive('/about') 
-                      ? 'bg-blue-800 text-white' 
-                      : 'text-blue-100 hover:bg-blue-600'
+                <Link
+                  href="/about"
+                  className={`px-3 py-2 rounded-md font-medium ${
+                    isActive('/about')
+                      ? 'text-blue-600 underline'
+                      : 'text-gray-600 hover:text-gray-900'
                   }`}
                 >
                   About
                 </Link>
                 
-                <a 
+                <a
                   href="https://github.com/endgor/azure-ip-lookup"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-blue-100 hover:bg-blue-600 flex items-center"
+                  className="px-3 py-2 rounded-md font-medium text-gray-600 hover:text-gray-900 flex items-center"
                   aria-label="View Azure IP Lookup source code on GitHub"
                 >
                   <svg className="h-5 w-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">

@@ -79,14 +79,14 @@ const Results = memo(function Results({ results, query, total }: ResultsProps) {
   };
   
   return (
-    <section className="bg-white rounded-lg shadow-md overflow-hidden mb-6" aria-label="Search Results">
-      <header className="bg-blue-50 px-4 py-3 border-b border-blue-100">
+    <section className="bg-white rounded-lg shadow-sm overflow-hidden mb-6" aria-label="Search Results">
+      <header className="bg-gray-50 px-4 py-3 border-b border-gray-200">
         <div className="flex justify-between items-center">
           <div>
-            <h2 className="text-lg font-semibold text-blue-800">
+            <h2 className="text-lg font-semibold text-gray-800">
               Results for {query}
             </h2>
-            <p className="text-sm text-blue-600">
+            <p className="text-sm text-gray-600">
               Found {totalDisplay} matching Azure IP {totalDisplay === 1 ? 'range' : 'ranges'}
             </p>
           </div>

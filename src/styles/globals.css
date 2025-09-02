@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-rgb: 249, 250, 251;
+  --background-rgb: 255, 255, 255;
 }
 
 body {
@@ -15,15 +15,15 @@ body {
 }
 
 .prose h1 {
-  @apply text-3xl font-bold mb-6 text-blue-800;
+  @apply text-3xl font-bold mb-6 text-gray-900;
 }
 
 .prose h2 {
-  @apply text-2xl font-semibold mt-8 mb-4 text-blue-700;
+  @apply text-2xl font-semibold mt-8 mb-4 text-gray-800;
 }
 
 .prose h3 {
-  @apply text-xl font-semibold mt-6 mb-3 text-blue-600;
+  @apply text-xl font-semibold mt-6 mb-3 text-gray-700;
 }
 
 .prose p {
