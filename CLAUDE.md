@@ -4,46 +4,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Azure IP Lookup is a Next.js web application that identifies whether IP addresses belong to Microsoft Azure infrastructure and determines which Azure Service Tags contain specific IP addresses. The application serves IP data that is automatically updated daily via GitHub Actions from Microsoft's official sources.
+Azure IP Lookup is a Next.js web application that identifies whether IP addresses belong to Microsoft Azure infrastructure and determines which Azure Service Tags contain specific IP addresses. The application is configured as a static export for Azure Static Web Apps deployment, with IP data automatically updated daily via GitHub Actions from Microsoft's official sources.
 
-**Performance Optimized**: Recently underwent comprehensive performance optimizations to improve Core Web Vitals and real experience scores, including font loading optimization, component memoization, bundle analysis, and static site generation for key pages.
+**Deployment Architecture**: Configured as a Next.js static export (`output: 'export'`) optimized for Azure Static Web Apps. Uses `staticwebapp.config.json` for routing and caching configuration. No server-side APIs - all functionality runs client-side with static JSON data files.
 
 ## Development Commands
 
 ### Core Development
 - `npm install` - Install dependencies
 - `npm run dev` - Start development server (http://localhost:3000)
-- `npm run build` - Build for production (includes data copy via vercel-build.js)
+- `npm run build` - Build for production (uses azure-build.js for data preparation)
+- `npm run build:azure` - Build specifically for Azure Static Web Apps deployment
 - `npm run analyze` - Build with bundle analyzer to identify optimization opportunities
-- `npm start` - Start production server
+- `npm start` - Start production server (Note: not applicable for static export)
 - `npm run lint` - Run ESLint
 
 ### Data Management
 - `npm run update-ip-data` - Download latest Azure IP ranges from Microsoft
 - `ts-node scripts/update-ip-data.ts` - Direct execution of IP data update script
 
-### Performance Analysis
-- `npm run analyze` - Generate bundle analysis report to identify heavy dependencies and optimization opportunities
-
 ## Architecture
 
 ### Core Components
-- **IP Service** (`src/lib/ipService.ts`): Core business logic for IP lookups, CIDR matching, and service tag queries with optimized caching (6-hour TTL) and LRU normalization cache
-- **Data Layer**: Azure IP ranges stored in both `/data/` (source) and `/public/data/` directories
-- **API Routes**: 
-  - `/api/ipAddress.ts` - Main IP lookup endpoint with optimized caching headers
-  - `/api/file-metadata.ts` - File metadata with aggressive caching (24h)
-  - `/api/service-tags.ts` - Service tag directory API
-  - `/api/versions.ts` - Version information API
+- **IP Service** (`src/lib/ipService.ts`): Core business logic for IP lookups, CIDR matching, and service tag queries running entirely client-side
+- **Data Layer**: Azure IP ranges stored in `/public/data/` directory as static JSON files (no `/data/` source directory in static export)
+- **Static Export**: All functionality runs client-side using static JSON data files - no server-side APIs
 - **Frontend Components**: Performance-optimized React components with memoization in `/src/components/`
-- **Static Pages**: About page uses ISR (Incremental Static Regeneration) for optimal performance
+- **Build Process**: `azure-build.js` ensures data files exist and creates empty placeholders if missing
 
 ### Data Flow
 1. IP data downloaded from Microsoft's official sources (Public Cloud, China Cloud, US Government)
-2. Stored in `/data/` directory and copied to `/public/data/` for client access
-3. Extended in-memory caching (6-hour TTL) with improved memory management
+2. Stored directly in `/public/data/` directory as static JSON files
+3. Client-side JavaScript loads and processes JSON data files at runtime
 4. Service supports IP addresses, CIDR notation, domain names, and service tag lookups
-5. Aggressive CDN caching with stale-while-revalidate headers for optimal performance
+5. Azure Static Web Apps CDN caching configured via `staticwebapp.config.json`
 
 ### Key Features
 - **Multi-format Input**: Supports IP addresses, CIDR ranges, domain names, and service tags
@@ -54,15 +48,16 @@ Azure IP Lookup is a Next.js web application that identifies whether IP addresse
 - **Export Functionality**: Dynamic imports for CSV/Excel export to reduce initial bundle size
 
 ### File Structure
-- `/src/lib/ipService.ts` - Main IP lookup and search logic with performance optimizations
+- `/src/lib/ipService.ts` - Main IP lookup and search logic running client-side
 - `/src/lib/exportUtils.ts` - Export functionality (CSV/Excel) with dynamic loading
 - `/src/types/azure.ts` - TypeScript interfaces for Azure data structures
 - `/src/components/` - Performance-optimized React components with memo() wrappers
-- `/src/pages/_app.tsx` - App root with next/font integration and analytics
+- `/src/pages/_app.tsx` - App root with next/font integration
 - `/scripts/update-ip-data.ts` - Data fetching and update automation
-- `/scripts/vercel-build.js` - Build-time data copying for Vercel deployments
-- `/data/` - Source Azure IP range JSON files (4.6MB total)
-- `/public/data/` - Client-accessible copy of IP data
+- `/scripts/azure-build.js` - Build-time data preparation for Azure Static Web Apps
+- `/public/data/` - Azure IP range JSON files (4.6MB total) served as static assets
+- `/staticwebapp.config.json` - Azure Static Web Apps routing and caching configuration
+- `/next.config.js` - Next.js configuration with static export settings
 
 ## Performance Optimizations
 
@@ -86,15 +81,28 @@ The application uses official Microsoft Azure IP range data:
 - Azure China Cloud (ID: 57062) - ~260KB
 - Azure US Government Cloud (ID: 57063) - ~312KB
 
-Data is automatically updated daily via GitHub Actions and triggers Vercel deployment.
+Data is automatically updated daily via GitHub Actions and triggers Azure Static Web Apps deployment.
 
-## Performance Considerations
+## Azure Static Web Apps Configuration
 
-- **Large Dataset**: Main Azure Cloud file is 4.0MB - cached in memory for 6 hours
-- **Cold Start Optimization**: Extended cache TTLs to improve serverless performance
-- **Bundle Size**: Use dynamic imports for heavy dependencies (papaparse, xlsx)
-- **Static Generation**: Use ISR for pages with infrequent data changes
-- **CDN Optimization**: Aggressive caching headers for static and API responses
+### Deployment Settings
+- **Build Preset**: Next.js
+- **App Location**: `/` (root directory)
+- **API Location**: Leave blank (no Azure Functions APIs)
+- **Output Location**: Leave blank (Next.js static export handles this)
+
+### Configuration Files
+- `staticwebapp.config.json` - Defines routing, caching headers, and security policies
+- `next.config.js` - Configured with `output: 'export'` for static generation
+- Build uses `npm run build:azure` which runs `azure-build.js` followed by `next build`
+
+## Deployment Considerations
+
+- **Static Export**: Application builds to static files (`output: 'export'`) suitable for Azure Static Web Apps
+- **Large Dataset**: Main Azure Cloud file is 4.0MB - loaded and parsed client-side as needed
+- **Bundle Size**: Use dynamic imports for heavy dependencies (papaparse, xlsx) to reduce initial load
+- **CDN Optimization**: Caching configured via `staticwebapp.config.json` for optimal Azure Static Web Apps performance
+- **Build Process**: `azure-build.js` ensures data files exist or creates placeholders to prevent build failures
 
 # important-instruction-reminders
 Do what has been asked; nothing more, nothing less.
