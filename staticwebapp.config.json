@@ -9,6 +9,16 @@
       "headers": {
         "Cache-Control": "public, max-age=86400, stale-while-revalidate=43200"
       }
+    },
+    {
+      "route": "/maintenance",
+      "rewrite": "/maintenance.html"
+    },
+    {
+      "route": "/maintenance.html",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
+      }
     }
   ],
   "navigationFallback": {

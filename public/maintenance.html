@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance - Azure IP Lookup</title>
+    <meta name="description" content="Azure IP Lookup is temporarily unavailable for maintenance. Please check back shortly.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="refresh" content="300">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #1d4ed8, #2563eb);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 0.5rem;
+        }
+        
+        .main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            background: #fef3c7;
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .warning-icon {
+            width: 40px;
+            height: 40px;
+            color: #d97706;
+        }
+        
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.125rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+        
+        .info-box {
+            background: #fffbeb;
+            border: 1px solid #fed7aa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+        
+        .info-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-text {
+            color: #b45309;
+            margin-bottom: 1rem;
+        }
+        
+        .info-list {
+            list-style: disc;
+            margin-left: 1.5rem;
+            color: #b45309;
+            font-size: 0.875rem;
+        }
+        
+        .info-list li {
+            margin-bottom: 0.25rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.15s ease-in-out;
+            margin-bottom: 1rem;
+        }
+        
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+        
+        .small-text {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 1rem;
+        }
+        
+        .link {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+        
+        .link:hover {
+            color: #1d4ed8;
+        }
+        
+        .alternatives {
+            margin-top: 2rem;
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+        }
+        
+        .alternatives-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+        
+        .alternatives-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        
+        .alternative-item {
+            display: block;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.15s ease-in-out;
+        }
+        
+        .alternative-item:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+        
+        .alternative-title {
+            font-weight: 500;
+            color: #2563eb;
+            margin-bottom: 0.25rem;
+        }
+        
+        .alternative-desc {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        .footer {
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .footer-text {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        
+        @media (max-width: 640px) {
+            .card {
+                padding: 2rem 1rem;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21.3 12c0 .9-5.5 5.6-9.3 5.6S2.7 12.9 2.7 12s5.5-5.6 9.3-5.6c3.8-.1 9.3 4.7 9.3 5.6zm-9.3-3.5c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5-3.5-1.6-3.5-3.5 1.5-3.5 3.5-3.5z" />
+                </svg>
+                Azure IP Lookup
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="card">
+                <div class="icon-container">
+                    <svg class="warning-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                    </svg>
+                </div>
+                
+                <h1 class="title">Temporarily Unavailable</h1>
+                <p class="subtitle">We're currently updating the Azure IP Lookup service</p>
+                
+                <div class="info-box">
+                    <h2 class="info-title">What's happening?</h2>
+                    <p class="info-text">
+                        The Azure IP Lookup service is temporarily unavailable due to deployment updates. 
+                        This usually takes just a few minutes to resolve.
+                    </p>
+                    <ul class="info-list">
+                        <li>Service data is being updated with the latest Azure IP ranges</li>
+                        <li>New features and improvements are being deployed</li>
+                        <li>All data remains secure and intact</li>
+                    </ul>
+                </div>
+                
+                <button class="btn" onclick="window.location.reload()">
+                    <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                    Try Again
+                </button>
+                
+                <div class="small-text">
+                    <p>This page will automatically refresh in 5 minutes</p>
+                    <p style="margin-top: 0.5rem;">
+                        For updates, check our 
+                        <a href="https://github.com/endgor/azure-ip-lookup" target="_blank" rel="noopener noreferrer" class="link">
+                            GitHub repository
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="alternatives">
+                <h3 class="alternatives-title">Alternative Resources</h3>
+                <div class="alternatives-grid">
+                    <a href="https://www.microsoft.com/en-us/download/details.aspx?id=56519" target="_blank" rel="noopener noreferrer" class="alternative-item">
+                        <div class="alternative-title">Microsoft Azure IP Ranges</div>
+                        <div class="alternative-desc">Official Microsoft download</div>
+                    </a>
+                    <a href="https://azurespeedtest.azurewebsites.net/" target="_blank" rel="noopener noreferrer" class="alternative-item">
+                        <div class="alternative-title">Azure Speed Test</div>
+                        <div class="alternative-desc">Network testing tools</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+            Azure IP Lookup Tool - Temporarily under maintenance
+        </div>
+    </footer>
+
+    <script>
+        // Auto-refresh after 5 minutes if user doesn't manually refresh
+        setTimeout(function() {
+            window.location.reload();
+        }, 300000);
+    </script>
+</body>
+</html>
