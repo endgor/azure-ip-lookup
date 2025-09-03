@@ -133,13 +133,6 @@ export default function Maintenance() {
             </div>
           </div>
         </main>
-
-        {/* Footer */}
-        <footer className="bg-gray-50 border-t">
-          <div className="container mx-auto px-4 py-4 text-center text-sm text-gray-600">
-            <p>Azure IP Lookup Tool - Temporarily under maintenance</p>
-          </div>
-        </footer>
       </div>
     </>
   );
