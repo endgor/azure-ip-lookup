@@ -123,7 +123,10 @@ const Pagination: React.FC<PaginationProps> = ({
       <div className="flex flex-wrap justify-center sm:justify-end gap-2" role="navigation" aria-label="Pagination">
         {/* Previous button */}
         {!isAll && currentPage > 1 && (
-          <Link href={getPageUrl(currentPage - 1)} className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200">
+          <Link
+            href={getPageUrl(currentPage - 1)}
+            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
             Previous
           </Link>
         )}
@@ -139,7 +142,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <Link
               key={page}
               href={getPageUrl(page)}
-              className={`px-3 py-1 rounded-md text-sm ${
+              className={`px-3 py-1 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
                 !isAll && currentPage === page
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -153,7 +156,7 @@ const Pagination: React.FC<PaginationProps> = ({
         {/* All option */}
         <Link
           href={getAllUrl()}
-          className={`px-3 py-1 rounded-md text-sm ${
+          className={`px-3 py-1 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
             isAll ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
@@ -162,7 +165,10 @@ const Pagination: React.FC<PaginationProps> = ({
         
         {/* Next button */}
         {!isAll && currentPage < totalPages && (
-          <Link href={getPageUrl(currentPage + 1)} className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200">
+          <Link
+            href={getPageUrl(currentPage + 1)}
+            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
             Next
           </Link>
         )}
