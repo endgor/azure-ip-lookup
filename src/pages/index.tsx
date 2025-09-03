@@ -1,6 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import Layout from '@/components/Layout';
 import LookupForm from '@/components/LookupForm';
 import Results from '@/components/Results';
@@ -205,7 +204,7 @@ export default function Home() {
   }, [initialQuery, initialService, initialRegion]);
   
   return (
-    <Layout title="Azure IP Range Finder & Service Tag Lookup Tool">
+    <Layout title="Azure IP Range Finder & Service Tag Lookup Tool" showFooter>
       <section className="text-center max-w-3xl mx-auto mb-8">
         <h1 className="text-4xl font-bold mb-4 text-blue-800">Azure IP Address & Service Tag Lookup</h1>
       </section>
@@ -346,35 +345,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="max-w-3xl mx-auto mt-12">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-800">Explore More</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Browse All Service Tags</h3>
-                <p className="text-gray-600 mb-4">
-                  Explore the complete directory of Azure Service Tags and their associated IP ranges.
-                </p>
-                <Link 
-                  href="/service-tags"
-                  className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
-                >
-                  View Service Tags Directory →
-                </Link>
-              </div>
-              <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold mb-3 text-blue-800">Learn More About This Tool</h3>
-                <p className="text-gray-600 mb-4">
-                  Discover how the Azure IP Lookup Tool works, its data sources, and technical details.
-                </p>
-                <Link 
-                  href="/about"
-                  className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
-                >
-                  Read About Page →
-                </Link>
-              </div>
-            </div>
-          </section>
         </>
       )}
     </Layout>

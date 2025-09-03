@@ -2,14 +2,14 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Script from 'next/script';
 
 interface LayoutProps {
   title?: string;
   children: React.ReactNode;
+  showFooter?: boolean;
 }
 
-export default function Layout({ title = 'Azure IP Lookup', children }: LayoutProps) {
+export default function Layout({ title = 'Azure IP Lookup', children, showFooter = false }: LayoutProps) {
   const router = useRouter();
   const isActive = (path: string) => router.pathname === path;
   
@@ -234,37 +234,39 @@ export default function Layout({ title = 'Azure IP Lookup', children }: LayoutPr
           {children}
         </main>
         
-        <footer className="bg-gray-50 border-t">
-          <div className="container mx-auto px-4 py-6 text-center text-gray-600">
-            <p className="font-medium">Azure IP Lookup Tool</p>
-            <p className="text-sm mt-1 mb-2">
-              Data automatically updates daily from Microsoft&apos;s official sources
-            </p>
-            <div className="flex justify-center space-x-4 text-sm">
-              <a 
-                href="https://www.microsoft.com/en-us/download/details.aspx?id=56519"
-                className="text-blue-600 hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                Official Data Source
-              </a>
-              <span className="text-gray-400">|</span>
-              <Link href="/about" className="text-blue-600 hover:underline">
-                About
-              </Link>
-              <span className="text-gray-400">|</span>
-              <a 
-                href="https://github.com/endgor/azure-ip-lookup"
-                className="text-blue-600 hover:underline"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                GitHub Repository
-              </a>
+        {showFooter && (
+          <footer className="bg-gray-50 border-t">
+            <div className="container mx-auto px-4 py-6 text-center text-gray-600">
+              <p className="font-medium">Azure IP Lookup Tool</p>
+              <p className="text-sm mt-1 mb-2">
+                Data automatically updates daily from Microsoft&apos;s official sources
+              </p>
+              <div className="flex justify-center space-x-4 text-sm">
+                <a
+                  href="https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+                  className="text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Official Data Source
+                </a>
+                <span className="text-gray-400">|</span>
+                <Link href="/about" className="text-blue-600 hover:underline">
+                  About
+                </Link>
+                <span className="text-gray-400">|</span>
+                <a
+                  href="https://github.com/endgor/azure-ip-lookup"
+                  className="text-blue-600 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Repository
+                </a>
+              </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        )}
       </div>
     </>
   );
