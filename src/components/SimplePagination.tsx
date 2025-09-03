@@ -98,7 +98,7 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
         {!isAll && currentPage > 1 && (
           <button
             onClick={() => onPageChange(currentPage - 1)}
-            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
+            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Previous
           </button>
@@ -115,7 +115,7 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
             <button
               key={page}
               onClick={() => onPageChange(page)}
-              className={`px-3 py-1 rounded-md text-sm ${
+              className={`px-3 py-1 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
                 !isAll && currentPage === page
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -129,7 +129,7 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
         {/* All option */}
         <button
           onClick={() => onPageChange('all')}
-          className={`px-3 py-1 rounded-md text-sm ${
+          className={`px-3 py-1 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
             isAll ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
@@ -140,7 +140,7 @@ const SimplePagination: React.FC<SimplePaginationProps> = ({
         {!isAll && currentPage < totalPages && (
           <button
             onClick={() => onPageChange(currentPage + 1)}
-            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200"
+            className="px-3 py-1 rounded-md text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             Next
           </button>
