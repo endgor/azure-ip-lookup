@@ -4,38 +4,58 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 
+const BASE_URL = 'https://azurehub.org';
+
 interface LayoutProps {
   title?: string;
+  description?: string;
+  robots?: string;
   children: React.ReactNode;
 }
 
-export default function Layout({ title = 'Azure IP Lookup', children }: LayoutProps) {
+export default function Layout({
+  title = 'Azure IP Lookup',
+  description: descriptionProp,
+  robots = 'index, follow',
+  children
+}: LayoutProps) {
   const router = useRouter();
   const isActive = (path: string) => router.pathname === path;
-  
+
   // Generate more SEO-optimized titles based on the page
   let fullTitle = title;
-  let description = "Azure IP Lookup Tool helps you identify IP addresses and ranges associated with Azure services. Search by IP, CIDR, service name, or region to discover Azure infrastructure details.";
-  
+  let description =
+    descriptionProp ??
+    "Azure IP Lookup Tool helps you identify IP addresses and ranges associated with Azure services. Search by IP, CIDR, service name, or region to discover Azure infrastructure details.";
+
   // Customize title and description based on the current page
-  if (title === 'Azure IP Lookup') {
-    fullTitle = "Azure IP Lookup Tool";
-    description = "Free Azure IP Lookup Tool. Instantly verify if an IP address belongs to Microsoft Azure. Search by IP address, CIDR, service name, or region. Updated daily with official Microsoft data.";
-  } else if (title.includes('Azure Service Tags')) {
-    fullTitle = `${title} | Browse All Azure Service Tag IP Ranges`;
-    description = "Complete directory of Azure Service Tags with their associated IP ranges. Search and browse all Azure service tags to find networking details for Microsoft Azure infrastructure.";
-  } else if (title.includes('Service Tag:')) {
-    const serviceTag = title.replace('Azure Service Tag: ', '');
-    fullTitle = `${serviceTag} Azure Service Tag | IP Ranges & Network Details`;
-    description = `View all IP ranges and network details for the ${serviceTag} Azure Service Tag. Find regional distribution, system services, and network features for this Azure service.`;
-  } else if (title.includes('About')) {
-    fullTitle = "About Azure IP Lookup Tool | How It Works & Data Sources";
-    description = "Learn about the Azure IP Lookup Tool, how it works, and its data sources. Understand Azure Service Tags, network features, and how we keep IP range data updated daily.";
-  } else {
+  if (!descriptionProp) {
+    if (title === 'Azure IP Lookup') {
+      fullTitle = 'Azure IP Lookup Tool';
+      description =
+        'Free Azure IP Lookup Tool. Instantly verify if an IP address belongs to Microsoft Azure. Search by IP address, CIDR, service name, or region. Updated daily with official Microsoft data.';
+    } else if (title.includes('Azure Service Tags')) {
+      fullTitle = `${title} | Browse All Azure Service Tag IP Ranges`;
+      description =
+        'Complete directory of Azure Service Tags with their associated IP ranges. Search and browse all Azure service tags to find networking details for Microsoft Azure infrastructure.';
+    } else if (title.includes('Service Tag:')) {
+      const rawServiceTag = title.replace('Azure Service Tag: ', '');
+      const safeServiceTag = rawServiceTag.replace(/["'&<>]/g, '');
+      fullTitle = `${safeServiceTag} Azure Service Tag | IP Ranges & Network Details`;
+      description = `View all IP ranges and network details for the ${safeServiceTag} Azure Service Tag. Find regional distribution, system services, and network features for this Azure service.`;
+    } else if (title.includes('About')) {
+      fullTitle = 'About Azure IP Lookup Tool | How It Works & Data Sources';
+      description =
+        'Learn about the Azure IP Lookup Tool, how it works, and its data sources. Understand Azure Service Tags, network features, and how we keep IP range data updated daily.';
+    } else {
+      fullTitle = `${title} | Azure IP Lookup Tool`;
+    }
+  } else if (!title.includes('Azure IP Lookup Tool')) {
     fullTitle = `${title} | Azure IP Lookup Tool`;
   }
-  
-  const url = `https://azurehub.org${router.asPath}`;
+
+  const canonicalPath = router.asPath?.split('#')[0]?.split('?')[0] || '/';
+  const url = `${BASE_URL}${canonicalPath.startsWith('/') ? '' : '/'}${canonicalPath}`;
 
   return (
     <>
@@ -56,7 +76,7 @@ export default function Layout({ title = 'Azure IP Lookup', children }: LayoutPr
         <meta name="rating" content="general" />
         <meta name="revisit-after" content="1 day" />
         <meta httpEquiv="Content-Language" content="en-US" />
-        
+
         {/* Favicon Tags */}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
@@ -69,7 +89,7 @@ export default function Layout({ title = 'Azure IP Lookup', children }: LayoutPr
         <meta name="theme-color" content="#ffffff" />
 
         {/* Verification Meta Tags - Add these after you verify ownership */}
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content={robots} />
         
         {/* OpenGraph Meta Tags */}
         <meta property="og:title" content={fullTitle} />

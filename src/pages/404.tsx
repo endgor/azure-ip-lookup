@@ -3,7 +3,11 @@ import Layout from '@/components/Layout';
 
 export default function Custom404() {
   return (
-    <Layout title="Page Not Found - 404 Error">
+    <Layout
+      title="Page Not Found - 404 Error"
+      description="The page you are looking for could not be found on Azure IP Lookup. Return home to search Azure IP ranges or browse service tags."
+      robots="noindex, follow"
+    >
       <div className="max-w-2xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>

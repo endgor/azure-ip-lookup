@@ -109,7 +109,8 @@ ${serviceTagsArray
 
     // Write sitemap to output directory
     const sitemapPath = path.join(OUTPUT_DIR, 'sitemap.xml');
-    fs.writeFileSync(sitemapPath, sitemap);
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+    fs.writeFileSync(sitemapPath, sitemap, 'utf8');
 
     console.log(`✓ Sitemap generated successfully at ${sitemapPath}`);
     console.log(`  Total URLs: ${serviceTagsArray.length + 3}`);
