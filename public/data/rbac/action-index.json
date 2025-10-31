@@ -1,0 +1,6532 @@
+{
+  "Microsoft.ContainerRegistry": {
+    "registries": [
+      "*",
+      "agentpools/delete",
+      "agentpools/listQueueStatus/action",
+      "agentpools/operationResults/status/read",
+      "agentpools/operationStatuses/read",
+      "agentpools/read",
+      "agentpools/write",
+      "artifacts/delete",
+      "cacheRules/delete",
+      "cacheRules/operationStatuses/read",
+      "cacheRules/read",
+      "cacheRules/write",
+      "catalog/read",
+      "connectedRegistries/deactivate/action",
+      "connectedRegistries/delete",
+      "connectedRegistries/read",
+      "connectedRegistries/write",
+      "credentialSets/delete",
+      "credentialSets/operationStatuses/read",
+      "credentialSets/read",
+      "credentialSets/write",
+      "delete",
+      "exportPipelines/delete",
+      "exportPipelines/read",
+      "exportPipelines/write",
+      "generateCredentials/action",
+      "importImage/action",
+      "importPipelines/delete",
+      "importPipelines/read",
+      "importPipelines/write",
+      "listBuildSourceUploadUrl/action",
+      "listCredentials/action",
+      "metadata/read",
+      "operationStatuses/read",
+      "pipelineRuns/delete",
+      "pipelineRuns/operationStatuses/read",
+      "pipelineRuns/read",
+      "pipelineRuns/write",
+      "privateEndpointConnections/delete",
+      "privateEndpointConnections/operationStatuses/read",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "providers/Microsoft.Insights/diagnosticSettings/read",
+      "providers/Microsoft.Insights/diagnosticSettings/write",
+      "providers/Microsoft.Insights/logDefinitions/read",
+      "providers/Microsoft.Insights/metricDefinitions/read",
+      "pull/read",
+      "push/write",
+      "quarantine/read",
+      "quarantine/write",
+      "quarantinedArtifacts/read",
+      "quarantinedArtifacts/write",
+      "read",
+      "regenerateCredential/action",
+      "replications/delete",
+      "replications/operationStatuses/read",
+      "replications/read",
+      "replications/write",
+      "repositories/content/delete",
+      "repositories/content/read",
+      "repositories/content/write",
+      "repositories/metadata/delete",
+      "repositories/metadata/read",
+      "repositories/metadata/write",
+      "runs/cancel/action",
+      "runs/listLogSasUrl/action",
+      "runs/read",
+      "runs/write",
+      "scheduleRun/action",
+      "scopeMaps/delete",
+      "scopeMaps/operationStatuses/read",
+      "scopeMaps/read",
+      "scopeMaps/write",
+      "sign/write",
+      "taskruns/delete",
+      "taskruns/listDetails/action",
+      "taskruns/operationStatuses/read",
+      "taskruns/read",
+      "taskruns/write",
+      "tasks/delete",
+      "tasks/listDetails/action",
+      "tasks/read",
+      "tasks/write",
+      "tokens/delete",
+      "tokens/operationStatuses/read",
+      "tokens/read",
+      "tokens/write",
+      "trustedCollections/write",
+      "webhooks/delete",
+      "webhooks/getCallbackConfig/action",
+      "webhooks/listEvents/action",
+      "webhooks/operationStatuses/read",
+      "webhooks/ping/action",
+      "webhooks/read",
+      "webhooks/write",
+      "write"
+    ],
+    "locations": [
+      "operationResults/read"
+    ]
+  },
+  "Microsoft.ApiManagement": {
+    "service": [
+      "*",
+      "*/read",
+      "authorizationServers/read",
+      "backup/action",
+      "contentTypes/contentItems/delete",
+      "contentTypes/contentItems/read",
+      "contentTypes/contentItems/write",
+      "contentTypes/delete",
+      "contentTypes/read",
+      "contentTypes/write",
+      "delete",
+      "groups/read",
+      "groups/users/*",
+      "managedeployments/action",
+      "portalRevisions/read",
+      "portalRevisions/write",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateLinkResources/read",
+      "products/apiLinks/*",
+      "products/read",
+      "read",
+      "restore/action",
+      "tags/apiLinks/*",
+      "tags/operationLinks/*",
+      "tags/productLinks/*",
+      "tags/read",
+      "updatecertificate/action",
+      "updatehostname/action",
+      "users/read",
+      "workspaces/*",
+      "workspaces/*/read",
+      "workspaces/apiVersionSets/*",
+      "workspaces/apis/*",
+      "workspaces/backends/*",
+      "workspaces/certificates/*",
+      "workspaces/diagnostics/*",
+      "workspaces/groups/*",
+      "workspaces/loggers/*",
+      "workspaces/namedValues/*",
+      "workspaces/notifications/*",
+      "workspaces/policies/*",
+      "workspaces/policyFragments/*",
+      "workspaces/products/*",
+      "workspaces/schemas/*",
+      "workspaces/subscriptions/*",
+      "workspaces/tags/*",
+      "write"
+    ]
+  },
+  "Microsoft.Authorization": {
+    "*": [
+      "read",
+      "write"
+    ],
+    "policyassignments": [
+      "*",
+      "privateLinkAssociations/read",
+      "read",
+      "resourceManagementPrivateLinks/privateEndpointConnectionProxies/read",
+      "resourceManagementPrivateLinks/privateEndpointConnections/read",
+      "resourceManagementPrivateLinks/read"
+    ],
+    "policydefinitions": [
+      "*",
+      "read"
+    ],
+    "policyexemptions": [
+      "*",
+      "read"
+    ],
+    "policyenrollments": [
+      "*"
+    ],
+    "policysetdefinitions": [
+      "*",
+      "read"
+    ],
+    "roleAssignments": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "roleDefinitions": [
+      "read"
+    ],
+    "locks": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "classicAdministrators": [
+      "operationstatuses/read",
+      "read"
+    ],
+    "denyAssignments": [
+      "read"
+    ],
+    "diagnosticSettings": [
+      "read"
+    ],
+    "diagnosticSettingsCategories": [
+      "read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "permissions": [
+      "read"
+    ],
+    "providerOperations": [
+      "read"
+    ],
+    "roleAssignmentScheduleInstances": [
+      "read"
+    ],
+    "roleAssignmentScheduleRequests": [
+      "read"
+    ],
+    "roleAssignmentSchedules": [
+      "read"
+    ],
+    "roleEligibilityScheduleInstances": [
+      "read"
+    ],
+    "roleEligibilityScheduleRequests": [
+      "read"
+    ],
+    "roleEligibilitySchedules": [
+      "read"
+    ],
+    "roleManagementPolicies": [
+      "read"
+    ],
+    "roleManagementPolicyAssignments": [
+      "read"
+    ]
+  },
+  "Microsoft.Insights": {
+    "alertRules": [
+      "*",
+      "*/read",
+      "Activated/Action",
+      "Delete",
+      "Incidents/Read",
+      "Read",
+      "Resolved/Action",
+      "Throttled/Action",
+      "Write",
+      "activated/action",
+      "delete",
+      "incidents/read",
+      "read",
+      "resolved/action",
+      "throttled/action",
+      "write"
+    ],
+    "generateLiveToken": [
+      "read"
+    ],
+    "metricAlerts": [
+      "*",
+      "*/read",
+      "read",
+      "write"
+    ],
+    "components": [
+      "*",
+      "*/read",
+      "purge/action"
+    ],
+    "scheduledqueryrules": [
+      "*"
+    ],
+    "topology": [
+      "read"
+    ],
+    "transactions": [
+      "read"
+    ],
+    "webtests": [
+      "*"
+    ],
+    "snapshots": [
+      "read"
+    ],
+    "diagnosticSettings": [
+      "*",
+      "*/read",
+      "Read",
+      "read"
+    ],
+    "logDefinitions": [
+      "*",
+      "read"
+    ],
+    "metricdefinitions": [
+      "*",
+      "*/read",
+      "read"
+    ],
+    "metrics": [
+      "*",
+      "Read",
+      "Write",
+      "read"
+    ],
+    "autoscalesettings": [
+      "*",
+      "write"
+    ],
+    "workbooks": [
+      "*",
+      "delete",
+      "read",
+      "revisions/read",
+      "write"
+    ],
+    "myworkbooks": [
+      "read"
+    ],
+    "dataCollectionRuleAssociations": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "ActionGroups": [
+      "*"
+    ],
+    "ActivityLogAlerts": [
+      "*"
+    ],
+    "workbooktemplates": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "createNotifications": [
+      "*"
+    ],
+    "dataCollectionEndpoints": [
+      "*"
+    ],
+    "dataCollectionRules": [
+      "*",
+      "read",
+      "write"
+    ],
+    "eventtypes": [
+      "*",
+      "values/read"
+    ],
+    "notificationStatus": [
+      "*"
+    ],
+    "Register": [
+      "Action"
+    ],
+    "privateLinkScopes": [
+      "*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read"
+    ],
+    "privateLinkScopeOperationStatuses": [
+      "*"
+    ],
+    "Telemetry": [
+      "Write"
+    ],
+    "Logs": [
+      "Read",
+      "read"
+    ],
+    "DiagnosticSettingsCategories": [
+      "Read"
+    ]
+  },
+  "Microsoft.ResourceHealth": {
+    "availabilityStatuses": [
+      "current/read",
+      "read"
+    ],
+    "events": [
+      "action",
+      "fetchBillingCommunicationDetails/action",
+      "fetchEventDetails/action",
+      "impactedResources/read",
+      "listSecurityAdvisoryImpactedResources/action",
+      "read"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "emergingissues": [
+      "read"
+    ],
+    "metadata": [
+      "read"
+    ],
+    "potentialoutages": [
+      "read"
+    ]
+  },
+  "Microsoft.Resources": {
+    "deployments": [
+      "*",
+      "*/read",
+      "cancel/action",
+      "delete",
+      "exportTemplate/action",
+      "operationStatuses/read",
+      "operations/read",
+      "operationstatuses/read",
+      "read",
+      "validate/action",
+      "whatIf/action",
+      "write"
+    ],
+    "subscriptions": [
+      "locations/read",
+      "operationresults/read",
+      "providers/read",
+      "read",
+      "resourceGroups/*",
+      "resourceGroups/delete",
+      "resourceGroups/read",
+      "resourceGroups/resources/read",
+      "resourceGroups/write",
+      "resourcegroups/deployments/*",
+      "resourcegroups/deployments/operations/read",
+      "resourcegroups/deployments/operationstatuses/read",
+      "resourcegroups/deployments/read",
+      "resourcegroups/deployments/write",
+      "resourcegroups/read",
+      "resources/read"
+    ],
+    "templateSpecs": [
+      "*",
+      "*/read"
+    ],
+    "tags": [
+      "*",
+      "read",
+      "write"
+    ],
+    "resources": [
+      "read"
+    ],
+    "dataBoundaries": [
+      "write"
+    ],
+    "deploymentStacks": [
+      "*",
+      "exportTemplate/action",
+      "read",
+      "validate/action",
+      "write"
+    ],
+    "checkResourceName": [
+      "action"
+    ],
+    "deploymentScripts": [
+      "read",
+      "write"
+    ],
+    "links": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Support": {
+    "*": [
+      "read"
+    ],
+    "supporttickets": [
+      "write"
+    ]
+  },
+  "Microsoft.Attestation": {
+    "attestationProviders": [
+      "attestation/delete",
+      "attestation/read",
+      "attestation/write",
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Automation": {
+    "automationAccounts": [
+      "*",
+      "delete",
+      "hybridRunbookWorkerGroups/read",
+      "jobSchedules/read",
+      "jobSchedules/write",
+      "jobs/output/read",
+      "jobs/read",
+      "jobs/resume/action",
+      "jobs/stop/action",
+      "jobs/streams/read",
+      "jobs/suspend/action",
+      "jobs/write",
+      "linkedWorkspace/read",
+      "read",
+      "runbooks/delete",
+      "runbooks/read",
+      "runbooks/write",
+      "schedules/read",
+      "schedules/write",
+      "write"
+    ]
+  },
+  "Microsoft.Compute": {
+    "*": [
+      "read"
+    ],
+    "availabilitySets": [
+      "*",
+      "delete",
+      "read",
+      "vmSizes/read",
+      "write"
+    ],
+    "proximityPlacementGroups": [
+      "*",
+      "write"
+    ],
+    "virtualMachines": [
+      "*",
+      "*/read",
+      "WACloginAsAdmin/action",
+      "deallocate/action",
+      "delete",
+      "extensions/*",
+      "extensions/delete",
+      "extensions/read",
+      "extensions/write",
+      "instanceView/read",
+      "login/action",
+      "loginAsAdmin/action",
+      "patchAssessmentResults/latest/read",
+      "patchAssessmentResults/latest/softwarePatches/read",
+      "patchInstallationResults/read",
+      "patchInstallationResults/softwarePatches/read",
+      "powerOff/action",
+      "read",
+      "restart/action",
+      "runCommand/action",
+      "runCommands/read",
+      "runCommands/write",
+      "start/action",
+      "vmSizes/read",
+      "write"
+    ],
+    "disks": [
+      "*",
+      "beginGetAccess/action",
+      "delete",
+      "download/action",
+      "endGetAccess/action",
+      "read",
+      "upload/action",
+      "write"
+    ],
+    "locations": [
+      "*",
+      "DiskOperations/read",
+      "capsOperations/read",
+      "communityGalleries/*",
+      "diskOperations/read",
+      "operations/read",
+      "placementScores/generate/action",
+      "publishers/artifacttypes/types/read",
+      "publishers/artifacttypes/types/versions/read",
+      "sharedGalleries/*",
+      "usages/read",
+      "vmSizes/read"
+    ],
+    "virtualMachineScaleSets": [
+      "*",
+      "approveRollingUpgrade/action",
+      "deallocate/action",
+      "delete",
+      "delete/action",
+      "disks/beginGetAccess/action",
+      "extensions/read",
+      "instanceView/read",
+      "read",
+      "reimage/action",
+      "reimageall/action",
+      "restart/action",
+      "start/action",
+      "virtualMachines/instanceView/read",
+      "virtualMachines/read",
+      "virtualMachines/write",
+      "virtualmachines/restart/action",
+      "write"
+    ],
+    "cloudServices": [
+      "*"
+    ],
+    "hostgroups": [
+      "delete",
+      "hosts/delete",
+      "hosts/read",
+      "hosts/write",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "snapshots": [
+      "beginGetAccess/action",
+      "delete",
+      "download/action",
+      "endGetAccess/action",
+      "read",
+      "upload/action",
+      "write"
+    ],
+    "diskAccesses": [
+      "read"
+    ],
+    "galleries": [
+      "*",
+      "images/read",
+      "images/versions/read",
+      "read",
+      "share/action"
+    ],
+    "images": [
+      "*",
+      "read"
+    ],
+    "diskEncryptionSets": [
+      "*",
+      "read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "skus": [
+      "read"
+    ],
+    "sshPublicKeys": [
+      "*/generateKeyPair/action",
+      "delete",
+      "generateKeyPair/action",
+      "generatekeypair/action",
+      "read",
+      "write"
+    ],
+    "capacityReservationGroups": [
+      "deploy/action"
+    ],
+    "restorePointCollections": [
+      "read",
+      "restorePoints/read",
+      "restorePoints/write",
+      "write"
+    ]
+  },
+  "Microsoft.Network": {
+    "*": [
+      "read"
+    ],
+    "networkInterfaces": [
+      "*",
+      "*/read",
+      "delete",
+      "effectiveNetworkSecurityGroups/action",
+      "effectiveRouteTable/action",
+      "ipconfigurations/join/action",
+      "ipconfigurations/read",
+      "join/action",
+      "loadBalancers/read",
+      "providers/Microsoft.Insights/metricDefinitions/read",
+      "read",
+      "write"
+    ],
+    "virtualNetworks": [
+      "*",
+      "checkIpAddressAvailability/read",
+      "delete",
+      "join/action",
+      "joinLoadBalancer/action",
+      "peer/action",
+      "providers/Microsoft.Insights/diagnosticSettings/read",
+      "providers/Microsoft.Insights/metricDefinitions/read",
+      "read",
+      "subnets/*",
+      "subnets/delete",
+      "subnets/join/action",
+      "subnets/joinLoadBalancer/action",
+      "subnets/joinViaServiceEndpoint/action",
+      "subnets/prepareNetworkPolicies/action",
+      "subnets/read",
+      "subnets/serviceAssociationLinks/delete",
+      "subnets/serviceAssociationLinks/read",
+      "subnets/serviceAssociationLinks/write",
+      "subnets/unprepareNetworkPolicies/action",
+      "subnets/virtualMachines/read",
+      "subnets/write",
+      "usages/read",
+      "virtualMachines/read",
+      "virtualNetworkPeerings/delete",
+      "virtualNetworkPeerings/read",
+      "virtualNetworkPeerings/write",
+      "write"
+    ],
+    "networkSecurityGroups": [
+      "*",
+      "defaultSecurityRules/read",
+      "delete",
+      "join/action",
+      "read",
+      "securityRules/delete",
+      "securityRules/read",
+      "securityRules/write",
+      "write"
+    ],
+    "loadBalancers": [
+      "*/read",
+      "backendAddressPools/join/action",
+      "backendAddressPools/read",
+      "backendAddressPools/write",
+      "delete",
+      "frontendIPConfigurations/join/action",
+      "frontendIPConfigurations/read",
+      "inboundNATRules/join/action",
+      "inboundNatPools/join/action",
+      "inboundNatRules/join/action",
+      "inboundNatRules/read",
+      "loadBalancingRules/read",
+      "networkInterfaces/read",
+      "outboundRules/read",
+      "probes/join/action",
+      "probes/read",
+      "providers/Microsoft.Insights/logDefinitions/read",
+      "providers/Microsoft.Insights/metricDefinitions/read",
+      "read",
+      "virtualMachines/read",
+      "write"
+    ],
+    "publicIPAddresses": [
+      "*/read",
+      "delete",
+      "join/action",
+      "read",
+      "write"
+    ],
+    "dnsZones": [
+      "*",
+      "A/delete",
+      "A/write"
+    ],
+    "routeTables": [
+      "*",
+      "delete",
+      "join/action",
+      "read",
+      "routes/delete",
+      "routes/read",
+      "routes/write",
+      "write"
+    ],
+    "trafficManagerProfiles": [
+      "*",
+      "azureEndpoints/delete",
+      "azureEndpoints/read",
+      "azureEndpoints/write",
+      "delete",
+      "read",
+      "write"
+    ],
+    "applicationGateways": [
+      "backendAddressPools/join/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateLinkResources/read",
+      "read"
+    ],
+    "locations": [
+      "*",
+      "dnsResolverOperationResults/read",
+      "dnsResolverOperationStatuses/read",
+      "operationResults/read",
+      "operations/read",
+      "usages/read"
+    ],
+    "privateDnsZones": [
+      "*",
+      "A/delete",
+      "A/write",
+      "join/action",
+      "read",
+      "virtualNetworkLinks/read",
+      "virtualNetworkLinks/write",
+      "write"
+    ],
+    "privateDnsOperationResults": [
+      "*"
+    ],
+    "privateDnsOperationStatuses": [
+      "*",
+      "read"
+    ],
+    "networkWatchers": [
+      "read",
+      "securityGroupView/action"
+    ],
+    "publicIPPrefixes": [
+      "join/action"
+    ],
+    "azureFirewalls": [
+      "read"
+    ],
+    "ddosProtectionPlans": [
+      "join/action",
+      "read"
+    ],
+    "natGateways": [
+      "join/action",
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "dnsResolvers": [
+      "delete",
+      "inboundEndpoints/delete",
+      "inboundEndpoints/join/action",
+      "inboundEndpoints/read",
+      "inboundEndpoints/write",
+      "join/action",
+      "outboundEndpoints/delete",
+      "outboundEndpoints/join/action",
+      "outboundEndpoints/read",
+      "outboundEndpoints/write",
+      "read",
+      "write"
+    ],
+    "dnsForwardingRulesets": [
+      "delete",
+      "forwardingRules/delete",
+      "forwardingRules/read",
+      "forwardingRules/write",
+      "join/action",
+      "read",
+      "virtualNetworkLinks/delete",
+      "virtualNetworkLinks/read",
+      "virtualNetworkLinks/write",
+      "write"
+    ],
+    "serviceEndpointPolicies": [
+      "join/action"
+    ],
+    "privateEndpoints": [
+      "privateDnsZoneGroups/read",
+      "privateDnsZoneGroups/write",
+      "privateLinkServiceProxies/write",
+      "read",
+      "write"
+    ],
+    "networkVirtualAppliances": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "virtualHubs": [
+      "bgpConnections/read",
+      "bgpConnections/write",
+      "delete",
+      "ipConfigurations/read",
+      "ipConfigurations/write",
+      "read",
+      "write"
+    ],
+    "virtualWans": [
+      "read",
+      "virtualHubs/read"
+    ],
+    "networkManagers": [
+      "ipamPools/*/action",
+      "ipamPools/*/read",
+      "ipamPools/*/write",
+      "ipamPools/associateResourcesToPool/action"
+    ],
+    "networkIntentPolicies": [
+      "delete",
+      "join/action",
+      "read",
+      "write"
+    ],
+    "applicationSecurityGroups": [
+      "joinNetworkSecurityRule/action",
+      "read"
+    ],
+    "privatelinkservices": [
+      "delete",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "read",
+      "write"
+    ],
+    "expressRouteCrossConnections": [
+      "*",
+      "*/read"
+    ]
+  },
+  "Microsoft.Storage": {
+    "*": [
+      "read"
+    ],
+    "storageAccounts": [
+      "*",
+      "*/read",
+      "*/write",
+      "ListAccountSas/action",
+      "PrivateEndpointConnectionsApproval/action",
+      "blobServices/containers/*",
+      "blobServices/containers/blobs/*",
+      "blobServices/containers/blobs/add/action",
+      "blobServices/containers/blobs/delete",
+      "blobServices/containers/blobs/immutableStorage/runAsSuperUser/action",
+      "blobServices/containers/blobs/move/action",
+      "blobServices/containers/blobs/read",
+      "blobServices/containers/blobs/runAsSuperUser/action",
+      "blobServices/containers/blobs/tags/read",
+      "blobServices/containers/blobs/tags/write",
+      "blobServices/containers/blobs/write",
+      "blobServices/containers/delete",
+      "blobServices/containers/read",
+      "blobServices/containers/write",
+      "blobServices/generateUserDelegationKey/action",
+      "blobServices/read",
+      "blobServices/write",
+      "delete",
+      "encryptionScopes/read",
+      "encryptionScopes/write",
+      "fileServices/fileshares/files/delete",
+      "fileServices/fileshares/files/modifypermissions/action",
+      "fileServices/fileshares/files/read",
+      "fileServices/fileshares/files/write",
+      "fileServices/generateUserDelegationKey/action",
+      "fileServices/read",
+      "fileServices/readFileBackupSemantics/action",
+      "fileServices/runAsBuiltInFileAdministrator/action",
+      "fileServices/shares/delete",
+      "fileServices/shares/read",
+      "fileServices/shares/write",
+      "fileServices/takeOwnership/action",
+      "fileServices/write",
+      "fileServices/writeFileBackupSemantics/action",
+      "fileservices/write",
+      "listKeys/action",
+      "listkeys/action",
+      "objectReplicationPolicies/delete",
+      "objectReplicationPolicies/read",
+      "objectReplicationPolicies/restorePointMarkers/write",
+      "objectReplicationPolicies/write",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateLinkResources/read",
+      "queueServices/generateUserDelegationKey/action",
+      "queueServices/queues/delete",
+      "queueServices/queues/messages/add/action",
+      "queueServices/queues/messages/delete",
+      "queueServices/queues/messages/process/action",
+      "queueServices/queues/messages/read",
+      "queueServices/queues/messages/write",
+      "queueServices/queues/read",
+      "queueServices/queues/write",
+      "read",
+      "regeneratekey/action",
+      "reports/read",
+      "restoreBlobRanges/action",
+      "storageTaskAssignments/delete",
+      "storageTaskAssignments/read",
+      "storageTaskAssignments/reports/read",
+      "storageTaskAssignments/write",
+      "tableServices/generateUserDelegationKey/action",
+      "tableServices/tables/delete",
+      "tableServices/tables/entities/add/action",
+      "tableServices/tables/entities/delete",
+      "tableServices/tables/entities/read",
+      "tableServices/tables/entities/update/action",
+      "tableServices/tables/entities/write",
+      "tableServices/tables/read",
+      "tableServices/tables/write",
+      "write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "checkNameAvailability": [
+      "read"
+    ]
+  },
+  "Microsoft.ContainerService": {
+    "managedClusters": [
+      "*",
+      "accessProfiles/listCredential/action",
+      "agentPools/abort/action",
+      "agentPools/delete",
+      "agentPools/deleteMachines/action",
+      "agentPools/machines/read",
+      "agentPools/machines/write",
+      "agentPools/read",
+      "agentPools/upgradeNodeImageVersion/action",
+      "agentPools/write",
+      "apps/controllerrevisions/read",
+      "apps/daemonsets/*",
+      "apps/daemonsets/read",
+      "apps/deployments/*",
+      "apps/deployments/read",
+      "apps/replicasets/*",
+      "apps/replicasets/read",
+      "apps/statefulsets/*",
+      "apps/statefulsets/read",
+      "autoscaling/horizontalpodautoscalers/*",
+      "autoscaling/horizontalpodautoscalers/read",
+      "batch/cronjobs/*",
+      "batch/cronjobs/read",
+      "batch/jobs/*",
+      "batch/jobs/read",
+      "configmaps/*",
+      "configmaps/read",
+      "coordination.k8s.io/leases/delete",
+      "coordination.k8s.io/leases/read",
+      "coordination.k8s.io/leases/write",
+      "discovery.k8s.io/endpointslices/read",
+      "endpoints/*",
+      "endpoints/read",
+      "events.k8s.io/events/read",
+      "events/*",
+      "events/read",
+      "extensions/daemonsets/*",
+      "extensions/daemonsets/read",
+      "extensions/deployments/*",
+      "extensions/deployments/read",
+      "extensions/ingresses/*",
+      "extensions/ingresses/read",
+      "extensions/networkpolicies/*",
+      "extensions/networkpolicies/read",
+      "extensions/replicasets/*",
+      "extensions/replicasets/read",
+      "limitranges/read",
+      "listClusterAdminCredential/action",
+      "listClusterMonitoringUserCredential/action",
+      "listClusterUserCredential/action",
+      "managedNamespaces/*",
+      "managedNamespaces/listCredential/action",
+      "managedNamespaces/read",
+      "metrics.k8s.io/nodes/read",
+      "metrics.k8s.io/pods/read",
+      "namespaces/read",
+      "networking.k8s.io/ingresses/*",
+      "networking.k8s.io/ingresses/read",
+      "networking.k8s.io/networkpolicies/*",
+      "networking.k8s.io/networkpolicies/read",
+      "persistentvolumeclaims/*",
+      "persistentvolumeclaims/read",
+      "pods/*",
+      "pods/read",
+      "policy/poddisruptionbudgets/*",
+      "policy/poddisruptionbudgets/read",
+      "read",
+      "replicationcontrollers/*",
+      "replicationcontrollers/read",
+      "resourcequotas/read",
+      "runcommand/action",
+      "secrets/*",
+      "serviceaccounts/*",
+      "serviceaccounts/read",
+      "services/*",
+      "services/read",
+      "trustedAccessRoleBindings/delete",
+      "trustedAccessRoleBindings/read",
+      "trustedAccessRoleBindings/write",
+      "write"
+    ],
+    "locations": [
+      "*"
+    ],
+    "managedclustersnapshots": [
+      "*"
+    ],
+    "snapshots": [
+      "*"
+    ],
+    "deploymentSafeguards": [
+      "*"
+    ],
+    "fleets": [
+      "*",
+      "apiextensions.k8s.io/customresourcedefinitions/read",
+      "apps/controllerrevisions/read",
+      "apps/daemonsets/*",
+      "apps/daemonsets/read",
+      "apps/daemonsets/write",
+      "apps/deployments/*",
+      "apps/deployments/read",
+      "apps/deployments/write",
+      "apps/statefulsets/*",
+      "apps/statefulsets/read",
+      "apps/statefulsets/write",
+      "authorization.k8s.io/localsubjectaccessreviews/write",
+      "autoscaling/horizontalpodautoscalers/*",
+      "autoscaling/horizontalpodautoscalers/read",
+      "autoscaling/horizontalpodautoscalers/write",
+      "batch/cronjobs/*",
+      "batch/cronjobs/read",
+      "batch/cronjobs/write",
+      "batch/jobs/*",
+      "batch/jobs/read",
+      "batch/jobs/write",
+      "cluster.kubernetes-fleet.io/internalmemberclusters/read",
+      "cluster.kubernetes-fleet.io/memberclusters/read",
+      "cluster.kubernetes-fleet.io/memberclusters/write",
+      "configmaps/*",
+      "configmaps/read",
+      "configmaps/write",
+      "endpoints/*",
+      "endpoints/read",
+      "endpoints/write",
+      "events.k8s.io/events/read",
+      "events/read",
+      "extensions/daemonsets/*",
+      "extensions/daemonsets/read",
+      "extensions/daemonsets/write",
+      "extensions/deployments/*",
+      "extensions/deployments/read",
+      "extensions/deployments/write",
+      "extensions/ingresses/*",
+      "extensions/ingresses/read",
+      "extensions/ingresses/write",
+      "extensions/networkpolicies/*",
+      "extensions/networkpolicies/read",
+      "extensions/networkpolicies/write",
+      "limitranges/read",
+      "listCredentials/action",
+      "members/*",
+      "members/apps/controllerrevisions/read",
+      "members/apps/daemonsets/*",
+      "members/apps/daemonsets/read",
+      "members/apps/deployments/*",
+      "members/apps/deployments/read",
+      "members/apps/replicasets/*",
+      "members/apps/replicasets/read",
+      "members/apps/statefulsets/*",
+      "members/apps/statefulsets/read",
+      "members/autoscaling/horizontalpodautoscalers/*",
+      "members/autoscaling/horizontalpodautoscalers/read",
+      "members/batch/cronjobs/*",
+      "members/batch/cronjobs/read",
+      "members/batch/jobs/*",
+      "members/batch/jobs/read",
+      "members/configmaps/*",
+      "members/configmaps/read",
+      "members/coordination.k8s.io/leases/delete",
+      "members/coordination.k8s.io/leases/read",
+      "members/coordination.k8s.io/leases/write",
+      "members/discovery.k8s.io/endpointslices/read",
+      "members/endpoints/*",
+      "members/endpoints/read",
+      "members/events.k8s.io/events/read",
+      "members/events/*",
+      "members/events/read",
+      "members/extensions/daemonsets/*",
+      "members/extensions/daemonsets/read",
+      "members/extensions/deployments/*",
+      "members/extensions/deployments/read",
+      "members/extensions/ingresses/*",
+      "members/extensions/ingresses/read",
+      "members/extensions/networkpolicies/*",
+      "members/extensions/networkpolicies/read",
+      "members/extensions/replicasets/*",
+      "members/extensions/replicasets/read",
+      "members/limitranges/read",
+      "members/metrics.k8s.io/nodes/read",
+      "members/metrics.k8s.io/pods/read",
+      "members/namespaces/read",
+      "members/networking.k8s.io/ingresses/*",
+      "members/networking.k8s.io/ingresses/read",
+      "members/networking.k8s.io/networkpolicies/*",
+      "members/networking.k8s.io/networkpolicies/read",
+      "members/persistentvolumeclaims/*",
+      "members/persistentvolumeclaims/read",
+      "members/pods/*",
+      "members/pods/read",
+      "members/policy/poddisruptionbudgets/*",
+      "members/policy/poddisruptionbudgets/read",
+      "members/replicationcontrollers/*",
+      "members/replicationcontrollers/read",
+      "members/resourcequotas/read",
+      "members/secrets/*",
+      "members/serviceaccounts/*",
+      "members/serviceaccounts/read",
+      "members/services/*",
+      "members/services/read",
+      "namespaces/read",
+      "networking.k8s.io/ingresses/*",
+      "networking.k8s.io/ingresses/read",
+      "networking.k8s.io/ingresses/write",
+      "networking.k8s.io/networkpolicies/*",
+      "networking.k8s.io/networkpolicies/read",
+      "networking.k8s.io/networkpolicies/write",
+      "nodes/read",
+      "nodes/write",
+      "persistentvolumeclaims/*",
+      "persistentvolumeclaims/read",
+      "persistentvolumeclaims/write",
+      "persistentvolumes/read",
+      "persistentvolumes/write",
+      "placement.kubernetes-fleet.io/clusterresourcebindings/read",
+      "placement.kubernetes-fleet.io/clusterresourceoverrides/read",
+      "placement.kubernetes-fleet.io/clusterresourceoverrides/write",
+      "placement.kubernetes-fleet.io/clusterresourceoverridesnapshots/read",
+      "placement.kubernetes-fleet.io/clusterresourceplacements/read",
+      "placement.kubernetes-fleet.io/clusterresourceplacements/write",
+      "placement.kubernetes-fleet.io/clusterresourcesnapshots/read",
+      "placement.kubernetes-fleet.io/clusterschedulingpolicysnapshots/read",
+      "placement.kubernetes-fleet.io/resourceoverrides/*",
+      "placement.kubernetes-fleet.io/resourceoverrides/read",
+      "placement.kubernetes-fleet.io/resourceoverrides/write",
+      "placement.kubernetes-fleet.io/resourceoverridesnapshots/read",
+      "placement.kubernetes-fleet.io/works/read",
+      "policy/poddisruptionbudgets/*",
+      "policy/poddisruptionbudgets/read",
+      "policy/poddisruptionbudgets/write",
+      "rbac.authorization.k8s.io/rolebindings/*",
+      "rbac.authorization.k8s.io/roles/*",
+      "read",
+      "replicationcontrollers/*",
+      "replicationcontrollers/read",
+      "replicationcontrollers/write",
+      "resourcequotas/read",
+      "secrets/*",
+      "secrets/read",
+      "secrets/write",
+      "serviceaccounts/*",
+      "serviceaccounts/read",
+      "serviceaccounts/write",
+      "services/*",
+      "services/read",
+      "services/write"
+    ]
+  },
+  "Microsoft.Maps": {
+    "accounts": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "services/*/read",
+      "services/batch/action",
+      "services/render/read",
+      "services/search/read"
+    ]
+  },
+  "Microsoft.AzureStack": {
+    "edgeSubscriptions": [
+      "read"
+    ],
+    "registrations": [
+      "products/*/action",
+      "products/read",
+      "read"
+    ]
+  },
+  "Microsoft.RecoveryServices": {
+    "locations": [
+      "*",
+      "allocateStamp/action",
+      "allocatedStamp/read",
+      "backupAadProperties/read",
+      "backupCrossRegionRestore/action",
+      "backupCrrJob/action",
+      "backupCrrJobs/action",
+      "backupCrrOperationResults/read",
+      "backupCrrOperationsStatus/read",
+      "backupPreValidateProtection/action",
+      "backupStatus/action",
+      "backupValidateFeatures/action",
+      "operationStatus/read"
+    ],
+    "Vaults": [
+      "*",
+      "backupEngines/read",
+      "backupFabrics/backupProtectionIntent/*",
+      "backupFabrics/backupProtectionIntent/read",
+      "backupFabrics/backupProtectionIntent/write",
+      "backupFabrics/operationResults/*",
+      "backupFabrics/operationResults/read",
+      "backupFabrics/protectableContainers/read",
+      "backupFabrics/protectionContainers/*",
+      "backupFabrics/protectionContainers/inquire/action",
+      "backupFabrics/protectionContainers/items/read",
+      "backupFabrics/protectionContainers/operationResults/read",
+      "backupFabrics/protectionContainers/protectedItems/*/read",
+      "backupFabrics/protectionContainers/protectedItems/backup/action",
+      "backupFabrics/protectionContainers/protectedItems/operationResults/read",
+      "backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
+      "backupFabrics/protectionContainers/protectedItems/read",
+      "backupFabrics/protectionContainers/protectedItems/recoveryPoints/accessToken/action",
+      "backupFabrics/protectionContainers/protectedItems/recoveryPoints/provisionInstantItemRecovery/action",
+      "backupFabrics/protectionContainers/protectedItems/recoveryPoints/read",
+      "backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action",
+      "backupFabrics/protectionContainers/protectedItems/recoveryPoints/revokeInstantItemRecovery/action",
+      "backupFabrics/protectionContainers/protectedItems/write",
+      "backupFabrics/protectionContainers/read",
+      "backupFabrics/protectionContainers/write",
+      "backupFabrics/refreshContainers/action",
+      "backupJobs/*",
+      "backupJobs/operationResults/read",
+      "backupJobs/read",
+      "backupJobsExport/action",
+      "backupOperationResults/*",
+      "backupOperationResults/read",
+      "backupOperations/read",
+      "backupPolicies/*",
+      "backupPolicies/operationResults/read",
+      "backupPolicies/operations/read",
+      "backupPolicies/read",
+      "backupPolicies/write",
+      "backupProtectableItems/*",
+      "backupProtectedItems/*",
+      "backupProtectedItems/read",
+      "backupProtectionContainers/*",
+      "backupProtectionContainers/read",
+      "backupProtectionIntents/read",
+      "backupResourceGuardProxies/delete",
+      "backupResourceGuardProxies/read",
+      "backupResourceGuardProxies/unlockDelete/action",
+      "backupResourceGuardProxies/write",
+      "backupSecurityPIN/*",
+      "backupTriggerValidateOperation/action",
+      "backupUsageSummaries/read",
+      "backupValidateOperation/action",
+      "backupValidateOperationResults/read",
+      "backupValidateOperationsStatuses/read",
+      "backupconfig/*",
+      "backupconfig/read",
+      "backupstorageconfig/*",
+      "backupstorageconfig/read",
+      "certificates/*",
+      "certificates/write",
+      "extendedInformation/*",
+      "extendedInformation/read",
+      "extendedInformation/write",
+      "monitoringAlerts/*",
+      "monitoringAlerts/read",
+      "monitoringAlerts/write",
+      "monitoringConfigurations/*",
+      "monitoringConfigurations/notificationConfiguration/read",
+      "operationResults/read",
+      "operationStatus/read",
+      "read",
+      "refreshContainers/read",
+      "registeredIdentities/*",
+      "registeredIdentities/operationResults/read",
+      "registeredIdentities/read",
+      "registeredIdentities/write",
+      "replicationAlertSettings/*",
+      "replicationAlertSettings/read",
+      "replicationEvents/read",
+      "replicationFabrics/*",
+      "replicationFabrics/checkConsistency/action",
+      "replicationFabrics/read",
+      "replicationFabrics/reassociateGateway/action",
+      "replicationFabrics/renewcertificate/action",
+      "replicationFabrics/replicationNetworks/read",
+      "replicationFabrics/replicationNetworks/replicationNetworkMappings/read",
+      "replicationFabrics/replicationProtectionContainers/read",
+      "replicationFabrics/replicationProtectionContainers/replicationMigrationItems/read",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectableItems/read",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/applyRecoveryPoint/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/failoverCommit/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/plannedFailover/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/reProtect/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/read",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/recoveryPoints/read",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/repairReplication/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailover/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailoverCleanup/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/unplannedFailover/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectedItems/updateMobilityService/action",
+      "replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/read",
+      "replicationFabrics/replicationProtectionContainers/switchprotection/action",
+      "replicationFabrics/replicationRecoveryServicesProviders/read",
+      "replicationFabrics/replicationRecoveryServicesProviders/refreshProvider/action",
+      "replicationFabrics/replicationStorageClassifications/read",
+      "replicationFabrics/replicationStorageClassifications/replicationStorageClassificationMappings/read",
+      "replicationFabrics/replicationvCenters/read",
+      "replicationJobs/*",
+      "replicationJobs/read",
+      "replicationOperationStatus/read",
+      "replicationPolicies/*",
+      "replicationPolicies/read",
+      "replicationRecoveryPlans/*",
+      "replicationRecoveryPlans/failoverCommit/action",
+      "replicationRecoveryPlans/plannedFailover/action",
+      "replicationRecoveryPlans/reProtect/action",
+      "replicationRecoveryPlans/read",
+      "replicationRecoveryPlans/testFailover/action",
+      "replicationRecoveryPlans/testFailoverCleanup/action",
+      "replicationRecoveryPlans/unplannedFailover/action",
+      "replicationVaultSettings/*",
+      "replicationVaultSettings/read",
+      "storageConfig/*",
+      "storageConfig/read",
+      "tokenInfo/read",
+      "usages/*",
+      "usages/read",
+      "vaultTokens/read",
+      "write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.DataProtection": {
+    "locations": [
+      "checkFeatureSupport/action",
+      "checkNameAvailability/action",
+      "getBackupStatus/action",
+      "operationResults/read",
+      "operationStatus/read"
+    ],
+    "backupVaults": [
+      "backupInstances/SuspendBackups/action",
+      "backupInstances/backup/action",
+      "backupInstances/delete",
+      "backupInstances/findRestorableTimeRanges/action",
+      "backupInstances/operationResults/read",
+      "backupInstances/read",
+      "backupInstances/recoveryPoints/read",
+      "backupInstances/restore/action",
+      "backupInstances/resumeProtection/action",
+      "backupInstances/validateForModifyBackup/action",
+      "backupInstances/validateRestore/action",
+      "backupInstances/write",
+      "backupPolicies/delete",
+      "backupPolicies/read",
+      "backupPolicies/write",
+      "backupResourceGuardProxies/delete",
+      "backupResourceGuardProxies/read",
+      "backupResourceGuardProxies/unlockDelete/action",
+      "backupResourceGuardProxies/write",
+      "deletedBackupInstances/read",
+      "deletedBackupInstances/undelete/action",
+      "operationResults/read",
+      "operationStatus/read",
+      "read",
+      "validateForBackup/action",
+      "write"
+    ],
+    "subscriptions": [
+      "providers/resourceGuards/read",
+      "resourceGroups/providers/locations/crossRegionRestore/action",
+      "resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action",
+      "resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action",
+      "resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action",
+      "resourceGroups/providers/locations/operationStatus/read",
+      "resourceGroups/providers/locations/validateCrossRegionRestore/action",
+      "resourceGroups/providers/resourceGuards/delete",
+      "resourceGroups/providers/resourceGuards/read",
+      "resourceGroups/providers/resourceGuards/write",
+      "resourceGroups/providers/resourceGuards/{operationName}/read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "*": [
+      "action",
+      "read",
+      "resourceGuards/write"
+    ]
+  },
+  "Microsoft.Billing": {
+    "*": [
+      "read"
+    ],
+    "billingPeriods": [
+      "read"
+    ],
+    "billingProperty": [
+      "read"
+    ]
+  },
+  "Microsoft.Commerce": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.Consumption": {
+    "*": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "reservationRecommendationDetails": [
+      "read"
+    ],
+    "reservationRecommendations": [
+      "read"
+    ]
+  },
+  "Microsoft.Management": {
+    "managementGroups": [
+      "delete",
+      "read",
+      "settings/delete",
+      "settings/write",
+      "subscriptions/delete",
+      "subscriptions/read",
+      "subscriptions/write",
+      "write"
+    ],
+    "getEntities": [
+      "action"
+    ],
+    "ServiceGroups": [
+      "read"
+    ]
+  },
+  "Microsoft.CostManagement": {
+    "*": [
+      "read"
+    ],
+    "benefitRecommendations": [
+      "read"
+    ]
+  },
+  "Microsoft.Blockchain": {
+    "blockchainMembers": [
+      "transactionNodes/connect/action",
+      "transactionNodes/read"
+    ]
+  },
+  "Microsoft.BizTalkServices": {
+    "BizTalk": [
+      "*"
+    ]
+  },
+  "Microsoft.Cdn": {
+    "edgenodes": [
+      "read"
+    ],
+    "operationresults": [
+      "*",
+      "profileresults/afdendpointresults/CheckCustomDomainDNSMappingStatus/action",
+      "profileresults/customdomainresults/read",
+      "profileresults/secretresults/read"
+    ],
+    "profiles": [
+      "*",
+      "*/read",
+      "CheckResourceUsage/action",
+      "Usages/action",
+      "afdendpoints/CheckCustomDomainDNSMappingStatus/action",
+      "afdendpoints/Usages/action",
+      "afdendpoints/validateCustomDomain/action",
+      "customdomains/delete",
+      "customdomains/read",
+      "customdomains/write",
+      "endpoints/*",
+      "endpoints/*/read",
+      "endpoints/CheckResourceUsage/action",
+      "origingroups/Usages/action",
+      "queryloganalyticsmetrics/action",
+      "queryloganalyticsrankings/action",
+      "querywafloganalyticsmetrics/action",
+      "querywafloganalyticsrankings/action",
+      "rulesets/Usages/action",
+      "secrets/delete",
+      "secrets/read",
+      "secrets/write"
+    ]
+  },
+  "Microsoft.ClassicNetwork": {
+    "networkSecurityGroups": [
+      "join/action"
+    ],
+    "reservedIps": [
+      "link/action",
+      "read"
+    ],
+    "virtualNetworks": [
+      "join/action",
+      "read"
+    ],
+    "*": [
+      "read"
+    ],
+    "expressRouteCrossConnections": [
+      "*",
+      "*/read"
+    ]
+  },
+  "Microsoft.ClassicStorage": {
+    "storageAccounts": [
+      "*",
+      "disks/read",
+      "images/read",
+      "listKeys/action",
+      "listkeys/action",
+      "read",
+      "regeneratekey/action"
+    ]
+  },
+  "successbricks.cleardb": {
+    "databases": [
+      "*"
+    ]
+  },
+  "Microsoft.ClassicCompute": {
+    "domainNames": [
+      "*"
+    ],
+    "virtualMachines": [
+      "*",
+      "*/write",
+      "extensions/*"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.CognitiveServices": {
+    "*": [
+      "read"
+    ],
+    "accounts": [
+      "*/read",
+      "AudioContentCreation/*",
+      "BatchAvatar/*",
+      "BatchTextToSpeech/*",
+      "ContentSafety/*",
+      "ConversationalLanguageUnderstanding/*",
+      "ConversationalLanguageUnderstanding/*/read",
+      "ConversationalLanguageUnderstanding/projects/export/action",
+      "CustomAvatar/*",
+      "CustomAvatar/*/read",
+      "CustomVision/*",
+      "CustomVision/*/read",
+      "CustomVision/classify/*",
+      "CustomVision/detect/*",
+      "CustomVision/projects/images/*",
+      "CustomVision/projects/images/suggested/*",
+      "CustomVision/projects/iterations/export/*",
+      "CustomVision/projects/iterations/publish/*",
+      "CustomVision/projects/predictions/*",
+      "CustomVision/projects/predictions/query/action",
+      "CustomVision/projects/quicktest/*",
+      "CustomVision/projects/tags/*",
+      "CustomVision/projects/tagsandregions/suggestions/action",
+      "CustomVoice/*",
+      "CustomVoice/*/read",
+      "CustomVoice/evaluations/*",
+      "CustomVoice/longaudiosynthesis/*",
+      "Face/*",
+      "Face/*/sessions/action",
+      "Face/*/sessions/audit/read",
+      "Face/*/sessions/delete",
+      "Face/*/sessions/read",
+      "Face/detect/action",
+      "Face/detectliveness/multimodal/action",
+      "Face/detectliveness/singlemodal/action",
+      "Face/detectlivenesswithverify/singlemodal/action",
+      "Face/findsimilars/action",
+      "Face/group/action",
+      "Face/identify/action",
+      "Face/verify/action",
+      "ImmersiveReader/getcontentmodelforreader/action",
+      "LUIS/*",
+      "LUIS/*/read",
+      "LUIS/apps/testdatasets/write",
+      "Language/*",
+      "Language/*/projects/export/action",
+      "Language/*/read",
+      "Language/analyze-conversations/action",
+      "Language/analyze-conversations/jobs/action",
+      "Language/analyze-conversations/jobscancel/action",
+      "Language/analyze-text/action",
+      "Language/analyze-text/jobs/action",
+      "Language/analyze-text/jobscancel/action",
+      "Language/generate/action",
+      "Language/query-dataverse/action",
+      "Language/query-knowledgebases/action",
+      "Language/query-text/action",
+      "LanguageAuthoring/*",
+      "LanguageAuthoring/*/read",
+      "MaaS/*",
+      "MetricsAdvisor/*",
+      "OpenAI/*",
+      "OpenAI/*/read",
+      "OpenAI/assistants/*",
+      "OpenAI/deployments/audio/action",
+      "OpenAI/deployments/chat/completions/action",
+      "OpenAI/deployments/completions/action",
+      "OpenAI/deployments/embeddings/action",
+      "OpenAI/deployments/extensions/chat/completions/action",
+      "OpenAI/deployments/realtime/action",
+      "OpenAI/deployments/search/action",
+      "OpenAI/engines/completions/action",
+      "OpenAI/engines/generate/action",
+      "OpenAI/engines/search/action",
+      "OpenAI/images/generations/action",
+      "OpenAI/responses/*",
+      "OpenAI/video/generations/*/action",
+      "OpenAI/video/generations/*/delete",
+      "QnAMaker.v2/alterations/read",
+      "QnAMaker.v2/alterations/write",
+      "QnAMaker.v2/endpointkeys/read",
+      "QnAMaker.v2/endpointkeys/refreshkeys/action",
+      "QnAMaker.v2/endpointsettings/read",
+      "QnAMaker.v2/endpointsettings/write",
+      "QnAMaker.v2/knowledgebases/create/write",
+      "QnAMaker.v2/knowledgebases/download/read",
+      "QnAMaker.v2/knowledgebases/generateanswer/action",
+      "QnAMaker.v2/knowledgebases/read",
+      "QnAMaker.v2/knowledgebases/train/action",
+      "QnAMaker.v2/knowledgebases/write",
+      "QnAMaker.v2/operations/read",
+      "QnAMaker/alterations/read",
+      "QnAMaker/alterations/write",
+      "QnAMaker/endpointkeys/read",
+      "QnAMaker/endpointkeys/refreshkeys/action",
+      "QnAMaker/endpointsettings/read",
+      "QnAMaker/endpointsettings/write",
+      "QnAMaker/knowledgebases/create/write",
+      "QnAMaker/knowledgebases/download/read",
+      "QnAMaker/knowledgebases/generateanswer/action",
+      "QnAMaker/knowledgebases/read",
+      "QnAMaker/knowledgebases/train/action",
+      "QnAMaker/knowledgebases/write",
+      "QnAMaker/operations/read",
+      "SpeechServices/*",
+      "SpeechServices/*/frontend/action",
+      "SpeechServices/*/read",
+      "SpeechServices/*/transcriptions/action",
+      "SpeechServices/*/transcriptions/delete",
+      "SpeechServices/*/transcriptions/read",
+      "SpeechServices/*/transcriptions/write",
+      "SpeechServices/text-dependent/*/action",
+      "SpeechServices/text-independent/*/action",
+      "SpeechServices/voiceagent/realtime/*",
+      "SpeechServices/voicelive/realtime/*",
+      "TTSPlayer/*",
+      "TextAnalytics/*",
+      "TextAnalytics/QnAMaker/alterations/read",
+      "TextAnalytics/QnAMaker/alterations/write",
+      "TextAnalytics/QnAMaker/endpointkeys/read",
+      "TextAnalytics/QnAMaker/endpointkeys/refreshkeys/action",
+      "TextAnalytics/QnAMaker/endpointsettings/read",
+      "TextAnalytics/QnAMaker/endpointsettings/write",
+      "TextAnalytics/QnAMaker/knowledgebases/create/write",
+      "TextAnalytics/QnAMaker/knowledgebases/download/read",
+      "TextAnalytics/QnAMaker/knowledgebases/generateanswer/action",
+      "TextAnalytics/QnAMaker/knowledgebases/read",
+      "TextAnalytics/QnAMaker/knowledgebases/train/action",
+      "TextAnalytics/QnAMaker/knowledgebases/write",
+      "TextAnalytics/QnAMaker/operations/read",
+      "VideoTranslation/*",
+      "commitmentplans/delete",
+      "commitmentplans/read",
+      "commitmentplans/write",
+      "deployments/delete",
+      "deployments/write",
+      "listkeys/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateLinkResources/read",
+      "projects/*",
+      "raiPolicies/delete",
+      "raiPolicies/read",
+      "raiPolicies/write",
+      "read"
+    ],
+    "locations": [
+      "*/read",
+      "usages/read"
+    ]
+  },
+  "Microsoft.Features": {
+    "features": [
+      "read"
+    ],
+    "providers": [
+      "features/read",
+      "features/register/action"
+    ]
+  },
+  "Microsoft.DocumentDB": {
+    "databaseAccounts": [
+      "backup/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "readonlykeys/action",
+      "restore/action",
+      "services/read"
+    ],
+    "*": [
+      "read"
+    ],
+    "locations": [
+      "restorableDatabaseAccounts/*/read",
+      "restorableDatabaseAccounts/read",
+      "restorableDatabaseAccounts/restore/action"
+    ],
+    "fleets": [
+      "*"
+    ],
+    "garnetClusters": [
+      "acl/*",
+      "acl/append/write",
+      "acl/bzmpop/delete",
+      "acl/bzpopmax/delete",
+      "acl/bzpopmin/delete",
+      "acl/channels/action",
+      "acl/clientid/read",
+      "acl/clientinfo/read",
+      "acl/configget/read",
+      "acl/decr/write",
+      "acl/decrby/write",
+      "acl/del/delete",
+      "acl/echo/read",
+      "acl/exists/read",
+      "acl/expire/delete",
+      "acl/get/read",
+      "acl/getdel/delete",
+      "acl/getex/read",
+      "acl/getrange/read",
+      "acl/getset/write",
+      "acl/hdel/delete",
+      "acl/hexists/read",
+      "acl/hexpire/delete",
+      "acl/hexpireat/delete",
+      "acl/hexpiretime/read",
+      "acl/hget/read",
+      "acl/hgetall/read",
+      "acl/hincrby/write",
+      "acl/hincrbyfloat/write",
+      "acl/histogram/read",
+      "acl/hkeys/read",
+      "acl/hlen/read",
+      "acl/hmget/read",
+      "acl/hmset/write",
+      "acl/hpersist/write",
+      "acl/hpexpire/delete",
+      "acl/hpexpireat/delete",
+      "acl/hpexpiretime/read",
+      "acl/hpttl/read",
+      "acl/hrandfield/read",
+      "acl/hscan/read",
+      "acl/hset/write",
+      "acl/hsetnx/write",
+      "acl/hstrlen/read",
+      "acl/httl/read",
+      "acl/hvals/read",
+      "acl/incr/write",
+      "acl/incrby/write",
+      "acl/incrbyfloat/write",
+      "acl/info/read",
+      "acl/keyslot/read",
+      "acl/lcs/read",
+      "acl/mget/read",
+      "acl/mset/write",
+      "acl/msetnx/write",
+      "acl/nodes/read",
+      "acl/numpat/action",
+      "acl/numsub/action",
+      "acl/ping/read",
+      "acl/psetex/write",
+      "acl/psubscribe/action",
+      "acl/publish/action",
+      "acl/punsubscribe/action",
+      "acl/readonly/read",
+      "acl/readwrite/write",
+      "acl/sadd/write",
+      "acl/scard/read",
+      "acl/scripteval/action",
+      "acl/scriptevalsha/action",
+      "acl/scriptexists/action",
+      "acl/scriptflush/action",
+      "acl/scriptload/action",
+      "acl/sdiff/read",
+      "acl/sdiffstore/write",
+      "acl/set/write",
+      "acl/setex/write",
+      "acl/setnx/write",
+      "acl/setrange/write",
+      "acl/sinter/read",
+      "acl/sintercard/read",
+      "acl/sinterstore/write",
+      "acl/sismember/read",
+      "acl/slots/read",
+      "acl/smembers/read",
+      "acl/smismember/read",
+      "acl/smove/write",
+      "acl/spop/delete",
+      "acl/srandmember/read",
+      "acl/srem/delete",
+      "acl/sscan/read",
+      "acl/strlen/read",
+      "acl/subscribe/action",
+      "acl/substr/read",
+      "acl/sunion/read",
+      "acl/sunionstore/write",
+      "acl/unlink/delete",
+      "acl/unsubscribe/action",
+      "acl/zadd/write",
+      "acl/zcard/read",
+      "acl/zcount/read",
+      "acl/zdiff/read",
+      "acl/zdiffstore/write",
+      "acl/zincrby/write",
+      "acl/zinter/read",
+      "acl/zintercard/read",
+      "acl/zinterstore/write",
+      "acl/zlexcount/read",
+      "acl/zmpop/delete",
+      "acl/zmscore/read",
+      "acl/zpopmax/delete",
+      "acl/zpopmin/delete",
+      "acl/zrandmember/read",
+      "acl/zrange/read",
+      "acl/zrangebylex/read",
+      "acl/zrangebyscore/read",
+      "acl/zrangestore/write",
+      "acl/zrank/read",
+      "acl/zrem/delete",
+      "acl/zremrangebylex/delete",
+      "acl/zremrangebyrank/delete",
+      "acl/zremrangebyscore/delete",
+      "acl/zrevrange/read",
+      "acl/zrevrangebylex/read",
+      "acl/zrevrangebyscore/read",
+      "acl/zrevrank/read",
+      "acl/zscan/read",
+      "acl/zscore/read",
+      "acl/zunion/read",
+      "acl/zunionstore/write"
+    ]
+  },
+  "Microsoft.Advisor": {
+    "configurations": [
+      "read",
+      "write"
+    ],
+    "recommendations": [
+      "available/action",
+      "read",
+      "suppressions/delete",
+      "suppressions/write",
+      "write"
+    ],
+    "resiliencyReviews": [
+      "read"
+    ],
+    "triageRecommendations": [
+      "approve/action",
+      "read",
+      "reject/action",
+      "reset/action"
+    ],
+    "triageResources": [
+      "read"
+    ],
+    "suppressions": [
+      "delete",
+      "write"
+    ],
+    "assessments": [
+      "write"
+    ]
+  },
+  "Microsoft.Databox": {
+    "*": [
+      "read"
+    ],
+    "jobs": [
+      "listcredentials/action",
+      "listsecrets/action"
+    ],
+    "locations": [
+      "availableSkus/action",
+      "regionConfiguration/action",
+      "validateAddress/action",
+      "validateInputs/action"
+    ]
+  },
+  "Microsoft.DataFactory": {
+    "dataFactories": [
+      "*"
+    ],
+    "factories": [
+      "*"
+    ]
+  },
+  "Microsoft.EventGrid": {
+    "eventSubscriptions": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "topicTypes": [
+      "eventSubscriptions/read"
+    ],
+    "locations": [
+      "eventSubscriptions/read",
+      "topicTypes/eventSubscriptions/read"
+    ],
+    "topics": [
+      "read"
+    ],
+    "domains": [
+      "read"
+    ],
+    "partnerNamespaces": [
+      "read"
+    ],
+    "namespaces": [
+      "read"
+    ],
+    "events": [
+      "receive/action",
+      "send/action"
+    ],
+    "systemTopics": [
+      "eventSubscriptions/write"
+    ],
+    "*": [
+      "read"
+    ],
+    "topicSpaces": [
+      "publish/action",
+      "subscribe/action"
+    ]
+  },
+  "Microsoft.OperationalInsights": {
+    "workspaces": [
+      "*/read",
+      "LinkedServices/read",
+      "analytics/query/action",
+      "dataSources/read",
+      "failback/action",
+      "intelligencepacks/*",
+      "listKeys/action",
+      "purge/action",
+      "query/*/read",
+      "query/read",
+      "read",
+      "savedSearches/*",
+      "savedSearches/read",
+      "search/action",
+      "sharedKeys/action",
+      "sharedKeys/read",
+      "sharedkeys/action",
+      "sharedkeys/read",
+      "storageinsightconfigs/*",
+      "tables/data/read",
+      "write"
+    ],
+    "querypacks": [
+      "*/read"
+    ],
+    "locations": [
+      "workspaces/failover/action"
+    ]
+  },
+  "Microsoft.BigAnalytics": {
+    "accounts": [
+      "*"
+    ]
+  },
+  "Microsoft.DataLakeAnalytics": {
+    "accounts": [
+      "*"
+    ]
+  },
+  "Microsoft.DevTestLab": {
+    "*": [
+      "read"
+    ],
+    "labs": [
+      "claimAnyVm/action",
+      "createEnvironment/action",
+      "ensureCurrentUserProfile/action",
+      "formulas/delete",
+      "formulas/read",
+      "formulas/write",
+      "policySets/evaluatePolicies/action",
+      "virtualMachines/claim/action",
+      "virtualMachines/getRdpFileContents/action",
+      "virtualmachines/listApplicableSchedules/action"
+    ],
+    "schedules": [
+      "*"
+    ]
+  },
+  "Microsoft.DocumentDb": {
+    "databaseAccounts": [
+      "*"
+    ]
+  },
+  "Microsoft.EnterpriseKnowledgeGraph": {
+    "services": [
+      "conflation/read",
+      "conflation/write",
+      "delete",
+      "ingestion/read",
+      "ingestion/write",
+      "intentclassification/read",
+      "intentclassification/write",
+      "knowledge/read",
+      "knowledge/write",
+      "ontology/read",
+      "ontology/write",
+      "sourceschema/read",
+      "sourceschema/write"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.AAD": {
+    "*": [
+      "read"
+    ],
+    "domainServices": [
+      "*",
+      "*/read",
+      "oucontainer/*"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ]
+  },
+  "Microsoft.IntelligentSystems": {
+    "accounts": [
+      "*"
+    ]
+  },
+  "Microsoft.KeyVault": {
+    "checkNameAvailability": [
+      "read"
+    ],
+    "deletedVaults": [
+      "read"
+    ],
+    "locations": [
+      "*/read",
+      "deletedManagedHsms/purge/action",
+      "deletedManagedHsms/read",
+      "deletedVaults/purge/action",
+      "deletedVaults/read",
+      "managedHsmOperationResults/read",
+      "operationResults/read"
+    ],
+    "vaults": [
+      "*",
+      "*/read",
+      "certificatecas/*",
+      "certificatecontacts/write",
+      "certificates/*",
+      "certificates/read",
+      "deploy/action",
+      "keyrotationpolicies/*",
+      "keys/*",
+      "keys/backup/action",
+      "keys/decrypt/action",
+      "keys/encrypt/action",
+      "keys/read",
+      "keys/release/action",
+      "keys/sign/action",
+      "keys/unwrap/action",
+      "keys/update/action",
+      "keys/verify/action",
+      "keys/wrap/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "secrets/*",
+      "secrets/getSecret/action",
+      "secrets/readMetadata/action",
+      "secrets/setSecret/action"
+    ],
+    "operations": [
+      "read"
+    ],
+    "managedHSMs": [
+      "*"
+    ],
+    "deletedManagedHsms": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.LabServices": {
+    "labAccounts": [
+      "*/read",
+      "createLab/action",
+      "getPricingAndAvailability/action",
+      "getRestrictionsAndUsage/action"
+    ],
+    "labPlans": [
+      "createLab/action",
+      "images/read",
+      "read",
+      "saveImage/action"
+    ],
+    "labs": [
+      "delete",
+      "publish/action",
+      "read",
+      "schedules/delete",
+      "schedules/read",
+      "schedules/write",
+      "syncGroup/action",
+      "users/delete",
+      "users/invite/action",
+      "users/read",
+      "users/write",
+      "virtualMachines/read",
+      "virtualMachines/redeploy/action",
+      "virtualMachines/reimage/action",
+      "virtualMachines/resetPassword/action",
+      "virtualMachines/start/action",
+      "virtualMachines/stop/action",
+      "write"
+    ],
+    "locations": [
+      "usages/read"
+    ],
+    "skus": [
+      "read"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "*": {
+    "_provider": [
+      "read"
+    ]
+  },
+  "Microsoft.HybridCompute": {
+    "machines": [
+      "*",
+      "*/read",
+      "UpgradeExtensions/action",
+      "WACLoginAsAdmin/action",
+      "addExtensions/action",
+      "assessPatches/action",
+      "delete",
+      "extensions/*",
+      "extensions/delete",
+      "extensions/read",
+      "extensions/write",
+      "hybridIdentityMetadata/read",
+      "installPatches/action",
+      "licenseProfiles/*",
+      "licenseProfiles/delete",
+      "licenseProfiles/read",
+      "licenseProfiles/write",
+      "listAccessDetails/action",
+      "login/action",
+      "loginAsAdmin/action",
+      "patchAssessmentResults/read",
+      "patchAssessmentResults/softwarePatches/read",
+      "patchInstallationResults/read",
+      "patchInstallationResults/softwarePatches/read",
+      "read",
+      "runCommands/*",
+      "runcommands/delete",
+      "runcommands/read",
+      "runcommands/write",
+      "upgradeExtensions/action",
+      "write"
+    ],
+    "*": [
+      "read"
+    ],
+    "settings": [
+      "*",
+      "read",
+      "write"
+    ],
+    "gateways": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "privateLinkScopes": [
+      "*",
+      "networkSecurityPerimeterConfigurations/read",
+      "privateEndpointConnections/read",
+      "read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "locations": [
+      "*",
+      "operationresults/read",
+      "operationstatus/read",
+      "updateCenterOperationResults/read"
+    ],
+    "osType": [
+      "agentVersions/latest/read",
+      "agentVersions/read"
+    ],
+    "licenses": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.OperationsManagement": {
+    "solutions": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Logic": {
+    "*": [
+      "read"
+    ],
+    "workflows": [
+      "disable/action",
+      "enable/action",
+      "read",
+      "runs/read",
+      "triggers/listCallbackUrl/action",
+      "triggers/read",
+      "validate/action"
+    ],
+    "integrationServiceEnvironments": [
+      "*",
+      "*/join/action",
+      "read"
+    ]
+  },
+  "Microsoft.Web": {
+    "connectionGateways": [
+      "*",
+      "*/read"
+    ],
+    "connections": [
+      "*",
+      "*/read"
+    ],
+    "customApis": [
+      "*",
+      "*/read"
+    ],
+    "serverFarms": [
+      "*",
+      "join/action",
+      "read"
+    ],
+    "sites": [
+      "*",
+      "applySlotConfig/Action",
+      "config/list/Action",
+      "functions/listSecrets/action",
+      "hostruntime/webhooks/api/workflows/runs/read",
+      "hostruntime/webhooks/api/workflows/triggers/listCallbackUrl/action",
+      "hostruntime/webhooks/api/workflows/triggers/read",
+      "publish/Action",
+      "read",
+      "restart/Action",
+      "slots/config/list/Action",
+      "slots/publish/Action",
+      "slots/restart/Action",
+      "slots/slotsswap/Action",
+      "slots/start/Action",
+      "slots/stop/Action",
+      "slotsdiffs/Action",
+      "slotsswap/Action",
+      "start/Action",
+      "stop/Action",
+      "write"
+    ],
+    "hostingEnvironments": [
+      "*",
+      "Join/Action"
+    ],
+    "certificates": [
+      "*"
+    ],
+    "listSitesAssignedToHostName": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.Solutions": {
+    "applications": [
+      "*",
+      "read"
+    ],
+    "*": [
+      "action"
+    ],
+    "jitRequests": [
+      "*"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.ManagedIdentity": {
+    "userAssignedIdentities": [
+      "*/assign/action",
+      "*/read",
+      "assign/action",
+      "delete",
+      "federatedIdentityCredentials/delete",
+      "federatedIdentityCredentials/read",
+      "federatedIdentityCredentials/write",
+      "read",
+      "revokeTokens/action",
+      "write"
+    ]
+  },
+  "NewRelic.APM": {
+    "accounts": [
+      "*"
+    ]
+  },
+  "Microsoft.Cache": {
+    "register": [
+      "action"
+    ],
+    "redis": [
+      "*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read"
+    ],
+    "redisEnterprise": [
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read"
+    ]
+  },
+  "Microsoft.PolicyInsights": {
+    "checkDataPolicyCompliance": [
+      "action"
+    ],
+    "policyEvents": [
+      "logDataEvents/action"
+    ],
+    "policyStates": [
+      "queryResults/action",
+      "triggerEvaluation/action"
+    ],
+    "remediations": [
+      "*"
+    ]
+  },
+  "Microsoft.Scheduler": {
+    "jobcollections": [
+      "*"
+    ]
+  },
+  "Microsoft.Search": {
+    "searchServices": [
+      "*",
+      "delete",
+      "indexes/*",
+      "indexes/documents/*",
+      "indexes/documents/read",
+      "listAdminKeys/action",
+      "privateEndpointConnections/*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "read",
+      "sharedPrivateLinkResources/read",
+      "write"
+    ]
+  },
+  "Microsoft.Security": {
+    "*": [
+      "read"
+    ],
+    "iotDefenderSettings": [
+      "downloadManagerActivation/action",
+      "packageDownloads/action"
+    ],
+    "iotSensors": [
+      "downloadResetPassword/action"
+    ],
+    "sqlVulnerabilityAssessments": [
+      "*"
+    ],
+    "assessments": [
+      "read",
+      "write"
+    ],
+    "pricings": [
+      "read",
+      "securityoperators/read",
+      "write"
+    ],
+    "automations": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "defenderforstoragesettings": [
+      "read",
+      "write"
+    ],
+    "advancedThreatProtectionSettings": [
+      "read",
+      "write"
+    ],
+    "datascanners": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.operationalInsights": {
+    "workspaces": [
+      "*/read"
+    ]
+  },
+  "Microsoft.IoTSecurity": {
+    "*": [
+      "read"
+    ],
+    "defenderSettings": [
+      "downloadManagerActivation/action",
+      "packageDownloads/action"
+    ]
+  },
+  "Microsoft.MixedReality": {
+    "SpatialAnchorsAccounts": [
+      "create/action",
+      "delete",
+      "discovery/read",
+      "properties/read",
+      "query/read",
+      "submitdiag/read",
+      "write"
+    ],
+    "RemoteRenderingAccounts": [
+      "convert/action",
+      "convert/delete",
+      "convert/read",
+      "diagnostic/read",
+      "managesessions/action",
+      "managesessions/delete",
+      "managesessions/read",
+      "render/read"
+    ],
+    "ObjectUnderstandingAccounts": [
+      "ingest/action",
+      "ingest/read"
+    ],
+    "ObjectAnchorsAccounts": [
+      "ingest/action",
+      "ingest/read"
+    ],
+    "spatialMapsAccounts": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Sql": {
+    "locations": [
+      "*/read",
+      "administratorAzureAsyncOperation/read",
+      "instanceFailoverGroups/*",
+      "ledgerDigestUploadsAzureAsyncOperation/read",
+      "ledgerDigestUploadsOperationResults/read",
+      "serverConfigurationOptionAzureAsyncOperation/read"
+    ],
+    "managedInstances": [
+      "*",
+      "administrators/read",
+      "advancedThreatProtectionSettings/read",
+      "advancedThreatProtectionSettings/write",
+      "azureADOnlyAuthentications/*",
+      "databases/advancedThreatProtectionSettings/read",
+      "databases/advancedThreatProtectionSettings/write",
+      "databases/currentSensitivityLabels/*",
+      "databases/delete",
+      "databases/read",
+      "databases/recommendedSensitivityLabels/*",
+      "databases/schemas/tables/columns/sensitivityLabels/*",
+      "databases/securityAlertPolicies/*",
+      "databases/sensitivityLabels/*",
+      "databases/transparentDataEncryption/*",
+      "databases/vulnerabilityAssessments/*",
+      "databases/write",
+      "metrics/read",
+      "read",
+      "securityAlertPolicies/*",
+      "serverConfigurationOptions/read",
+      "serverConfigurationOptions/write",
+      "vulnerabilityAssessments/*",
+      "write"
+    ],
+    "servers": [
+      "*",
+      "administrators/read",
+      "advancedThreatProtectionSettings/read",
+      "advancedThreatProtectionSettings/write",
+      "auditingSettings/*",
+      "azureADOnlyAuthentications/*",
+      "databases/*",
+      "databases/advancedThreatProtectionSettings/read",
+      "databases/advancedThreatProtectionSettings/write",
+      "databases/auditRecords/read",
+      "databases/auditingSettings/*",
+      "databases/currentSensitivityLabels/*",
+      "databases/dataMaskingPolicies/*",
+      "databases/delete",
+      "databases/extendedAuditingSettings/read",
+      "databases/ledgerDigestUploads/*",
+      "databases/read",
+      "databases/recommendedSensitivityLabels/*",
+      "databases/schemas/read",
+      "databases/schemas/tables/columns/read",
+      "databases/schemas/tables/columns/sensitivityLabels/*",
+      "databases/schemas/tables/read",
+      "databases/securityAlertPolicies/*",
+      "databases/securityMetrics/*",
+      "databases/sensitivityLabels/*",
+      "databases/sqlvulnerabilityAssessments/*",
+      "databases/transparentDataEncryption/*",
+      "databases/vulnerabilityAssessmentScans/*",
+      "databases/vulnerabilityAssessmentSettings/*",
+      "databases/vulnerabilityAssessments/*",
+      "databases/write",
+      "devOpsAuditingSettings/*",
+      "extendedAuditingSettings/*",
+      "externalPolicyBasedAuthorizations/*",
+      "firewallRules/*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "securityAlertPolicies/*",
+      "sqlvulnerabilityAssessments/*",
+      "vulnerabilityAssessments/*",
+      "write"
+    ]
+  },
+  "Microsoft.SerialConsole": {
+    "serialPorts": [
+      "connect/action"
+    ]
+  },
+  "Microsoft.SqlVirtualMachine": {
+    "sqlVirtualMachines": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.ServiceBus": {
+    "*": [
+      "queues/read",
+      "receive/action",
+      "send/action",
+      "topics/read",
+      "topics/subscriptions/read"
+    ],
+    "namespaces": [
+      "read"
+    ]
+  },
+  "Microsoft.EventHub": {
+    "*": [
+      "eventhubs/consumergroups/read",
+      "eventhubs/read",
+      "receive/action",
+      "send/action"
+    ],
+    "namespaces": [
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "schemagroups/*",
+      "schemagroups/read",
+      "schemas/*",
+      "schemas/read"
+    ]
+  },
+  "Microsoft.HDInsight": {
+    "*": [
+      "read"
+    ],
+    "clusters": [
+      "configurations/*",
+      "getGatewaySettings/action",
+      "updateGatewaySettings/action"
+    ],
+    "clusterPools": [
+      "availableupgrades/read",
+      "clusters/availableupgrades/read",
+      "clusters/delete",
+      "clusters/instanceviews/read",
+      "clusters/jobs/read",
+      "clusters/libraries/read",
+      "clusters/managelibraries/action",
+      "clusters/read",
+      "clusters/resize/action",
+      "clusters/rollback/action",
+      "clusters/runjob/action",
+      "clusters/serviceconfigs/read",
+      "clusters/upgrade/action",
+      "clusters/upgradehistories/read",
+      "clusters/write",
+      "delete",
+      "read",
+      "upgrade/action",
+      "upgradehistories/read",
+      "write"
+    ]
+  },
+  "Microsoft.DesktopVirtualization": {
+    "applicationGroups": [
+      "*",
+      "*/read",
+      "read",
+      "useApplications/action"
+    ],
+    "appAttachPackages": [
+      "delete",
+      "read",
+      "useApplications/action",
+      "write"
+    ],
+    "hostpools": [
+      "*",
+      "*/read",
+      "doNotUseInternalAPI/action",
+      "read",
+      "retrieveRegistrationToken/action",
+      "sessionHostConfigurations/read",
+      "sessionhosts/*",
+      "sessionhosts/delete",
+      "sessionhosts/read",
+      "sessionhosts/retryprovisioning/action",
+      "sessionhosts/usersessions/*",
+      "sessionhosts/usersessions/delete",
+      "sessionhosts/usersessions/disconnect/action",
+      "sessionhosts/usersessions/read",
+      "sessionhosts/usersessions/sendMessage/action",
+      "sessionhosts/write",
+      "write"
+    ],
+    "workspaces": [
+      "*",
+      "read"
+    ],
+    "*": [
+      "read"
+    ],
+    "scalingPlans": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Blueprint": {
+    "blueprints": [
+      "*"
+    ],
+    "blueprintAssignments": [
+      "*"
+    ]
+  },
+  "Microsoft.SecurityInsights": {
+    "*": [
+      "read"
+    ],
+    "dataConnectorsCheckRequirements": [
+      "action"
+    ],
+    "automationRules": [
+      "*"
+    ],
+    "cases": [
+      "*"
+    ],
+    "incidents": [
+      "*"
+    ],
+    "entities": [
+      "runPlaybook/action"
+    ],
+    "threatIntelligence": [
+      "bulkTag/action",
+      "indicators/appendTags/action",
+      "indicators/query/action",
+      "indicators/replaceTags/action",
+      "queryIndicators/action"
+    ],
+    "businessApplicationAgents": [
+      "read",
+      "systems/listActions/action",
+      "systems/read",
+      "systems/reportActionStatus/action",
+      "systems/undoAction/action",
+      "systems/write",
+      "write"
+    ]
+  },
+  "Microsoft.SignalRService": {
+    "*": [
+      "read"
+    ],
+    "SignalR": [
+      "*",
+      "auth/accessKey/action",
+      "auth/clientToken/action",
+      "clientConnection/*",
+      "clientConnection/read",
+      "clientConnection/write",
+      "group/*",
+      "group/read",
+      "hub/*",
+      "listkeys/action",
+      "serverConnection/write",
+      "user/*",
+      "user/read"
+    ],
+    "WebPubSub": [
+      "*",
+      "*/read"
+    ]
+  },
+  "Microsoft.GuestConfiguration": {
+    "guestConfigurationAssignments": [
+      "*/read",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.ManagedServices": {
+    "registrationAssignments": [
+      "delete",
+      "read"
+    ],
+    "operationStatuses": [
+      "read"
+    ]
+  },
+  "Microsoft.AppConfiguration": {
+    "configurationStores": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.Kubernetes": {
+    "connectedClusters": [
+      "*",
+      "Delete",
+      "Read",
+      "Write",
+      "apps/controllerrevisions/read",
+      "apps/daemonsets/*",
+      "apps/daemonsets/read",
+      "apps/deployments/*",
+      "apps/deployments/read",
+      "apps/replicasets/*",
+      "apps/replicasets/read",
+      "apps/statefulsets/*",
+      "apps/statefulsets/read",
+      "authorization.k8s.io/localsubjectaccessreviews/write",
+      "autoscaling/horizontalpodautoscalers/*",
+      "autoscaling/horizontalpodautoscalers/read",
+      "batch/cronjobs/*",
+      "batch/cronjobs/read",
+      "batch/jobs/*",
+      "batch/jobs/read",
+      "configmaps/*",
+      "configmaps/read",
+      "delete",
+      "endpoints/*",
+      "endpoints/read",
+      "events.k8s.io/events/read",
+      "events/read",
+      "extensions/daemonsets/*",
+      "extensions/daemonsets/read",
+      "extensions/deployments/*",
+      "extensions/deployments/read",
+      "extensions/ingresses/*",
+      "extensions/ingresses/read",
+      "extensions/networkpolicies/*",
+      "extensions/networkpolicies/read",
+      "extensions/replicasets/*",
+      "extensions/replicasets/read",
+      "limitranges/read",
+      "listClusterUserCredential/action",
+      "listClusterUserCredentials/action",
+      "namespaces/read",
+      "networking.k8s.io/ingresses/*",
+      "networking.k8s.io/ingresses/read",
+      "networking.k8s.io/networkpolicies/*",
+      "networking.k8s.io/networkpolicies/read",
+      "persistentvolumeclaims/*",
+      "persistentvolumeclaims/read",
+      "pods/*",
+      "pods/read",
+      "policy/poddisruptionbudgets/*",
+      "policy/poddisruptionbudgets/read",
+      "rbac.authorization.k8s.io/rolebindings/*",
+      "rbac.authorization.k8s.io/roles/*",
+      "read",
+      "replicationcontrollers/*",
+      "replicationcontrollers/read",
+      "resourcequotas/read",
+      "secrets/*",
+      "serviceaccounts/*",
+      "serviceaccounts/read",
+      "services/*",
+      "services/read",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.KubernetesConfiguration": {
+    "extensions": [
+      "Delete",
+      "Read",
+      "Write",
+      "delete",
+      "operations/read",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "operations": [
+      "read"
+    ],
+    "namespaces": [
+      "listUserCredential/action",
+      "read"
+    ],
+    "fluxConfigurations": [
+      "delete",
+      "operations/read",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Experimentation": {
+    "experimentWorkspaces": [
+      "admin/action",
+      "delete",
+      "experimentationGroups/admin/action",
+      "experimentationGroups/delete",
+      "experimentationGroups/emergencystop/action",
+      "experimentationGroups/experiment/action",
+      "experimentationGroups/experimentadmin/action",
+      "experimentationGroups/metricwrite/action",
+      "experimentationGroups/read",
+      "experimentationGroups/write",
+      "metricwrite/action",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.DigitalTwins": {
+    "digitaltwins": [
+      "*",
+      "commands/*",
+      "read",
+      "relationships/*",
+      "relationships/read"
+    ],
+    "eventroutes": [
+      "*",
+      "read"
+    ],
+    "jobs": [
+      "*",
+      "deletions/read",
+      "import/read",
+      "imports/read"
+    ],
+    "models": [
+      "*",
+      "read"
+    ],
+    "query": [
+      "*",
+      "action"
+    ]
+  },
+  "Microsoft.HealthcareApis": {
+    "services": [
+      "*",
+      "fhir/resources/*",
+      "fhir/resources/bulkOperator/action",
+      "fhir/resources/convertData/action",
+      "fhir/resources/delete",
+      "fhir/resources/editProfileDefinitions/action",
+      "fhir/resources/export/action",
+      "fhir/resources/hardDelete/action",
+      "fhir/resources/import/action",
+      "fhir/resources/read",
+      "fhir/resources/readById/action",
+      "fhir/resources/reindex/action",
+      "fhir/resources/resourceValidate/action",
+      "fhir/resources/search/action",
+      "fhir/resources/smart/action",
+      "fhir/resources/write"
+    ],
+    "workspaces": [
+      "*",
+      "dicomservices/resources/*",
+      "dicomservices/resources/read",
+      "fhirservices/resources/*",
+      "fhirservices/resources/bulkOperator/action",
+      "fhirservices/resources/convertData/action",
+      "fhirservices/resources/delete",
+      "fhirservices/resources/editProfileDefinitions/action",
+      "fhirservices/resources/export/action",
+      "fhirservices/resources/hardDelete/action",
+      "fhirservices/resources/import/action",
+      "fhirservices/resources/read",
+      "fhirservices/resources/readById/action",
+      "fhirservices/resources/reindex/action",
+      "fhirservices/resources/resourceValidate/action",
+      "fhirservices/resources/search/action",
+      "fhirservices/resources/searchparameter/action",
+      "fhirservices/resources/smart/action",
+      "fhirservices/resources/write"
+    ]
+  },
+  "Microsoft.ServicesHub": {
+    "connectors": [
+      "checkAssessmentEntitlement/action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "supportOfferingEntitlement": [
+      "read"
+    ],
+    "workspaces": [
+      "read"
+    ]
+  },
+  "Microsoft.IndustryDataLifecycle": {
+    "custodianCollaboratives": [
+      "*/read",
+      "auditLogs/action",
+      "dataModels/*",
+      "receivedDataPackages/*",
+      "rejectDataPackage/action"
+    ],
+    "memberCollaboratives": [
+      "*/read",
+      "sharedDataPackages/*"
+    ],
+    "locations": [
+      "dataPackages/*"
+    ],
+    "derivedModels": [
+      "*"
+    ],
+    "pipelineSets": [
+      "*"
+    ],
+    "modelMappings": [
+      "*"
+    ]
+  },
+  "Microsoft.DeviceUpdate": {
+    "accounts": [
+      "instances/management/delete",
+      "instances/management/read",
+      "instances/management/write",
+      "instances/updates/delete",
+      "instances/updates/read",
+      "instances/updates/write"
+    ],
+    "updateAccounts": [
+      "agents/requestUpdate/action"
+    ]
+  },
+  "Microsoft.AgFoodPlatform": {
+    "*": [
+      "action",
+      "checkConsent/action",
+      "download/action",
+      "list/action",
+      "overlap/action",
+      "read",
+      "search/action",
+      "write"
+    ],
+    "farmBeats": [
+      "datasetRecords/*",
+      "datasets/*",
+      "ingestionJobs/satelliteDataIngestionJobs/*",
+      "parties/boundaries/read",
+      "parties/boundaries/write",
+      "parties/farms/read",
+      "parties/farms/write",
+      "parties/fields/read",
+      "parties/fields/write",
+      "parties/models/resourceTypes/resources/insightAttachments/*",
+      "parties/models/resourceTypes/resources/insights/*",
+      "parties/read",
+      "scenes/*",
+      "sensorPartnerScope/*"
+    ]
+  },
+  "Microsoft.SecurityDetonation": {
+    "chambers": [
+      "platforms/delete",
+      "platforms/metadata/read",
+      "platforms/read",
+      "platforms/write",
+      "publishRequests/cancel/action",
+      "publishRequests/read",
+      "submissions/accesskeyview/read",
+      "submissions/adminview/read",
+      "submissions/analystview/read",
+      "submissions/delete",
+      "submissions/files/read",
+      "submissions/publicview/read",
+      "submissions/read",
+      "submissions/write",
+      "toolsets/delete",
+      "toolsets/metadata/read",
+      "toolsets/read",
+      "toolsets/write",
+      "workflows/delete",
+      "workflows/metadata/read",
+      "workflows/read",
+      "workflows/write"
+    ]
+  },
+  "Microsoft.Capacity": {
+    "catalogs": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "resourceProviders": [
+      "locations/serviceLimits/read",
+      "locations/serviceLimits/write",
+      "locations/serviceLimitsRequests/read"
+    ]
+  },
+  "Microsoft.SQL": {
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.MachineLearningServices": {
+    "workspaces": [
+      "*",
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "computes/*",
+      "connections/listsecrets/action",
+      "datastores/read",
+      "evaluations/*",
+      "experiments/runs/read",
+      "labeling/labels/read",
+      "labeling/labels/write",
+      "labeling/projects/read",
+      "labeling/projects/summary/read",
+      "managedNetworks/batchOutboundRules/action",
+      "managedNetworks/outboundRules/delete",
+      "managedNetworks/outboundRules/read",
+      "managedNetworks/outboundRules/write",
+      "managedNetworks/read",
+      "managedNetworks/write",
+      "metadata/artifacts/read",
+      "metadata/secrets/read",
+      "metrics/*/write",
+      "models/read",
+      "models/versions/read",
+      "notebooks/vm/*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "simulations/*"
+    ],
+    "registries": [
+      "assets/*",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read"
+    ],
+    "locations": [
+      "*/read"
+    ]
+  },
+  "Microsoft.ProjectBabylon": {
+    "accounts": [
+      "data/read",
+      "data/write",
+      "read",
+      "scan/read",
+      "scan/write"
+    ]
+  },
+  "Microsoft.Quota": {
+    "usages": [
+      "read"
+    ],
+    "quotas": [
+      "read",
+      "write"
+    ],
+    "quotaRequests": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "GROUPQUOTAS": [
+      "*/DELETE",
+      "*/READ",
+      "*/WRITE",
+      "READ",
+      "groupQuotaLimits/READ",
+      "quotaAllocations/READ",
+      "subscriptions/READ"
+    ]
+  },
+  "Microsoft.WorkloadBuilder": {
+    "migrationAgents": [
+      "Read",
+      "Write"
+    ]
+  },
+  "Microsoft.AppPlatform": {
+    "Spring": [
+      "*/read",
+      "ApplicationConfigurationService/logstream/action",
+      "ApplicationConfigurationService/read",
+      "SpringCloudGateway/logstream/action",
+      "apps/deployments/connect/action",
+      "apps/deployments/remotedebugging/action",
+      "configServers/read",
+      "configService/delete",
+      "configService/logstream/action",
+      "configService/read",
+      "configService/write",
+      "configurationServices/read",
+      "eurekaService/delete",
+      "eurekaService/read",
+      "eurekaService/write",
+      "gateways/read",
+      "jobs/executions/listInstances/action",
+      "jobs/executions/logstream/action",
+      "jobs/executions/read",
+      "jobs/read",
+      "managedComponents/logstream/action",
+      "read"
+    ]
+  },
+  "Microsoft.StreamAnalytics": {
+    "locations": [
+      "*/Read",
+      "CompileQuery/action",
+      "OperationResults/read",
+      "SampleInput/action",
+      "TestQuery/action"
+    ],
+    "streamingjobs": [
+      "*/Read",
+      "Read"
+    ],
+    "clusters": [
+      "*/Read",
+      "ListStreamingJobs/action",
+      "Read"
+    ],
+    "operations": [
+      "Read"
+    ]
+  },
+  "Microsoft.AnyBuild": {
+    "clusters": [
+      "build/read",
+      "build/write"
+    ]
+  },
+  "Microsoft.Devices": {
+    "IotHubs": [
+      "*",
+      "*/read",
+      "devices/*",
+      "fileUpload/notifications/action",
+      "twins/*"
+    ],
+    "provisioningServices": [
+      "*",
+      "*/read",
+      "enrollmentGroups/*",
+      "enrollments/*"
+    ]
+  },
+  "Microsoft.TestBase": {
+    "testBaseAccounts": [
+      "customerEvents/delete",
+      "customerEvents/write",
+      "packages/getDownloadUrl/action",
+      "packages/testResults/getDownloadUrl/action",
+      "packages/testResults/getVideoDownloadUrl/action"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.Dashboard": {
+    "grafana": [
+      "ActAsGrafanaAdmin/action",
+      "ActAsGrafanaEditor/action",
+      "ActAsGrafanaLimitedViewer/action",
+      "ActAsGrafanaViewer/action",
+      "PrivateEndpointConnectionsApproval/action",
+      "delete",
+      "integrationFabrics/delete",
+      "integrationFabrics/write",
+      "managedPrivateEndpoints/action",
+      "managedPrivateEndpoints/delete",
+      "managedPrivateEndpoints/write",
+      "privateEndpointConnectionProxies/delete",
+      "privateEndpointConnectionProxies/validate/action",
+      "privateEndpointConnectionProxies/write",
+      "privateEndpointConnections/delete",
+      "privateEndpointConnections/write",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/write",
+      "read"
+    ],
+    "dashboards": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.AzureArcData": {
+    "sqlServerInstances": [
+      "availabilityGroups/getDetailView/action",
+      "availabilityGroups/read",
+      "databases/read",
+      "getTelemetry/action",
+      "read",
+      "write"
+    ],
+    "*": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.Relay": {
+    "*": [
+      "hybridConnections/read",
+      "listen/action",
+      "send/action",
+      "wcfRelays/read"
+    ]
+  },
+  "Microsoft.CodeSigning": {
+    "*": [
+      "read"
+    ],
+    "certificateProfiles": [
+      "Sign/action"
+    ],
+    "IdentityVerification": [
+      "Delete",
+      "Read",
+      "Write"
+    ]
+  },
+  "Microsoft.ConnectedVMwarevSphere": {
+    "virtualmachines": [
+      "*",
+      "Extensions/Read",
+      "Extensions/Write",
+      "Read",
+      "WACloginAsAdmin/action"
+    ],
+    "virtualmachineinstances": [
+      "*"
+    ],
+    "virtualnetworks": [
+      "Read",
+      "join/action"
+    ],
+    "virtualmachinetemplates": [
+      "Read",
+      "clone/action"
+    ],
+    "resourcepools": [
+      "Read",
+      "deploy/action"
+    ],
+    "hosts": [
+      "Read",
+      "deploy/action"
+    ],
+    "clusters": [
+      "Read",
+      "deploy/action"
+    ],
+    "datastores": [
+      "Read",
+      "allocateSpace/action"
+    ],
+    "vcenters": [
+      "Delete",
+      "Read",
+      "Write"
+    ]
+  },
+  "Microsoft.ExtendedLocation": {
+    "customLocations": [
+      "Delete",
+      "Read",
+      "Write",
+      "delete",
+      "deploy/action",
+      "enabledresourcetypes/read",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.PlayFab": {
+    "*": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.LoadTestService": {
+    "*": [
+      "read"
+    ],
+    "loadtests": [
+      "*",
+      "readTest/action"
+    ],
+    "testProfiles": [
+      "*",
+      "read"
+    ],
+    "testProfileRuns": [
+      "*",
+      "read"
+    ]
+  },
+  "Microsoft.IoTFirmwareDefense": {
+    "*": [
+      "read"
+    ],
+    "workspaces": [
+      "firmwares/*"
+    ]
+  },
+  "Microsoft.HybridConnectivity": {
+    "endpoints": [
+      "delete",
+      "listCredentials/action",
+      "listIngressGatewayCredentials/action",
+      "listManagedProxyDetails/action",
+      "read",
+      "serviceConfigurations/delete",
+      "serviceConfigurations/read",
+      "serviceConfigurations/write",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "publicCloudConnectors": [
+      "delete",
+      "testPermissions/action",
+      "write"
+    ],
+    "solutionConfigurations": [
+      "delete",
+      "syncNow/action",
+      "write"
+    ]
+  },
+  "microsoft.insights": {
+    "workbooks": [
+      "read",
+      "revisions/read"
+    ],
+    "workbooktemplates": [
+      "read"
+    ]
+  },
+  "Microsoft.AlertsManagement": {
+    "alerts": [
+      "*"
+    ],
+    "alertsSummary": [
+      "*"
+    ],
+    "issues": [
+      "*"
+    ],
+    "smartDetectorAlertRules": [
+      "*"
+    ],
+    "actionRules": [
+      "*"
+    ],
+    "smartGroups": [
+      "*"
+    ],
+    "migrateFromSmartDetection": [
+      "*"
+    ],
+    "investigations": [
+      "*"
+    ],
+    "prometheusRuleGroups": [
+      "*"
+    ]
+  },
+  "Microsoft.Monitor": {
+    "accounts": [
+      "*",
+      "data/metrics/read",
+      "read",
+      "write"
+    ],
+    "settings": [
+      "*"
+    ],
+    "investigations": [
+      "*"
+    ],
+    "slis": [
+      "read"
+    ],
+    "pipelineGroups": [
+      "*",
+      "read"
+    ]
+  },
+  "Microsoft.Purview": {
+    "accounts": [
+      "data/read",
+      "data/write",
+      "read",
+      "scan/read",
+      "scan/write"
+    ]
+  },
+  "Microsoft.AutonomousDevelopmentPlatform": {
+    "*": [
+      "read"
+    ],
+    "accounts": [
+      "dataPools/discoveries/*",
+      "dataPools/measurementCollections/*",
+      "dataPools/measurements/states/new/*",
+      "dataPools/uploads/*",
+      "measurementCollections/*"
+    ],
+    "workspaces": [
+      "discoveries/*",
+      "measurementCollections/*",
+      "measurements/classifications/*",
+      "measurements/dataStreams/classifications/*",
+      "measurements/states/new/*",
+      "read",
+      "uploads/*"
+    ]
+  },
+  "Microsoft.ResourceConnector": {
+    "appliances": [
+      "Delete",
+      "Read",
+      "Write",
+      "delete",
+      "listClusterUserCredential/action",
+      "listKeys/action",
+      "read",
+      "upgradeGraphs/read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "locations": [
+      "operationresults/read",
+      "operationsstatus/read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "telemetryconfig": [
+      "read"
+    ]
+  },
+  "Microsoft.BackupSolutions": {
+    "vmwareapplications": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.AzureStackHCI": {
+    "Clusters": [
+      "*",
+      "ArcSettings/Extensions/Delete",
+      "ArcSettings/Extensions/Read",
+      "ArcSettings/Extensions/Write",
+      "ArcSettings/Read",
+      "Read",
+      "WACloginAsAdmin/Action",
+      "read"
+    ],
+    "Operations": [
+      "Read",
+      "read"
+    ],
+    "virtualMachineInstances": [
+      "*",
+      "Read",
+      "read",
+      "restart/action",
+      "start/action",
+      "stop/action"
+    ],
+    "register": [
+      "Action",
+      "action"
+    ],
+    "Unregister": [
+      "Action"
+    ],
+    "NetworkSecurityGroups": [
+      "Delete",
+      "Read",
+      "SecurityRules/Delete",
+      "SecurityRules/Read",
+      "SecurityRules/Write",
+      "Write",
+      "join/action"
+    ],
+    "EdgeMachines": [
+      "*",
+      "*/read",
+      "Jobs/Read/*",
+      "Read/*"
+    ],
+    "DevicePools": [
+      "*",
+      "*/read",
+      "ClaimDevices/action",
+      "ReleaseDevices/action",
+      "read"
+    ],
+    "StorageContainers": [
+      "Read",
+      "Write",
+      "deploy/action"
+    ],
+    "EdgeDevices": [
+      "*"
+    ],
+    "VirtualMachines": [
+      "*",
+      "Extensions/Read",
+      "Read"
+    ],
+    "NetworkInterfaces": [
+      "*",
+      "Read"
+    ],
+    "VirtualHardDisks": [
+      "*",
+      "Read"
+    ],
+    "VirtualNetworks": [
+      "Read",
+      "join/action"
+    ],
+    "LogicalNetworks": [
+      "Read",
+      "join/action"
+    ],
+    "GalleryImages": [
+      "Read",
+      "deploy/action"
+    ],
+    "MarketplaceGalleryImages": [
+      "Read",
+      "deploy/action"
+    ]
+  },
+  "Microsoft.Maintenance": {
+    "maintenanceConfigurations": [
+      "delete",
+      "maintenanceScope/InGuestPatch/delete",
+      "maintenanceScope/InGuestPatch/read",
+      "maintenanceScope/InGuestPatch/write",
+      "read",
+      "write"
+    ],
+    "configurationAssignments": [
+      "delete",
+      "maintenanceScope/InGuestPatch/delete",
+      "maintenanceScope/InGuestPatch/read",
+      "maintenanceScope/InGuestPatch/write",
+      "read",
+      "write"
+    ],
+    "applyUpdates": [
+      "read"
+    ],
+    "updates": [
+      "read"
+    ],
+    "scheduledevents": [
+      "acknowledge/action"
+    ]
+  },
+  "Microsoft.DevCenter": {
+    "projects": [
+      "*",
+      "*/read",
+      "read",
+      "users/devboxes/adminActionManage/action",
+      "users/devboxes/adminActionRead/action",
+      "users/devboxes/adminAlign/action",
+      "users/devboxes/adminDelete/action",
+      "users/devboxes/adminRead/action",
+      "users/devboxes/adminStart/action",
+      "users/devboxes/adminStop/action",
+      "users/devboxes/adminWrite/action",
+      "users/devboxes/userActionManage/action",
+      "users/devboxes/userActionRead/action",
+      "users/devboxes/userCustomize/action",
+      "users/devboxes/userDelete/action",
+      "users/devboxes/userGetRemoteConnection/action",
+      "users/devboxes/userRead/action",
+      "users/devboxes/userStart/action",
+      "users/devboxes/userStop/action",
+      "users/devboxes/userUpcomingActionManage/action",
+      "users/devboxes/userUpcomingActionRead/action",
+      "users/devboxes/userWrite/action",
+      "users/environments/adminAction/action",
+      "users/environments/adminActionManage/action",
+      "users/environments/adminActionRead/action",
+      "users/environments/adminDelete/action",
+      "users/environments/adminOutputsRead/action",
+      "users/environments/adminRead/action",
+      "users/environments/adminWrite/action",
+      "users/environments/userActionManage/action",
+      "users/environments/userDelete/action",
+      "users/environments/userOutputsRead/action",
+      "users/environments/userRead/action",
+      "users/environments/userWrite/action"
+    ]
+  },
+  "microsoft.scvmm": {
+    "virtualnetworks": [
+      "Read",
+      "join/action"
+    ],
+    "virtualmachinetemplates": [
+      "Read",
+      "clone/action"
+    ],
+    "clouds": [
+      "Read",
+      "deploy/action"
+    ],
+    "virtualmachines": [
+      "*"
+    ],
+    "virtualMachineInstances": [
+      "*"
+    ],
+    "vmmservers": [
+      "Delete",
+      "Read",
+      "Write"
+    ]
+  },
+  "Microsoft.ScVmm": {},
+  "Microsoft.Hdinsight": {
+    "clusterpools": [
+      "clusters/read"
+    ]
+  },
+  "Microsoft.ElasticSan": {
+    "elasticSans": [
+      "*",
+      "*/read",
+      "PrivateEndpointConnectionsApproval/action",
+      "privateEndpointConnections/delete",
+      "privateEndpointConnections/write",
+      "volumeGroups/*",
+      "volumeGroups/*/read",
+      "volumeGroups/preBackup/action",
+      "volumeGroups/preRestore/action",
+      "volumeGroups/snapshots/beginGetAccess/action",
+      "volumeGroups/snapshots/delete",
+      "volumeGroups/snapshots/write",
+      "volumeGroups/volumes/*",
+      "volumeGroups/volumes/delete",
+      "volumeGroups/volumes/write"
+    ],
+    "locations": [
+      "*",
+      "asyncoperations/read"
+    ]
+  },
+  "Microsoft.Marketplace": {
+    "offerTypes": [
+      "publishers/offers/plans/agreements/read"
+    ]
+  },
+  "Microsoft.ComputeSchedule": {
+    "locations": [
+      "OperationStatuses/write",
+      "virtualMachinesCancelOperations/action",
+      "virtualMachinesExecuteCreate/action",
+      "virtualMachinesExecuteDeallocate/action",
+      "virtualMachinesExecuteDelete/action",
+      "virtualMachinesExecuteHibernate/action",
+      "virtualMachinesExecuteStart/action",
+      "virtualMachinesGetOperationErrors/action",
+      "virtualMachinesGetOperationStatus/action",
+      "virtualMachinesSubmitDeallocate/action",
+      "virtualMachinesSubmitHibernate/action",
+      "virtualMachinesSubmitStart/action"
+    ],
+    "register": [
+      "action"
+    ],
+    "autoActions": [
+      "attachResources/action",
+      "cancelNextOccurrence/action",
+      "delete",
+      "detachResources/action",
+      "disable/action",
+      "enable/action",
+      "listResources/action",
+      "occurrences/cancel/action",
+      "occurrences/delay/action",
+      "occurrences/listResources/action",
+      "patchResources/action",
+      "triggerManualOccurrence/action",
+      "write"
+    ],
+    "scheduledActions": [
+      "attachResources/action",
+      "cancelNextOccurrence/action",
+      "delete",
+      "detachResources/action",
+      "disable/action",
+      "enable/action",
+      "listResources/action",
+      "occurrences/cancel/action",
+      "occurrences/delay/action",
+      "patchResources/action",
+      "triggerManualOccurrence/action",
+      "write"
+    ]
+  },
+  "Microsoft.VideoIndexer": {
+    "*": [
+      "read"
+    ],
+    "accounts": [
+      "*/action",
+      "PrivateEndpointConnectionsApproval/action",
+      "delete",
+      "generateAccessToken/action",
+      "generateExtensionAccessToken/action",
+      "generateExtensionRestrictedViewerAccessToken/action",
+      "generateRestrictedViewerAccessToken/action",
+      "privateEndpointConnections/delete",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateLinkResources/read",
+      "read",
+      "write"
+    ],
+    "checknameavailability": [
+      "action"
+    ],
+    "locations": [
+      "operationstatuses/read",
+      "operationstatuses/write"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.Workloads": {
+    "sapvirtualInstances": [
+      "*/delete",
+      "*/read",
+      "*/start/action",
+      "*/stop/action",
+      "*/write"
+    ],
+    "Locations": [
+      "*/action",
+      "*/read",
+      "OperationStatuses/read"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "connectors": [
+      "*/delete",
+      "*/read",
+      "*/write"
+    ]
+  },
+  "Microsoft.ServiceNetworking": {
+    "trafficControllers": [
+      "*/delete",
+      "*/read",
+      "*/write",
+      "associations/delete",
+      "associations/read",
+      "associations/write",
+      "delete",
+      "frontends/delete",
+      "frontends/read",
+      "frontends/write",
+      "read",
+      "serviceRoutingConfigurations/delete",
+      "serviceRoutingConfigurations/read",
+      "serviceRoutingConfigurations/write",
+      "write"
+    ]
+  },
+  "Microsoft.Impact": {
+    "WorkloadImpacts": [
+      "*",
+      "*/read",
+      "Insights/Read",
+      "Read",
+      "read"
+    ],
+    "ImpactCategories": [
+      "read"
+    ],
+    "TopologyImpacts": [
+      "*"
+    ],
+    "getUploadToken": [
+      "action"
+    ],
+    "Connectors": [
+      "Read",
+      "Write"
+    ]
+  },
+  "Microsoft.App": {
+    "containerApps": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "debug/action",
+      "exec/action",
+      "logstream/action",
+      "read"
+    ],
+    "sessionPools": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "executions/*",
+      "fetchMcpServerCredentials/action",
+      "files/*",
+      "interpreters/execute/action",
+      "interpreters/read",
+      "rotateMcpServerCredentials/action",
+      "sessions/generatesessions/action"
+    ],
+    "jobs": [
+      "*/action",
+      "*/read",
+      "delete",
+      "exec/action",
+      "logstream/action",
+      "write"
+    ],
+    "managedenvironments": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "checknameavailability/action",
+      "join/action",
+      "read"
+    ],
+    "connectedEnvironments": [
+      "*",
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "checknameavailability/action",
+      "daprComponents/listSecrets/action",
+      "join/action",
+      "read"
+    ],
+    "agents": [
+      "*/delete",
+      "*/read",
+      "*/write",
+      "extendedAgents/delete",
+      "extendedAgents/read",
+      "extendedAgents/write",
+      "graph/read",
+      "graph/write",
+      "incidentManagement/delete",
+      "incidentManagement/read",
+      "incidentManagement/write",
+      "memory/read",
+      "memory/write",
+      "read",
+      "threads/approve/action",
+      "threads/read",
+      "threads/write"
+    ]
+  },
+  "Microsoft.EdgeMarketplace": {
+    "locations": [
+      "operationStatuses/read"
+    ],
+    "publishers": [
+      "read"
+    ],
+    "offers": [
+      "read"
+    ]
+  },
+  "Microsoft.EdgeMarketPlace": {
+    "offers": [
+      "generateAccessToken/action",
+      "getAccessToken/action"
+    ]
+  },
+  "Microsoft.DataMigration": {
+    "locations": [
+      "operationResults/read",
+      "operationStatuses/read",
+      "sqlMigrationServiceOperationResults/read"
+    ],
+    "databaseMigrations": [
+      "cancel/action",
+      "cutover/action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "sqlMigrationServices": [
+      "MonitoringData/read",
+      "delete",
+      "deleteNode/action",
+      "listAuthKeys/action",
+      "listMigrations/read",
+      "listMonitoringData/action",
+      "read",
+      "regenerateAuthKeys/action",
+      "validateIR/action",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.UsageBilling": {
+    "accounts": [
+      "inputs/send/action"
+    ]
+  },
+  "Microsoft.DBforMySQL": {
+    "flexibleServers": [
+      "backupAndExport/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "validateBackup/action"
+    ],
+    "locations": [
+      "azureAsyncOperation/read",
+      "operationResults/read"
+    ]
+  },
+  "PaloAltoNetworks.Cloudngfw": {
+    "firewalls": [
+      "*"
+    ],
+    "localRulestacks": [
+      "*",
+      "read"
+    ],
+    "globalRulestacks": [
+      "read"
+    ],
+    "Locations": [
+      "operationStatuses/read"
+    ]
+  },
+  "Microsoft.HybridContainerService": {
+    "register": [
+      "action"
+    ],
+    "kubernetesVersions": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "skus": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "provisionedClusterInstances": [
+      "agentPools/delete",
+      "agentPools/read",
+      "agentPools/write",
+      "delete",
+      "hybridIdentityMetadata/delete",
+      "hybridIdentityMetadata/write",
+      "listAdminKubeconfig/action",
+      "listUserKubeconfig/action",
+      "read",
+      "upgradeProfiles/read",
+      "write"
+    ],
+    "Locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "virtualNetworks": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.insights": {
+    "logs": [
+      "ApiManagementGatewayLogs/read",
+      "read"
+    ]
+  },
+  "Microsoft.AppComplianceAutomation": {},
+  "Microsoft.AzureSphere": {
+    "*": [
+      "read"
+    ],
+    "catalogs": [
+      "certificates/retrieveCertChain/action",
+      "certificates/retrieveProofOfPossessionNonce/action",
+      "countDevices/action",
+      "images/write",
+      "listDeployments/action",
+      "listDeviceGroups/action",
+      "listDeviceInsights/action",
+      "listDevices/action",
+      "products/countDevices/action",
+      "products/deviceGroups/countDevices/action",
+      "uploadImage/action"
+    ]
+  },
+  "Microsoft.SaaSHub": {
+    "cloudservices": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.SaaS": {
+    "resources": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.ProfessionalService": {
+    "resources": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "Microsoft.BillingBenefits": {
+    "register": [
+      "action"
+    ],
+    "maccs": [
+      "cancel/action",
+      "chargeShortfall/action",
+      "contributors/read",
+      "delete",
+      "read",
+      "write",
+      "writeOff/action"
+    ],
+    "credits": [
+      "cancel/action",
+      "read",
+      "sources/delete",
+      "sources/read",
+      "sources/write",
+      "write"
+    ],
+    "discounts": [
+      "cancel/action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "savingsPlanOrders": [
+      "write"
+    ]
+  },
+  "Microsoft.EnterpriseSupport": {
+    "enterpriseSupports": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "services": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.SoftwarePlan": {
+    "register": [
+      "action"
+    ],
+    "softwareSubscriptions": [
+      "cancel/action",
+      "delete",
+      "listKeys/action",
+      "productDownloadOptions/generateDownloadLinks/action",
+      "productDownloadOptions/read",
+      "productKeys/read",
+      "productKeys/showFullKey/action",
+      "read",
+      "refreshFulfillment/action",
+      "write"
+    ],
+    "validateSoftwareSubscriptionCreate": [
+      "action"
+    ]
+  },
+  "Microsoft.CognitiveSearch": {
+    "indexes": [
+      "documents/*",
+      "documents/read",
+      "schema/*",
+      "schema/read"
+    ]
+  },
+  "Microsoft.Mission": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "Locations": [
+      "OperationStatuses/read",
+      "OperationStatuses/write"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "communities": [
+      "communityEndpoints/approvalCallback/action",
+      "communityEndpoints/delete",
+      "communityEndpoints/read",
+      "communityEndpoints/write",
+      "communityendpoints/connect/action",
+      "delete",
+      "read",
+      "setMaintenanceMode/action",
+      "transitHubs/delete",
+      "transitHubs/read",
+      "transitHubs/write",
+      "write"
+    ],
+    "virtualEnclaves": [
+      "approvalCallback/action",
+      "delete",
+      "enclaveEndpoints/approvalCallback/action",
+      "enclaveEndpoints/connect/action",
+      "enclaveEndpoints/delete",
+      "enclaveEndpoints/read",
+      "enclaveEndpoints/write",
+      "endpoints/read",
+      "endpoints/write",
+      "read",
+      "setEnclaveRoleAssignments/action",
+      "setMaintenanceMode/action",
+      "setSubnetConfiguration/action",
+      "setWorkloadRoleAssignments/action",
+      "workloads/delete",
+      "workloads/read",
+      "workloads/write",
+      "write"
+    ],
+    "enclaveConnections": [
+      "approvalCallback/action",
+      "delete",
+      "read",
+      "setSourceCidr/action",
+      "write"
+    ],
+    "approvals": [
+      "delete",
+      "initiatorCallback/action",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.DBforPostgreSQL": {
+    "flexibleServers": [
+      "ltrBackupOperations/read",
+      "ltrPreBackup/action",
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read",
+      "read",
+      "startLtrBackup/action"
+    ],
+    "locations": [
+      "azureAsyncOperation/read",
+      "operationResults/read"
+    ],
+    "serverGroupsv2": [
+      "privateEndpointConnections/read",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "privateLinkResources/read"
+    ]
+  },
+  "microsoft.web": {
+    "sites": [
+      "config/Write",
+      "config/list/action",
+      "config/web/appsettings/delete",
+      "config/web/appsettings/write",
+      "deployWorkflowArtifacts/action",
+      "hostruntime/*",
+      "listworkflowsconnections/action",
+      "publish/action",
+      "slots/config/appsettings/write",
+      "slots/config/list/action",
+      "slots/config/web/appsettings/delete",
+      "slots/deployWorkflowArtifacts/action",
+      "slots/listworkflowsconnections/action",
+      "slots/publish/action",
+      "workflows/*",
+      "workflowsconfiguration/*"
+    ]
+  },
+  "Microsoft.ResourceNotifications": {
+    "systemTopics": [
+      "subscribeToAksResources/action",
+      "subscribeToComputeResources/action",
+      "subscribeToComputeScheduleResources/action",
+      "subscribeToContainerServiceEventResources/action",
+      "subscribeToHealthResources/action",
+      "subscribeToImpactReportingResources/action",
+      "subscribeToMaintenanceResources/action",
+      "subscribeToResources/action"
+    ]
+  },
+  "Microsoft.HealthDataAIServices": {
+    "DeidServices": [
+      "*",
+      "Batch/delete",
+      "Batch/read",
+      "Batch/write",
+      "Realtime/action"
+    ]
+  },
+  "Microsoft.Carbon": {
+    "carbonEmissionReports": [
+      "action",
+      "read"
+    ]
+  },
+  "Microsoft.Sovereign": {
+    "landingZoneConfigurations": [
+      "*",
+      "read"
+    ],
+    "landingZoneRegistrations": [
+      "*",
+      "read"
+    ],
+    "transparencyLogs": [
+      "*"
+    ],
+    "landingZoneAccounts": [
+      "*",
+      "*/read"
+    ]
+  },
+  "Microsoft.CustomerLockbox": {
+    "requests": [
+      "UpdateApproval/action",
+      "read"
+    ]
+  },
+  "Microsoft.KubernetesRuntime": {
+    "storageClasses": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "loadBalancers": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "bgpPeers": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/write"
+    ],
+    "services": [
+      "delete",
+      "write"
+    ],
+    "bfdProfiles": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.EdgeOrder": {
+    "orderItems": [
+      "read"
+    ]
+  },
+  "Microsoft.ApiCenter": {
+    "services": [
+      "*",
+      "*/read",
+      "workspaces/apis/versions/definitions/exportSpecification/action",
+      "workspaces/apis/versions/definitions/updateAnalysisState/action",
+      "workspaces/apis/versions/securityRequirements/getCredentials/action",
+      "workspaces/apis/versions/securityRequirements/read",
+      "workspaces/search/action"
+    ],
+    "deletedServices": [
+      "*"
+    ]
+  },
+  "MICROSOFT.QUOTA": {
+    "QUOTAS": [
+      "READ",
+      "WRITE"
+    ],
+    "USAGES": [
+      "READ"
+    ],
+    "QUOTAREQUESTS": [
+      "READ"
+    ],
+    "REGISTER": [
+      "ACTION"
+    ]
+  },
+  "Microsoft.Orbital": {
+    "operations": [
+      "read"
+    ],
+    "geoCatalogs": [
+      "*",
+      "read"
+    ]
+  },
+  "Microsoft.HealthBot": {
+    "healthBots": [
+      "AIActions/ClinicalCoder/Process/Action",
+      "Admin/*",
+      "AnalyticReport/Read",
+      "AuditTrails/Read",
+      "AuthenticationProviders/*",
+      "AuthenticationProviders/Read",
+      "Channels/*",
+      "Configuration/*",
+      "Configuration/Read",
+      "ConversationSession/Action",
+      "CopilotStudioSolution/*",
+      "CopilotStudioSolution/RestoreBuiltinTemplate/Read",
+      "DataConnections/*",
+      "DataConnections/Read",
+      "Delete",
+      "ExposedSkill/Read",
+      "Feedback/Read",
+      "HealthSafeguards/ClinicalAnchoring/Process/Action",
+      "HealthSafeguards/ClinicalCodesValidation/Process/Action",
+      "HealthSafeguards/ClinicalConflictDetection/Process/Action",
+      "HealthSafeguards/ClinicalEvidenceVerification/Process/Action",
+      "HealthSafeguards/ClinicalProvenance/Process/Action",
+      "HealthSafeguards/ClinicalSemanticValidation/Process/Action",
+      "HealthSafeguards/DetectHallucinationsAndOmissions/Process/Action",
+      "HealthSafeguards/HealthAdaptedFiltering/Process/Action",
+      "LanguageModels/*",
+      "LanguageModels/Read",
+      "Localization/*",
+      "Localization/Read",
+      "Metadata/Read",
+      "OpenAPIPlugins/*",
+      "OpenAPIPlugins/Read",
+      "Read",
+      "RegisteredSkills/Read",
+      "ResourceData/Read",
+      "Resources/*",
+      "Resources/Files/Read",
+      "Scenarios/*",
+      "Scenarios/*/Read",
+      "Users/Read",
+      "Write"
+    ]
+  },
+  "Microsoft.ProgrammableConnectivity": {
+    "Gateways": [
+      "NetworkAPIAccess"
+    ]
+  },
+  "Microsoft.BIllingBenefits": {
+    "register": [
+      "action"
+    ]
+  },
+  "Oracle.Database": {
+    "oracleSubscriptions": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "listCloudAccountDetails/action"
+    ],
+    "Locations": [
+      "*/read",
+      "*/write"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "cloudExadataInfrastructures": [
+      "*/delete",
+      "*/read",
+      "*/write",
+      "write"
+    ],
+    "cloudVmClusters": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write",
+      "listPrivateIpAddresses/action"
+    ],
+    "exascaleDbStorageVaults": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "exadbVmClusters": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "resourceAnchors": [
+      "*",
+      "read"
+    ],
+    "networkAnchors": [
+      "*",
+      "read"
+    ],
+    "autonomousDatabases": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ]
+  },
+  "Microsoft.MessagingCatalog": {},
+  "Microsoft.ManagedNetworkFabric": {
+    "*": [
+      "action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "networkFabricControllers": [
+      "join/action"
+    ],
+    "networkFabrics": [
+      "join/action"
+    ],
+    "networkRacks": [
+      "join/action"
+    ]
+  },
+  "Microsoft.ContainerInstance": {
+    "containerGroupProfiles": [
+      "read",
+      "revisions/read"
+    ],
+    "containerGroups": [
+      "*"
+    ]
+  },
+  "Microsoft.StandbyPool": {
+    "Locations": [
+      "OperationStatuses/read"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "standbyContainerGroupPools": [
+      "delete",
+      "read",
+      "runtimeViews/read",
+      "write"
+    ]
+  },
+  "Microsoft.ToolchainOrchestrator": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.ProviderHub": {
+    "*": [
+      "read"
+    ]
+  },
+  "MICROSOFT.HDINSIGHT": {
+    "CLUSTERS": [
+      "APPLICATIONS/DELETE",
+      "APPLICATIONS/READ",
+      "APPLICATIONS/WRITE",
+      "AZUREASYNCOPERATIONS/READ",
+      "CONFIGURATIONS/ACTION",
+      "CONFIGURATIONS/READ",
+      "DELETE",
+      "EXECUTESCRIPTACTIONS/ACTION",
+      "EXTENSIONS/DELETE",
+      "EXTENSIONS/READ",
+      "EXTENSIONS/WRITE",
+      "GETGATEWAYSETTINGS/ACTION",
+      "LISTHOSTS/ACTION",
+      "OPERATIONRESULTS/READ",
+      "PRIVATEENDPOINTCONNECTIONS/READ",
+      "PRIVATELINKRESOURCES/READ",
+      "READ",
+      "RESOLVEPRIVATELINKSERVICEID/ACTION",
+      "RESTARTHOSTS/ACTION",
+      "ROLES/AUTOSCALE/ACTION",
+      "ROLES/RESIZE/ACTION",
+      "SCRIPTACTIONS/DELETE",
+      "SCRIPTACTIONS/READ",
+      "SCRIPTEXECUTIONHISTORY/PROMOTE/ACTION",
+      "SCRIPTEXECUTIONHISTORY/READ",
+      "UPDATEGATEWAYSETTINGS/ACTION",
+      "WRITE"
+    ],
+    "LOCATIONS": [
+      "AVAILABLECLUSTERVERSIONS/READ",
+      "AZUREASYNCOPERATIONS/READ",
+      "BILLINGSPECS/READ",
+      "CAPABILITIES/READ",
+      "CHECKNAMEAVAILABILITY/ACTION",
+      "OPERATIONRESULTS/READ",
+      "OPERATIONSTATUSES/READ",
+      "OPERATIONSTATUSES/WRITE",
+      "USAGES/READ",
+      "VALIDATECREATEREQUEST/ACTION"
+    ],
+    "OPERATIONS": [
+      "READ"
+    ],
+    "REGISTER": [
+      "ACTION"
+    ],
+    "RESOURCETYPES": [
+      "READ"
+    ],
+    "UNREGISTER": [
+      "ACTION"
+    ]
+  },
+  "Microsoft.NetworkCloud": {
+    "bareMetalMachines": [
+      "cordon/action",
+      "delete",
+      "powerOff/action",
+      "read",
+      "reimage/action",
+      "replace/action",
+      "restart/action",
+      "runDataExtracts/action",
+      "runReadCommands/action",
+      "start/action",
+      "uncordon/action",
+      "write"
+    ],
+    "clusterManagers": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "clusters": [
+      "bareMetalMachineKeySets/read",
+      "bmcKeySets/read",
+      "continueUpdateVersion/action",
+      "delete",
+      "deploy/action",
+      "metricsConfigurations/delete",
+      "metricsConfigurations/read",
+      "metricsConfigurations/write",
+      "read",
+      "scanRuntime/action",
+      "updateVersion/action",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/read"
+    ],
+    "operations": [
+      "read"
+    ],
+    "rackSkus": [
+      "read"
+    ],
+    "racks": [
+      "delete",
+      "join/action",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "storageAppliances": [
+      "read"
+    ],
+    "unregister": [
+      "action"
+    ]
+  },
+  "microsoft.app": {
+    "jobs": [
+      "read"
+    ]
+  },
+  "microsoft.App": {
+    "managedEnvironments": [
+      "read"
+    ],
+    "connectedEnvironments": [
+      "read"
+    ]
+  },
+  "Microsoft.app": {
+    "managedenvironments": [
+      "read"
+    ],
+    "connectedEnvironments": [
+      "read"
+    ]
+  },
+  "Microsoft.DurableTask": {
+    "schedulers": [
+      "taskhubs/orchestrations/execute/action",
+      "taskhubs/orchestrations/metadata/read",
+      "taskhubs/orchestrations/read"
+    ]
+  },
+  "Microsoft.ServiceLinker": {
+    "linkers": [
+      "delete",
+      "generateConfigurations/action",
+      "listConfigurations/action",
+      "read",
+      "validateLinker/action",
+      "write"
+    ],
+    "dryruns": [
+      "delete",
+      "write"
+    ],
+    "locations": [
+      "connectors/delete",
+      "connectors/generateConfigurations/action",
+      "connectors/validate/action",
+      "connectors/write",
+      "dryruns/delete",
+      "dryruns/write",
+      "operationStatuses/write"
+    ]
+  },
+  "Microsoft.CloudTest": {
+    "*": [
+      "read"
+    ],
+    "hostedpools": [
+      "delete",
+      "leases/action",
+      "leases/complete/action",
+      "leases/extend/action",
+      "write"
+    ],
+    "images": [
+      "cancel/action",
+      "delete",
+      "refresh/action",
+      "write"
+    ],
+    "pools": [
+      "delete",
+      "leases/action",
+      "leases/complete/action",
+      "leases/extend/action",
+      "write"
+    ],
+    "accounts": [
+      "delete",
+      "write"
+    ],
+    "buildcaches": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.Automanage": {},
+  "Microsoft.BotService": {
+    "listAuthServiceProviders": [
+      "action",
+      "providers/Microsoft.Insights/diagnosticSettings/write"
+    ],
+    "botServices": [
+      "Connections/listWithSecrets/action",
+      "channels/delete",
+      "channels/listchannelwithkeys/action",
+      "channels/providers/Microsoft.Insights/diagnosticSettings/write",
+      "channels/read",
+      "channels/regeneratekeys/action",
+      "channels/write",
+      "connections/delete",
+      "connections/listwithsecrets/write",
+      "connections/providers/Microsoft.Insights/diagnosticSettings/write",
+      "connections/read",
+      "connections/write",
+      "createemailsigninurl/action",
+      "delete",
+      "joinPerimeter/action",
+      "networkSecurityPerimeterAssociationProxies/delete",
+      "networkSecurityPerimeterAssociationProxies/write",
+      "networkSecurityPerimeterConfigurations/reconcile/action",
+      "privateEndpointConnectionProxies/delete",
+      "privateEndpointConnectionProxies/validate/action",
+      "privateEndpointConnectionProxies/write",
+      "privateEndpointConnections/delete",
+      "privateEndpointConnections/write",
+      "privateEndpointConnectionsApproval/action",
+      "providers/Microsoft.Insights/diagnosticSettings/write",
+      "read",
+      "write"
+    ],
+    "checknameavailability": [
+      "providers/Microsoft.Insights/diagnosticSettings/write"
+    ],
+    "hostsettings": [
+      "providers/Microsoft.Insights/diagnosticSettings/write"
+    ],
+    "listqnamakerendpointkeys": [
+      "providers/Microsoft.Insights/diagnosticSettings/write"
+    ],
+    "locations": [
+      "notifyNetworkSecurityPerimeterUpdatesAvailable/action"
+    ]
+  },
+  "Microsoft.ServiceFabric": {
+    "managedclusters": [
+      "*"
+    ],
+    "operations": [
+      "read"
+    ],
+    "locations": [
+      "clusterVersions/read",
+      "environments/clusterVersions/read",
+      "operationresults/read",
+      "operations/read"
+    ],
+    "clusters": [
+      "*"
+    ]
+  },
+  "Microsoft.AzureFleet": {
+    "fleets": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "microsoft.Compute": {
+    "virtualMachineScaleSets": [
+      "networkInterfaces/read"
+    ]
+  },
+  "Microsoft.PowerBI": {
+    "tenants": [
+      "delete",
+      "read",
+      "workspaces/delete",
+      "workspaces/read",
+      "workspaces/write",
+      "write"
+    ]
+  },
+  "Microsoft.Portal": {
+    "dashboards": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.Windows365": {},
+  "Microsoft.Batch": {
+    "*": [
+      "read"
+    ],
+    "batchAccounts": [
+      "applications/*",
+      "applications/read",
+      "applications/versions/read",
+      "certificateOperationResults/*",
+      "certificates/*",
+      "jobSchedules/*",
+      "jobs/*",
+      "poolOperationResults/*",
+      "pools/*",
+      "pools/read",
+      "read"
+    ],
+    "locations": [
+      "*/read"
+    ]
+  },
+  "Microsoft.Chaos": {
+    "*": [
+      "read"
+    ],
+    "experiments": [
+      "cancel/action",
+      "delete",
+      "executions/getExecutionDetails/action",
+      "read",
+      "start/action",
+      "write"
+    ],
+    "locations": [
+      "operationResults/read",
+      "operationStatuses/read",
+      "targetTypes/capabilityTypes/read",
+      "targetTypes/read"
+    ],
+    "targets": [
+      "capabilities/delete",
+      "capabilities/read",
+      "capabilities/write",
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.MessagingConnectors": {},
+  "Microsoft.Quantum": {
+    "Workspaces": [
+      "jobs/read",
+      "jobs/write",
+      "read"
+    ],
+    "locations": [
+      "offerings/read"
+    ]
+  },
+  "Microsoft.Communication": {
+    "CheckNameAvailability": [
+      "action"
+    ],
+    "Locations": [
+      "OperationStatuses/read",
+      "OperationStatuses/write"
+    ],
+    "Operations": [
+      "read"
+    ],
+    "CommunicationServices": [
+      "EventGridFilters/delete",
+      "EventGridFilters/read",
+      "EventGridFilters/write",
+      "LinkNotificationHub/action",
+      "ListKeys/action",
+      "RegenerateKey/action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "EmailServices": [
+      "Domains/*",
+      "Domains/CancelVerification/action",
+      "Domains/InitiateVerification/action",
+      "Domains/SenderUsernames/delete",
+      "Domains/SenderUsernames/read",
+      "Domains/SenderUsernames/write",
+      "Domains/SuppressionLists/SuppressionListAddresses/delete",
+      "Domains/SuppressionLists/SuppressionListAddresses/read",
+      "Domains/SuppressionLists/SuppressionListAddresses/write",
+      "Domains/SuppressionLists/delete",
+      "Domains/SuppressionLists/read",
+      "Domains/SuppressionLists/write",
+      "Domains/delete",
+      "Domains/read",
+      "Domains/write",
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.BareMetal": {
+    "peeringSettings": [
+      "read"
+    ]
+  },
+  "Microsoft.EdgeManagement": {
+    "locations": [
+      "chat/action"
+    ],
+    "troubleshoot": [
+      "action"
+    ]
+  },
+  "Microsoft.OnlineExperimentation": {
+    "workspaces": [
+      "action",
+      "delete",
+      "read",
+      "write"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.DeviceOnboarding": {
+    "discoveryServices": [
+      "*"
+    ],
+    "locations": [
+      "operationStatuses/read"
+    ]
+  },
+  "Microsoft.StorageSync": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "locations": [
+      "*"
+    ],
+    "deployments": [
+      "preflight/action"
+    ],
+    "storageSyncServices": [
+      "*"
+    ],
+    "operations": [
+      "read"
+    ],
+    "*": [
+      "read"
+    ]
+  },
+  "microsoft.monitor": {
+    "accounts": [
+      "issues/*"
+    ]
+  },
+  "Microsoft.PowerPlatform": {
+    "accounts": [
+      "*"
+    ],
+    "enterprisePolicies": [
+      "*"
+    ]
+  },
+  "Microsoft.Edge": {
+    "targets": [
+      "*",
+      "read",
+      "solutions/versions/read",
+      "updateExternalValidationStatus/action"
+    ],
+    "solutionTemplates": [
+      "*",
+      "read",
+      "versions/read"
+    ],
+    "contexts": [
+      "*",
+      "eventGridFilters/delete",
+      "eventGridFilters/read",
+      "eventGridFilters/write",
+      "read"
+    ],
+    "sites": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "configurations": [
+      "*",
+      "arcGatewayConfigurations/delete",
+      "arcGatewayConfigurations/read",
+      "arcGatewayConfigurations/write",
+      "connectivityConfigurations/delete",
+      "connectivityConfigurations/read",
+      "connectivityConfigurations/write",
+      "delete",
+      "networkConfigurations/delete",
+      "networkConfigurations/read",
+      "networkConfigurations/write",
+      "provisioningConfigurations/delete",
+      "provisioningConfigurations/read",
+      "provisioningConfigurations/write",
+      "read",
+      "securityConfigurations/delete",
+      "securityConfigurations/read",
+      "securityConfigurations/write",
+      "timeServerConfigurations/delete",
+      "timeServerConfigurations/read",
+      "timeServerConfigurations/write",
+      "write"
+    ],
+    "configurationReferences": [
+      "*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "disconnectedOperations": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "winfields": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "configTemplates": [
+      "*"
+    ],
+    "schemas": [
+      "*"
+    ],
+    "schemaReferences": [
+      "*"
+    ],
+    "jobs": [
+      "*"
+    ],
+    "connectivityStatuses": [
+      "delete",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/write"
+    ],
+    "updates": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.SecretSyncController": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "azureKeyVaultSecretProviderClasses": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "secretSyncs": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.DevOpsInfrastructure": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "*": [
+      "read"
+    ],
+    "Locations": [
+      "OperationStatuses/write"
+    ],
+    "pools": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.DataBoxEdge": {
+    "dataBoxEdgeDevices": [
+      "bandwidthSchedules/delete",
+      "bandwidthSchedules/write",
+      "delete",
+      "deviceCapacityCheck/action",
+      "downloadUpdates/action",
+      "generateCertificate/action",
+      "getExtendedInformation/action",
+      "installUpdates/action",
+      "orders/delete",
+      "orders/listDCAccessCode/action",
+      "orders/write",
+      "providers/Microsoft.Insights/diagnosticSettings/write",
+      "publishers/offers/skus/versions/generatesastoken/action",
+      "roles/addons/delete",
+      "roles/addons/write",
+      "roles/delete",
+      "roles/migrate/action",
+      "roles/monitoringConfig/delete",
+      "roles/monitoringConfig/write",
+      "roles/write",
+      "scanForUpdates/action",
+      "securitySettings/update/action",
+      "shares/delete",
+      "shares/refresh/action",
+      "shares/write",
+      "storageAccountCredentials/delete",
+      "storageAccountCredentials/write",
+      "storageAccounts/containers/delete",
+      "storageAccounts/containers/refresh/action",
+      "storageAccounts/containers/write",
+      "storageAccounts/delete",
+      "storageAccounts/write",
+      "triggerSupportPackage/action",
+      "triggers/delete",
+      "triggers/write",
+      "updateExtendedInformation/action",
+      "uploadCertificate/action",
+      "users/delete",
+      "users/write",
+      "write"
+    ]
+  },
+  "Microsoft.Bing": {
+    "accounts": [
+      "useGrounding/action"
+    ]
+  },
+  "Microsoft.Discovery": {
+    "*": [
+      "read"
+    ],
+    "locations": [
+      "operationStatuses/read"
+    ],
+    "checkNameAvailability": [
+      "action"
+    ],
+    "operations": [
+      "read"
+    ],
+    "workspaces": [
+      "projects/read",
+      "read"
+    ],
+    "supercomputers": [
+      "nodePools/read",
+      "read"
+    ],
+    "storages": [
+      "read"
+    ],
+    "agents": [
+      "*"
+    ],
+    "bookshelves": [
+      "read"
+    ],
+    "dataContainers": [
+      "*",
+      "dataAssets/*"
+    ],
+    "models": [
+      "*"
+    ],
+    "tools": [
+      "*"
+    ],
+    "workflows": [
+      "*"
+    ]
+  },
+  "Microsoft.IoTOperations": {},
+  "Microsoft.DeviceRegistry": {
+    "Assets": [
+      "*"
+    ],
+    "AssetEndpointProfiles": [
+      "*"
+    ],
+    "Namespaces": [
+      "Assets/*",
+      "Devices/*",
+      "DiscoveredAssets/*",
+      "DiscoveredDevices/*",
+      "credentials/*",
+      "credentials/policies/*",
+      "delete",
+      "read",
+      "write"
+    ],
+    "SchemaRegistries": [
+      "*",
+      "read",
+      "write"
+    ],
+    "register": [
+      "action"
+    ]
+  },
+  "NGINX.NGINXPLUS": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write",
+      "read"
+    ],
+    "nginxDeployments": [
+      "Delete",
+      "Read",
+      "Write",
+      "apiKeys/Delete",
+      "apiKeys/Read",
+      "apiKeys/Write",
+      "certificates/Delete",
+      "certificates/Read",
+      "certificates/Write",
+      "configurations/Delete",
+      "configurations/Read",
+      "configurations/Write",
+      "wafPolicies/Delete",
+      "wafPolicies/Read",
+      "wafPolicies/Write"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.Datadog": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "agreements": [
+      "read",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write",
+      "read"
+    ],
+    "monitors": [
+      "delete",
+      "getDefaultKey/action",
+      "listApiKeys/action",
+      "listHosts/read",
+      "listLinkedResources/action",
+      "listLinkedResources/read",
+      "listMonitoredResources/read",
+      "monitoredSubscriptions/read",
+      "monitoredSubscriptions/write",
+      "read",
+      "refreshSetPasswordLink/action",
+      "setDefaultKey/action",
+      "singleSignOnConfigurations/read",
+      "singleSignOnConfigurations/write",
+      "tagRules/read",
+      "tagRules/write",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "subscriptionStatuses": [
+      "read"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.Elastic": {
+    "getOrganizationApiKey": [
+      "action"
+    ],
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write",
+      "read"
+    ],
+    "monitors": [
+      "associateTrafficFilter/action",
+      "createAndAssociateIPFilter/action",
+      "createAndAssociatePLFilter/action",
+      "createOrUpdateExternalUser/action",
+      "delete",
+      "deleteTrafficFilter/action",
+      "detachAndDeleteTrafficFilter/action",
+      "detachTrafficFilter/action",
+      "getBillingInfo/action",
+      "listAllTrafficFilters/action",
+      "listAssociatedTrafficFilters/action",
+      "listConnectedPartnerResources/action",
+      "listDeploymentInfo/action",
+      "listMonitoredResources/action",
+      "listUpgradableVersions/action",
+      "listVMHost/action",
+      "monitoredSubscriptions/read",
+      "monitoredSubscriptions/write",
+      "openAIIntegrations/getStatus/action",
+      "openAIIntegrations/read",
+      "openAIIntegrations/write",
+      "read",
+      "resubscribe/action",
+      "tagRules/read",
+      "tagRules/write",
+      "upgrade/action",
+      "vmCollectionUpdate/action",
+      "vmIngestionDetails/action",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "elasticVersions": [
+      "read"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "NewRelic.Observability": {
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "accounts": [
+      "read"
+    ],
+    "plans": [
+      "read"
+    ],
+    "organizations": [
+      "read"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write",
+      "read"
+    ],
+    "monitors": [
+      "delete",
+      "getBillingInfo/action",
+      "getMetricRules/action",
+      "getMetricStatus/action",
+      "latestLinkedSaaS/action",
+      "linkSaaS/action",
+      "listAppServices/action",
+      "listConnectedPartnerResources/action",
+      "listHosts/action",
+      "listLinkedResources/action",
+      "monitoredResources/action",
+      "monitoredSubscriptions/read",
+      "monitoredSubscriptions/write",
+      "read",
+      "refreshIngestionKey/action",
+      "resubscribe/action",
+      "switchBilling/action",
+      "tagRules/read",
+      "tagRules/write",
+      "vmHostPayloads/action",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Dynatrace.Observability": {
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "getMarketplaceSaaSResourceDetails": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write",
+      "read"
+    ],
+    "monitors": [
+      "delete",
+      "getMetricStatus/action",
+      "getSSODetails/action",
+      "getVMHostPayload/action",
+      "listAppServices/action",
+      "listHosts/action",
+      "listLinkableEnvironments/action",
+      "listMonitoredResources/action",
+      "manageAgentInstallation/action",
+      "monitoredSubscriptions/read",
+      "monitoredSubscriptions/write",
+      "read",
+      "singleSignOnConfigurations/read",
+      "singleSignOnConfigurations/write",
+      "tagRules/read",
+      "tagRules/write",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.OffAzureSpringBoot": {},
+  "Microsoft.NexusIdentity": {
+    "*": [
+      "action",
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.AzureDataTransfer": {},
+  "Microsoft.AzureBusinessContinuity": {
+    "deletedUnifiedProtectedItems": [
+      "read"
+    ],
+    "unifiedProtectedItems": [
+      "read"
+    ]
+  },
+  "PureStorage.Block": {},
+  "Dell.Storage": {},
+  "Pinecone.VectorDb": {
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "organizations": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ]
+  },
+  "Microsoft.WeightsAndBiases": {
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "instances": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ]
+  },
+  "LambdaTest.HyperExecute": {
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "organizations": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ]
+  },
+  "ArizeAi.ObservabilityEval": {
+    "checkNameAvailability": [
+      "action"
+    ],
+    "register": [
+      "action"
+    ],
+    "unregister": [
+      "action"
+    ],
+    "locations": [
+      "operationStatuses/read",
+      "operationStatuses/write"
+    ],
+    "operations": [
+      "read"
+    ],
+    "organizations": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "registeredSubscriptions": [
+      "read"
+    ]
+  },
+  "Microsoft.AzureResilienceManagement": {
+    "drills": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "recoveryPlans": [
+      "*/action",
+      "*/delete",
+      "*/read",
+      "*/write"
+    ],
+    "goalTemplates": [
+      "*",
+      "read"
+    ],
+    "goalAssignments": [
+      "*",
+      "goalResources/*",
+      "goalResources/read",
+      "read"
+    ],
+    "locations": [
+      "operationStatuses/read"
+    ],
+    "operations": [
+      "read"
+    ]
+  },
+  "Microsoft.Relationships": {
+    "ServiceGroupMember": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "*": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.EdgeOrderPartner": {
+    "locations": [
+      "productFamilies/inventories/manageInventoryMetadata/action",
+      "productFamilies/inventories/manageLink/action"
+    ]
+  },
+  "Microsoft.ChangeSafety": {
+    "changeStates": [
+      "delete",
+      "read",
+      "stageProgressions/delete",
+      "stageProgressions/read",
+      "stageProgressions/write",
+      "write"
+    ],
+    "locations": [
+      "operationstatuses/read",
+      "operationstatuses/write"
+    ],
+    "safeRollouts": [
+      "delete",
+      "read",
+      "steps/read",
+      "write"
+    ],
+    "stageMaps": [
+      "delete",
+      "read",
+      "write"
+    ],
+    "validations": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.operationalinsights": {
+    "workspaces": [
+      "query/read",
+      "read",
+      "tables/delete",
+      "tables/write",
+      "write"
+    ]
+  },
+  "Microsoft.Migrate": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.ApplicationMigration": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.OffAzure": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.MySQLDiscovery": {
+    "*": [
+      "read"
+    ]
+  },
+  "Microsoft.DependencyMap": {
+    "*": [
+      "read"
+    ],
+    "maps": [
+      "*/action"
+    ]
+  },
+  "Microsoft.DataReplication": {
+    "*": [
+      "read"
+    ],
+    "register": [
+      "action"
+    ],
+    "replicationVaults": [
+      "write"
+    ]
+  },
+  "Microsoft.AwsConnector": {
+    "accessAnalyzerAnalyzers": [
+      "delete",
+      "write"
+    ],
+    "acmCertificateSummaries": [
+      "delete",
+      "write"
+    ],
+    "apiGatewayRestApis": [
+      "delete",
+      "write"
+    ],
+    "apiGatewayStages": [
+      "delete",
+      "write"
+    ],
+    "applicationAutoScalingScalableTargets": [
+      "delete",
+      "write"
+    ],
+    "appSyncGraphqlApis": [
+      "delete",
+      "write"
+    ],
+    "autoScalingAutoScalingGroups": [
+      "delete",
+      "write"
+    ],
+    "cloudFormationStacks": [
+      "delete",
+      "write"
+    ],
+    "cloudFormationStackSets": [
+      "delete",
+      "write"
+    ],
+    "cloudFrontDistributions": [
+      "delete",
+      "write"
+    ],
+    "cloudTrailTrails": [
+      "delete",
+      "write"
+    ],
+    "cloudWatchAlarms": [
+      "delete",
+      "write"
+    ],
+    "codeBuildProjects": [
+      "delete",
+      "write"
+    ],
+    "codeBuildSourceCredentialsInfos": [
+      "delete",
+      "write"
+    ],
+    "configServiceConfigurationRecorders": [
+      "delete",
+      "write"
+    ],
+    "configServiceConfigurationRecorderStatuses": [
+      "delete",
+      "write"
+    ],
+    "configServiceDeliveryChannels": [
+      "delete",
+      "write"
+    ],
+    "databaseMigrationServiceReplicationInstances": [
+      "delete",
+      "write"
+    ],
+    "daxClusters": [
+      "delete",
+      "write"
+    ],
+    "dynamoDBContinuousBackupsDescriptions": [
+      "delete",
+      "write"
+    ],
+    "dynamoDBTables": [
+      "delete",
+      "write"
+    ],
+    "ec2AccountAttributes": [
+      "delete",
+      "write"
+    ],
+    "ec2Addresses": [
+      "delete",
+      "write"
+    ],
+    "ec2FlowLogs": [
+      "delete",
+      "write"
+    ],
+    "ec2Images": [
+      "delete",
+      "write"
+    ],
+    "ec2Instances": [
+      "delete",
+      "start/action",
+      "stop/action",
+      "write"
+    ],
+    "ec2InstanceStatuses": [
+      "delete",
+      "write"
+    ],
+    "ec2Ipams": [
+      "delete",
+      "write"
+    ],
+    "ec2KeyPairs": [
+      "delete",
+      "write"
+    ],
+    "ec2NetworkAcls": [
+      "delete",
+      "write"
+    ],
+    "ec2NetworkInterfaces": [
+      "delete",
+      "write"
+    ],
+    "ec2RouteTables": [
+      "delete",
+      "write"
+    ],
+    "ec2SecurityGroups": [
+      "delete",
+      "write"
+    ],
+    "ec2Snapshots": [
+      "delete",
+      "write"
+    ],
+    "ec2Subnets": [
+      "delete",
+      "write"
+    ],
+    "ec2Volumes": [
+      "delete",
+      "write"
+    ],
+    "ec2VPCEndpoints": [
+      "delete",
+      "write"
+    ],
+    "ec2VPCPeeringConnections": [
+      "delete",
+      "write"
+    ],
+    "ec2Vpcs": [
+      "delete",
+      "write"
+    ],
+    "ecrImageDetails": [
+      "delete",
+      "write"
+    ],
+    "ecrRepositories": [
+      "delete",
+      "write"
+    ],
+    "ecsClusters": [
+      "delete",
+      "write"
+    ],
+    "ecsServices": [
+      "delete",
+      "write"
+    ],
+    "ecsTaskDefinitions": [
+      "delete",
+      "write"
+    ],
+    "efsFileSystems": [
+      "delete",
+      "write"
+    ],
+    "efsMountTargets": [
+      "delete",
+      "write"
+    ],
+    "eksClusters": [
+      "delete",
+      "write"
+    ],
+    "eksNodegroups": [
+      "delete",
+      "write"
+    ],
+    "elasticBeanstalkApplications": [
+      "delete",
+      "write"
+    ],
+    "elasticBeanstalkConfigurationTemplates": [
+      "delete",
+      "write"
+    ],
+    "elasticBeanstalkEnvironments": [
+      "delete",
+      "write"
+    ],
+    "elasticLoadBalancingV2Listeners": [
+      "delete",
+      "write"
+    ],
+    "elasticLoadBalancingV2LoadBalancers": [
+      "delete",
+      "write"
+    ],
+    "elasticLoadBalancingV2TargetGroups": [
+      "delete",
+      "write"
+    ],
+    "elasticLoadBalancingV2TargetHealthDescriptions": [
+      "delete",
+      "write"
+    ],
+    "elasticsearchDomains": [
+      "delete",
+      "write"
+    ],
+    "emrClusters": [
+      "delete",
+      "write"
+    ],
+    "guardDutyDetectors": [
+      "delete",
+      "write"
+    ],
+    "iamAccessKeyLastUseds": [
+      "delete",
+      "write"
+    ],
+    "iamAccessKeyMetadata": [
+      "delete",
+      "write"
+    ],
+    "iamGroups": [
+      "delete",
+      "write"
+    ],
+    "iamInstanceProfiles": [
+      "delete",
+      "write"
+    ],
+    "iamManagedPolicies": [
+      "delete",
+      "write"
+    ],
+    "iamMFADevices": [
+      "delete",
+      "write"
+    ],
+    "iamPasswordPolicies": [
+      "delete",
+      "write"
+    ],
+    "iamPolicyVersions": [
+      "delete",
+      "write"
+    ],
+    "iamRoles": [
+      "delete",
+      "write"
+    ],
+    "iamServerCertificates": [
+      "delete",
+      "write"
+    ],
+    "iamUserPolicies": [
+      "delete",
+      "write"
+    ],
+    "iamVirtualMFADevices": [
+      "delete",
+      "write"
+    ],
+    "kmsAliases": [
+      "delete",
+      "write"
+    ],
+    "kmsKeys": [
+      "delete",
+      "write"
+    ],
+    "lambdaFunctionCodeLocations": [
+      "delete",
+      "write"
+    ],
+    "lambdaFunctionConfigurations": [
+      "delete",
+      "write"
+    ],
+    "lambdaFunctions": [
+      "delete",
+      "write"
+    ],
+    "licenseManagerLicenses": [
+      "delete",
+      "write"
+    ],
+    "lightsailBuckets": [
+      "delete",
+      "write"
+    ],
+    "lightsailInstances": [
+      "delete",
+      "write"
+    ],
+    "Locations": [
+      "OperationStatuses/write"
+    ],
+    "logsLogGroups": [
+      "delete",
+      "write"
+    ],
+    "logsLogStreams": [
+      "delete",
+      "write"
+    ],
+    "logsMetricFilters": [
+      "delete",
+      "write"
+    ],
+    "logsSubscriptionFilters": [
+      "delete",
+      "write"
+    ],
+    "macie2JobSummaries": [
+      "delete",
+      "write"
+    ],
+    "macieAllowLists": [
+      "delete",
+      "write"
+    ],
+    "networkFirewallFirewallPolicies": [
+      "delete",
+      "write"
+    ],
+    "networkFirewallFirewalls": [
+      "delete",
+      "write"
+    ],
+    "networkFirewallRuleGroups": [
+      "delete",
+      "write"
+    ],
+    "openSearchDomainStatuses": [
+      "delete",
+      "write"
+    ],
+    "openSearchServiceDomains": [
+      "delete",
+      "write"
+    ],
+    "organizationsAccounts": [
+      "delete",
+      "write"
+    ],
+    "organizationsOrganizations": [
+      "delete",
+      "write"
+    ],
+    "rdsDBClusters": [
+      "delete",
+      "write"
+    ],
+    "rdsDBInstances": [
+      "delete",
+      "write"
+    ],
+    "rdsDBSnapshotAttributesResults": [
+      "delete",
+      "write"
+    ],
+    "rdsDBSnapshots": [
+      "delete",
+      "write"
+    ],
+    "rdsEventSubscriptions": [
+      "delete",
+      "write"
+    ],
+    "rdsExportTasks": [
+      "delete",
+      "write"
+    ],
+    "redshiftClusterParameterGroups": [
+      "delete",
+      "write"
+    ],
+    "redshiftClusters": [
+      "delete",
+      "write"
+    ],
+    "route53DomainsDomainSummaries": [
+      "delete",
+      "write"
+    ],
+    "route53HostedZones": [
+      "delete",
+      "write"
+    ],
+    "route53ResourceRecordSets": [
+      "delete",
+      "write"
+    ],
+    "s3AccessControlPolicies": [
+      "delete",
+      "write"
+    ],
+    "s3AccessPoints": [
+      "delete",
+      "write"
+    ],
+    "s3BucketPolicies": [
+      "delete",
+      "write"
+    ],
+    "s3Buckets": [
+      "delete",
+      "write"
+    ],
+    "s3ControlMultiRegionAccessPointPolicyDocuments": [
+      "delete",
+      "write"
+    ],
+    "sageMakerApps": [
+      "delete",
+      "write"
+    ],
+    "sageMakerDevices": [
+      "delete",
+      "write"
+    ],
+    "sageMakerImages": [
+      "delete",
+      "write"
+    ],
+    "sageMakerNotebookInstanceSummaries": [
+      "delete",
+      "write"
+    ],
+    "secretsManagerResourcePolicies": [
+      "delete",
+      "write"
+    ],
+    "secretsManagerSecrets": [
+      "delete",
+      "write"
+    ],
+    "snsSubscriptions": [
+      "delete",
+      "write"
+    ],
+    "snsTopics": [
+      "delete",
+      "write"
+    ],
+    "sqsQueues": [
+      "delete",
+      "write"
+    ],
+    "ssmInstanceInformations": [
+      "delete",
+      "write"
+    ],
+    "ssmParameters": [
+      "delete",
+      "write"
+    ],
+    "ssmResourceComplianceSummaryItems": [
+      "delete",
+      "write"
+    ],
+    "wafv2IPSets": [
+      "delete",
+      "write"
+    ],
+    "wafv2LoggingConfigurations": [
+      "delete",
+      "write"
+    ],
+    "wafv2WebACLAssociations": [
+      "delete",
+      "write"
+    ],
+    "wafWebACLSummaries": [
+      "delete",
+      "write"
+    ]
+  },
+  "Microsoft.D365CustomerInsights": {
+    "instances": [
+      "providers/Microsoft.Insights/diagnosticSettings/write",
+      "write"
+    ]
+  },
+  "Microsoft.StorageActions": {
+    "storageTasks": [
+      "delete",
+      "read",
+      "reports/read",
+      "storageTaskAssignments/read",
+      "write"
+    ],
+    "locations": [
+      "previewActions/action"
+    ]
+  },
+  "Microsoft.ManagedOps": {
+    "managedOps": [
+      "delete",
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.AzureActiveDirectory": {
+    "directories": [
+      "read",
+      "write"
+    ]
+  },
+  "Microsoft.SupercomputerInfrastructure": {},
+  "microsoft.deviceregistry": {
+    "namespaces": [
+      "credentials/*",
+      "credentials/policies/*",
+      "credentials/policies/issueCertificate/action",
+      "credentials/policies/read",
+      "credentials/read",
+      "devices/*",
+      "discovereddevices/*",
+      "read"
+    ]
+  },
+  "microsoft.devices": {
+    "iothubs": [
+      "certificates/*",
+      "devices/*",
+      "read"
+    ]
+  },
+  "Microsoft.HybridNetwork": {},
+  "Microsoft.AppLink": {
+    "AppLinks": [
+      "AppLinkMembers/delete",
+      "AppLinkMembers/read",
+      "AppLinkMembers/write",
+      "delete",
+      "read",
+      "write"
+    ],
+    "locations": [
+      "operationStatuses/read"
+    ]
+  }
+}

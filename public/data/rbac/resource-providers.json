@@ -1,0 +1,2862 @@
+[
+  {
+    "name": "*",
+    "displayName": "*",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 14
+  },
+  {
+    "name": "ArizeAi.ObservabilityEval",
+    "displayName": "Arize Ai. Observability Eval",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "locations",
+      "operations",
+      "organizations",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Dell.Storage",
+    "displayName": "Dell. Storage",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Dynatrace.Observability",
+    "displayName": "Dynatrace. Observability",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "getMarketplaceSaaSResourceDetails",
+      "locations",
+      "monitors",
+      "operations",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 26
+  },
+  {
+    "name": "LambdaTest.HyperExecute",
+    "displayName": "Lambda Test. Hyper Execute",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "locations",
+      "operations",
+      "organizations",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.AAD",
+    "displayName": "A A D",
+    "category": "Identity",
+    "resourceTypes": [
+      "*",
+      "domainServices",
+      "register",
+      "unregister"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.Advisor",
+    "displayName": "Advisor",
+    "category": "Other",
+    "resourceTypes": [
+      "assessments",
+      "configurations",
+      "recommendations",
+      "resiliencyReviews",
+      "suppressions",
+      "triageRecommendations",
+      "triageResources"
+    ],
+    "actionCount": 28
+  },
+  {
+    "name": "Microsoft.AgFoodPlatform",
+    "displayName": "Ag Food Platform",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "farmBeats"
+    ],
+    "actionCount": 68
+  },
+  {
+    "name": "Microsoft.AlertsManagement",
+    "displayName": "Alerts Management",
+    "category": "Other",
+    "resourceTypes": [
+      "actionRules",
+      "alerts",
+      "alertsSummary",
+      "investigations",
+      "issues",
+      "migrateFromSmartDetection",
+      "prometheusRuleGroups",
+      "smartDetectorAlertRules",
+      "smartGroups"
+    ],
+    "actionCount": 19
+  },
+  {
+    "name": "Microsoft.AnyBuild",
+    "displayName": "Any Build",
+    "category": "Other",
+    "resourceTypes": [
+      "clusters"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.ApiCenter",
+    "displayName": "Api Center",
+    "category": "Other",
+    "resourceTypes": [
+      "deletedServices",
+      "services"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.ApiManagement",
+    "displayName": "Api Management",
+    "category": "Integration",
+    "resourceTypes": [
+      "service"
+    ],
+    "actionCount": 64
+  },
+  {
+    "name": "microsoft.app",
+    "displayName": "microsoft.app",
+    "category": "Other",
+    "resourceTypes": [
+      "jobs"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "microsoft.App",
+    "displayName": "microsoft. App",
+    "category": "Other",
+    "resourceTypes": [
+      "connectedEnvironments",
+      "managedEnvironments"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.app",
+    "displayName": "app",
+    "category": "Other",
+    "resourceTypes": [
+      "connectedEnvironments",
+      "managedenvironments"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.App",
+    "displayName": "App",
+    "category": "Other",
+    "resourceTypes": [
+      "agents",
+      "connectedEnvironments",
+      "containerApps",
+      "jobs",
+      "managedenvironments",
+      "sessionPools"
+    ],
+    "actionCount": 108
+  },
+  {
+    "name": "Microsoft.AppComplianceAutomation",
+    "displayName": "App Compliance Automation",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.AppConfiguration",
+    "displayName": "App Configuration",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "configurationStores"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.ApplicationMigration",
+    "displayName": "Application Migration",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.AppLink",
+    "displayName": "App Link",
+    "category": "Other",
+    "resourceTypes": [
+      "AppLinks",
+      "locations"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.AppPlatform",
+    "displayName": "App Platform",
+    "category": "Other",
+    "resourceTypes": [
+      "Spring"
+    ],
+    "actionCount": 32
+  },
+  {
+    "name": "Microsoft.Attestation",
+    "displayName": "Attestation",
+    "category": "Other",
+    "resourceTypes": [
+      "attestationProviders"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "Microsoft.Authorization",
+    "displayName": "Authorization",
+    "category": "Identity",
+    "resourceTypes": [
+      "*",
+      "classicAdministrators",
+      "denyAssignments",
+      "diagnosticSettings",
+      "diagnosticSettingsCategories",
+      "locks",
+      "operations",
+      "permissions",
+      "policyassignments",
+      "policydefinitions",
+      "policyenrollments",
+      "policyexemptions",
+      "policysetdefinitions",
+      "providerOperations",
+      "roleAssignmentScheduleInstances",
+      "roleAssignmentScheduleRequests",
+      "roleAssignmentSchedules",
+      "roleAssignments",
+      "roleDefinitions",
+      "roleEligibilityScheduleInstances",
+      "roleEligibilityScheduleRequests",
+      "roleEligibilitySchedules",
+      "roleManagementPolicies",
+      "roleManagementPolicyAssignments"
+    ],
+    "actionCount": 485
+  },
+  {
+    "name": "Microsoft.Automanage",
+    "displayName": "Automanage",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Automation",
+    "displayName": "Automation",
+    "category": "Other",
+    "resourceTypes": [
+      "automationAccounts"
+    ],
+    "actionCount": 41
+  },
+  {
+    "name": "Microsoft.AutonomousDevelopmentPlatform",
+    "displayName": "Autonomous Development Platform",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "accounts",
+      "workspaces"
+    ],
+    "actionCount": 17
+  },
+  {
+    "name": "Microsoft.AwsConnector",
+    "displayName": "Aws Connector",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "accessAnalyzerAnalyzers",
+      "acmCertificateSummaries",
+      "apiGatewayRestApis",
+      "apiGatewayStages",
+      "appSyncGraphqlApis",
+      "applicationAutoScalingScalableTargets",
+      "autoScalingAutoScalingGroups",
+      "cloudFormationStackSets",
+      "cloudFormationStacks",
+      "cloudFrontDistributions",
+      "cloudTrailTrails",
+      "cloudWatchAlarms",
+      "codeBuildProjects",
+      "codeBuildSourceCredentialsInfos",
+      "configServiceConfigurationRecorderStatuses",
+      "configServiceConfigurationRecorders",
+      "configServiceDeliveryChannels",
+      "databaseMigrationServiceReplicationInstances",
+      "daxClusters",
+      "dynamoDBContinuousBackupsDescriptions",
+      "dynamoDBTables",
+      "ec2AccountAttributes",
+      "ec2Addresses",
+      "ec2FlowLogs",
+      "ec2Images",
+      "ec2InstanceStatuses",
+      "ec2Instances",
+      "ec2Ipams",
+      "ec2KeyPairs",
+      "ec2NetworkAcls",
+      "ec2NetworkInterfaces",
+      "ec2RouteTables",
+      "ec2SecurityGroups",
+      "ec2Snapshots",
+      "ec2Subnets",
+      "ec2VPCEndpoints",
+      "ec2VPCPeeringConnections",
+      "ec2Volumes",
+      "ec2Vpcs",
+      "ecrImageDetails",
+      "ecrRepositories",
+      "ecsClusters",
+      "ecsServices",
+      "ecsTaskDefinitions",
+      "efsFileSystems",
+      "efsMountTargets",
+      "eksClusters",
+      "eksNodegroups",
+      "elasticBeanstalkApplications",
+      "elasticBeanstalkConfigurationTemplates",
+      "elasticBeanstalkEnvironments",
+      "elasticLoadBalancingV2Listeners",
+      "elasticLoadBalancingV2LoadBalancers",
+      "elasticLoadBalancingV2TargetGroups",
+      "elasticLoadBalancingV2TargetHealthDescriptions",
+      "elasticsearchDomains",
+      "emrClusters",
+      "guardDutyDetectors",
+      "iamAccessKeyLastUseds",
+      "iamAccessKeyMetadata",
+      "iamGroups",
+      "iamInstanceProfiles",
+      "iamMFADevices",
+      "iamManagedPolicies",
+      "iamPasswordPolicies",
+      "iamPolicyVersions",
+      "iamRoles",
+      "iamServerCertificates",
+      "iamUserPolicies",
+      "iamVirtualMFADevices",
+      "kmsAliases",
+      "kmsKeys",
+      "lambdaFunctionCodeLocations",
+      "lambdaFunctionConfigurations",
+      "lambdaFunctions",
+      "licenseManagerLicenses",
+      "lightsailBuckets",
+      "lightsailInstances",
+      "logsLogGroups",
+      "logsLogStreams",
+      "logsMetricFilters",
+      "logsSubscriptionFilters",
+      "macie2JobSummaries",
+      "macieAllowLists",
+      "networkFirewallFirewallPolicies",
+      "networkFirewallFirewalls",
+      "networkFirewallRuleGroups",
+      "openSearchDomainStatuses",
+      "openSearchServiceDomains",
+      "organizationsAccounts",
+      "organizationsOrganizations",
+      "rdsDBClusters",
+      "rdsDBInstances",
+      "rdsDBSnapshotAttributesResults",
+      "rdsDBSnapshots",
+      "rdsEventSubscriptions",
+      "rdsExportTasks",
+      "redshiftClusterParameterGroups",
+      "redshiftClusters",
+      "route53DomainsDomainSummaries",
+      "route53HostedZones",
+      "route53ResourceRecordSets",
+      "s3AccessControlPolicies",
+      "s3AccessPoints",
+      "s3BucketPolicies",
+      "s3Buckets",
+      "s3ControlMultiRegionAccessPointPolicyDocuments",
+      "sageMakerApps",
+      "sageMakerDevices",
+      "sageMakerImages",
+      "sageMakerNotebookInstanceSummaries",
+      "secretsManagerResourcePolicies",
+      "secretsManagerSecrets",
+      "snsSubscriptions",
+      "snsTopics",
+      "sqsQueues",
+      "ssmInstanceInformations",
+      "ssmParameters",
+      "ssmResourceComplianceSummaryItems",
+      "wafWebACLSummaries",
+      "wafv2IPSets",
+      "wafv2LoggingConfigurations",
+      "wafv2WebACLAssociations"
+    ],
+    "actionCount": 249
+  },
+  {
+    "name": "Microsoft.AzureActiveDirectory",
+    "displayName": "Azure Active Directory",
+    "category": "Identity",
+    "resourceTypes": [
+      "directories"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.AzureArcData",
+    "displayName": "Azure Arc Data",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "register",
+      "sqlServerInstances"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.AzureBusinessContinuity",
+    "displayName": "Azure Business Continuity",
+    "category": "Other",
+    "resourceTypes": [
+      "deletedUnifiedProtectedItems",
+      "unifiedProtectedItems"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.AzureDataTransfer",
+    "displayName": "Azure Data Transfer",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.AzureFleet",
+    "displayName": "Azure Fleet",
+    "category": "Other",
+    "resourceTypes": [
+      "fleets"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.AzureResilienceManagement",
+    "displayName": "Azure Resilience Management",
+    "category": "Other",
+    "resourceTypes": [
+      "drills",
+      "goalAssignments",
+      "goalTemplates",
+      "locations",
+      "operations",
+      "recoveryPlans"
+    ],
+    "actionCount": 48
+  },
+  {
+    "name": "Microsoft.AzureSphere",
+    "displayName": "Azure Sphere",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "catalogs"
+    ],
+    "actionCount": 22
+  },
+  {
+    "name": "Microsoft.AzureStack",
+    "displayName": "Azure Stack",
+    "category": "Other",
+    "resourceTypes": [
+      "edgeSubscriptions",
+      "registrations"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.AzureStackHCI",
+    "displayName": "Azure Stack H C I",
+    "category": "Other",
+    "resourceTypes": [
+      "Clusters",
+      "DevicePools",
+      "EdgeDevices",
+      "EdgeMachines",
+      "GalleryImages",
+      "LogicalNetworks",
+      "MarketplaceGalleryImages",
+      "NetworkInterfaces",
+      "NetworkSecurityGroups",
+      "Operations",
+      "StorageContainers",
+      "Unregister",
+      "VirtualHardDisks",
+      "VirtualMachines",
+      "VirtualNetworks",
+      "register",
+      "virtualMachineInstances"
+    ],
+    "actionCount": 77
+  },
+  {
+    "name": "Microsoft.BackupSolutions",
+    "displayName": "Backup Solutions",
+    "category": "Other",
+    "resourceTypes": [
+      "vmwareapplications"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.BareMetal",
+    "displayName": "Bare Metal",
+    "category": "Other",
+    "resourceTypes": [
+      "peeringSettings"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Batch",
+    "displayName": "Batch",
+    "category": "Compute",
+    "resourceTypes": [
+      "*",
+      "batchAccounts",
+      "locations"
+    ],
+    "actionCount": 18
+  },
+  {
+    "name": "Microsoft.BigAnalytics",
+    "displayName": "Big Analytics",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Billing",
+    "displayName": "Billing",
+    "category": "Management",
+    "resourceTypes": [
+      "*",
+      "billingPeriods",
+      "billingProperty"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.BillingBenefits",
+    "displayName": "Billing Benefits",
+    "category": "Other",
+    "resourceTypes": [
+      "credits",
+      "discounts",
+      "maccs",
+      "register",
+      "savingsPlanOrders"
+    ],
+    "actionCount": 19
+  },
+  {
+    "name": "Microsoft.BIllingBenefits",
+    "displayName": "B Illing Benefits",
+    "category": "Other",
+    "resourceTypes": [
+      "register"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Bing",
+    "displayName": "Bing",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.BizTalkServices",
+    "displayName": "Biz Talk Services",
+    "category": "Other",
+    "resourceTypes": [
+      "BizTalk"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Blockchain",
+    "displayName": "Blockchain",
+    "category": "Other",
+    "resourceTypes": [
+      "blockchainMembers"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Blueprint",
+    "displayName": "Blueprint",
+    "category": "Other",
+    "resourceTypes": [
+      "blueprintAssignments",
+      "blueprints"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.BotService",
+    "displayName": "Bot Service",
+    "category": "AI & ML",
+    "resourceTypes": [
+      "botServices",
+      "checknameavailability",
+      "hostsettings",
+      "listAuthServiceProviders",
+      "listqnamakerendpointkeys",
+      "locations"
+    ],
+    "actionCount": 33
+  },
+  {
+    "name": "Microsoft.Cache",
+    "displayName": "Cache",
+    "category": "Database",
+    "resourceTypes": [
+      "redis",
+      "redisEnterprise",
+      "register"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.Capacity",
+    "displayName": "Capacity",
+    "category": "Other",
+    "resourceTypes": [
+      "catalogs",
+      "register",
+      "resourceProviders"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.Carbon",
+    "displayName": "Carbon",
+    "category": "Other",
+    "resourceTypes": [
+      "carbonEmissionReports"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Cdn",
+    "displayName": "Cdn",
+    "category": "Networking",
+    "resourceTypes": [
+      "edgenodes",
+      "operationresults",
+      "profiles"
+    ],
+    "actionCount": 41
+  },
+  {
+    "name": "Microsoft.ChangeSafety",
+    "displayName": "Change Safety",
+    "category": "Other",
+    "resourceTypes": [
+      "changeStates",
+      "locations",
+      "safeRollouts",
+      "stageMaps",
+      "validations"
+    ],
+    "actionCount": 18
+  },
+  {
+    "name": "Microsoft.Chaos",
+    "displayName": "Chaos",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "experiments",
+      "locations",
+      "targets"
+    ],
+    "actionCount": 47
+  },
+  {
+    "name": "Microsoft.ClassicCompute",
+    "displayName": "Classic Compute",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "domainNames",
+      "virtualMachines"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Microsoft.ClassicNetwork",
+    "displayName": "Classic Network",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "expressRouteCrossConnections",
+      "networkSecurityGroups",
+      "reservedIps",
+      "virtualNetworks"
+    ],
+    "actionCount": 9
+  },
+  {
+    "name": "Microsoft.ClassicStorage",
+    "displayName": "Classic Storage",
+    "category": "Other",
+    "resourceTypes": [
+      "storageAccounts"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.CloudTest",
+    "displayName": "Cloud Test",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "accounts",
+      "buildcaches",
+      "hostedpools",
+      "images",
+      "pools"
+    ],
+    "actionCount": 19
+  },
+  {
+    "name": "Microsoft.CodeSigning",
+    "displayName": "Code Signing",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "IdentityVerification",
+      "certificateProfiles"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.CognitiveSearch",
+    "displayName": "Cognitive Search",
+    "category": "Other",
+    "resourceTypes": [
+      "indexes"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.CognitiveServices",
+    "displayName": "Cognitive Services",
+    "category": "AI & ML",
+    "resourceTypes": [
+      "*",
+      "accounts",
+      "locations"
+    ],
+    "actionCount": 216
+  },
+  {
+    "name": "Microsoft.Commerce",
+    "displayName": "Commerce",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Communication",
+    "displayName": "Communication",
+    "category": "Other",
+    "resourceTypes": [
+      "CheckNameAvailability",
+      "CommunicationServices",
+      "EmailServices",
+      "Locations",
+      "Operations"
+    ],
+    "actionCount": 31
+  },
+  {
+    "name": "microsoft.Compute",
+    "displayName": "microsoft. Compute",
+    "category": "Other",
+    "resourceTypes": [
+      "virtualMachineScaleSets"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Compute",
+    "displayName": "Compute",
+    "category": "Compute",
+    "resourceTypes": [
+      "*",
+      "availabilitySets",
+      "capacityReservationGroups",
+      "cloudServices",
+      "diskAccesses",
+      "diskEncryptionSets",
+      "disks",
+      "galleries",
+      "hostgroups",
+      "images",
+      "locations",
+      "operations",
+      "proximityPlacementGroups",
+      "register",
+      "restorePointCollections",
+      "skus",
+      "snapshots",
+      "sshPublicKeys",
+      "virtualMachineScaleSets",
+      "virtualMachines"
+    ],
+    "actionCount": 298
+  },
+  {
+    "name": "Microsoft.ComputeSchedule",
+    "displayName": "Compute Schedule",
+    "category": "Other",
+    "resourceTypes": [
+      "autoActions",
+      "locations",
+      "register",
+      "scheduledActions"
+    ],
+    "actionCount": 59
+  },
+  {
+    "name": "Microsoft.ConnectedVMwarevSphere",
+    "displayName": "Connected V Mwarev Sphere",
+    "category": "Other",
+    "resourceTypes": [
+      "clusters",
+      "datastores",
+      "hosts",
+      "resourcepools",
+      "vcenters",
+      "virtualmachineinstances",
+      "virtualmachines",
+      "virtualmachinetemplates",
+      "virtualnetworks"
+    ],
+    "actionCount": 22
+  },
+  {
+    "name": "Microsoft.Consumption",
+    "displayName": "Consumption",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "register",
+      "reservationRecommendationDetails",
+      "reservationRecommendations"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.ContainerInstance",
+    "displayName": "Container Instance",
+    "category": "Compute",
+    "resourceTypes": [
+      "containerGroupProfiles",
+      "containerGroups"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.ContainerRegistry",
+    "displayName": "Container Registry",
+    "category": "Compute",
+    "resourceTypes": [
+      "locations",
+      "registries"
+    ],
+    "actionCount": 154
+  },
+  {
+    "name": "Microsoft.ContainerService",
+    "displayName": "Container Service",
+    "category": "Compute",
+    "resourceTypes": [
+      "deploymentSafeguards",
+      "fleets",
+      "locations",
+      "managedClusters",
+      "managedclustersnapshots",
+      "snapshots"
+    ],
+    "actionCount": 398
+  },
+  {
+    "name": "Microsoft.CostManagement",
+    "displayName": "Cost Management",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "benefitRecommendations"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.CustomerLockbox",
+    "displayName": "Customer Lockbox",
+    "category": "Other",
+    "resourceTypes": [
+      "requests"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.D365CustomerInsights",
+    "displayName": "D365 Customer Insights",
+    "category": "Other",
+    "resourceTypes": [
+      "instances"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Dashboard",
+    "displayName": "Dashboard",
+    "category": "Other",
+    "resourceTypes": [
+      "dashboards",
+      "grafana",
+      "locations"
+    ],
+    "actionCount": 22
+  },
+  {
+    "name": "Microsoft.Databox",
+    "displayName": "Databox",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "jobs",
+      "locations"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.DataBoxEdge",
+    "displayName": "Data Box Edge",
+    "category": "Other",
+    "resourceTypes": [
+      "dataBoxEdgeDevices"
+    ],
+    "actionCount": 40
+  },
+  {
+    "name": "Microsoft.Datadog",
+    "displayName": "Datadog",
+    "category": "Other",
+    "resourceTypes": [
+      "agreements",
+      "locations",
+      "monitors",
+      "operations",
+      "register",
+      "registeredSubscriptions",
+      "subscriptionStatuses",
+      "unregister"
+    ],
+    "actionCount": 27
+  },
+  {
+    "name": "Microsoft.DataFactory",
+    "displayName": "Data Factory",
+    "category": "Analytics",
+    "resourceTypes": [
+      "dataFactories",
+      "factories"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.DataLakeAnalytics",
+    "displayName": "Data Lake Analytics",
+    "category": "Storage",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.DataMigration",
+    "displayName": "Data Migration",
+    "category": "Other",
+    "resourceTypes": [
+      "databaseMigrations",
+      "locations",
+      "operations",
+      "register",
+      "sqlMigrationServices"
+    ],
+    "actionCount": 60
+  },
+  {
+    "name": "Microsoft.DataProtection",
+    "displayName": "Data Protection",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "backupVaults",
+      "locations",
+      "operations",
+      "subscriptions"
+    ],
+    "actionCount": 114
+  },
+  {
+    "name": "Microsoft.DataReplication",
+    "displayName": "Data Replication",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "register",
+      "replicationVaults"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.DBforMySQL",
+    "displayName": "D Bfor My S Q L",
+    "category": "Database",
+    "resourceTypes": [
+      "flexibleServers",
+      "locations"
+    ],
+    "actionCount": 9
+  },
+  {
+    "name": "Microsoft.DBforPostgreSQL",
+    "displayName": "D Bfor Postgre S Q L",
+    "category": "Database",
+    "resourceTypes": [
+      "flexibleServers",
+      "locations",
+      "serverGroupsv2"
+    ],
+    "actionCount": 16
+  },
+  {
+    "name": "Microsoft.DependencyMap",
+    "displayName": "Dependency Map",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "maps"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.DesktopVirtualization",
+    "displayName": "Desktop Virtualization",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "appAttachPackages",
+      "applicationGroups",
+      "hostpools",
+      "scalingPlans",
+      "workspaces"
+    ],
+    "actionCount": 52
+  },
+  {
+    "name": "Microsoft.DevCenter",
+    "displayName": "Dev Center",
+    "category": "Other",
+    "resourceTypes": [
+      "projects"
+    ],
+    "actionCount": 53
+  },
+  {
+    "name": "Microsoft.DeviceOnboarding",
+    "displayName": "Device Onboarding",
+    "category": "Other",
+    "resourceTypes": [
+      "discoveryServices",
+      "locations"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "microsoft.deviceregistry",
+    "displayName": "microsoft.deviceregistry",
+    "category": "Other",
+    "resourceTypes": [
+      "namespaces"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.DeviceRegistry",
+    "displayName": "Device Registry",
+    "category": "Other",
+    "resourceTypes": [
+      "AssetEndpointProfiles",
+      "Assets",
+      "Namespaces",
+      "SchemaRegistries",
+      "register"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "microsoft.devices",
+    "displayName": "microsoft.devices",
+    "category": "Other",
+    "resourceTypes": [
+      "iothubs"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.Devices",
+    "displayName": "Devices",
+    "category": "Other",
+    "resourceTypes": [
+      "IotHubs",
+      "provisioningServices"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "Microsoft.DeviceUpdate",
+    "displayName": "Device Update",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts",
+      "updateAccounts"
+    ],
+    "actionCount": 19
+  },
+  {
+    "name": "Microsoft.DevOpsInfrastructure",
+    "displayName": "Dev Ops Infrastructure",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "Locations",
+      "pools",
+      "register",
+      "unregister"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.DevTestLab",
+    "displayName": "Dev Test Lab",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "labs",
+      "schedules"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.DigitalTwins",
+    "displayName": "Digital Twins",
+    "category": "Other",
+    "resourceTypes": [
+      "digitaltwins",
+      "eventroutes",
+      "jobs",
+      "models",
+      "query"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.Discovery",
+    "displayName": "Discovery",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "agents",
+      "bookshelves",
+      "checkNameAvailability",
+      "dataContainers",
+      "locations",
+      "models",
+      "operations",
+      "storages",
+      "supercomputers",
+      "tools",
+      "workflows",
+      "workspaces"
+    ],
+    "actionCount": 22
+  },
+  {
+    "name": "Microsoft.DocumentDb",
+    "displayName": "Document Db",
+    "category": "Other",
+    "resourceTypes": [
+      "databaseAccounts"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.DocumentDB",
+    "displayName": "Document D B",
+    "category": "Database",
+    "resourceTypes": [
+      "*",
+      "databaseAccounts",
+      "fleets",
+      "garnetClusters",
+      "locations"
+    ],
+    "actionCount": 238
+  },
+  {
+    "name": "Microsoft.DurableTask",
+    "displayName": "Durable Task",
+    "category": "Other",
+    "resourceTypes": [
+      "schedulers"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.Edge",
+    "displayName": "Edge",
+    "category": "Other",
+    "resourceTypes": [
+      "configTemplates",
+      "configurationReferences",
+      "configurations",
+      "connectivityStatuses",
+      "contexts",
+      "disconnectedOperations",
+      "jobs",
+      "locations",
+      "schemaReferences",
+      "schemas",
+      "sites",
+      "solutionTemplates",
+      "targets",
+      "updates",
+      "winfields"
+    ],
+    "actionCount": 69
+  },
+  {
+    "name": "Microsoft.EdgeManagement",
+    "displayName": "Edge Management",
+    "category": "Other",
+    "resourceTypes": [
+      "locations",
+      "troubleshoot"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.EdgeMarketplace",
+    "displayName": "Edge Marketplace",
+    "category": "Other",
+    "resourceTypes": [
+      "locations",
+      "offers",
+      "publishers"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Microsoft.EdgeMarketPlace",
+    "displayName": "Edge Market Place",
+    "category": "Other",
+    "resourceTypes": [
+      "offers"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.EdgeOrder",
+    "displayName": "Edge Order",
+    "category": "Other",
+    "resourceTypes": [
+      "orderItems"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.EdgeOrderPartner",
+    "displayName": "Edge Order Partner",
+    "category": "Other",
+    "resourceTypes": [
+      "locations"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Elastic",
+    "displayName": "Elastic",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "elasticVersions",
+      "getOrganizationApiKey",
+      "locations",
+      "monitors",
+      "operations",
+      "register",
+      "registeredSubscriptions"
+    ],
+    "actionCount": 39
+  },
+  {
+    "name": "Microsoft.ElasticSan",
+    "displayName": "Elastic San",
+    "category": "Other",
+    "resourceTypes": [
+      "elasticSans",
+      "locations"
+    ],
+    "actionCount": 28
+  },
+  {
+    "name": "Microsoft.EnterpriseKnowledgeGraph",
+    "displayName": "Enterprise Knowledge Graph",
+    "category": "Other",
+    "resourceTypes": [
+      "operations",
+      "services"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.EnterpriseSupport",
+    "displayName": "Enterprise Support",
+    "category": "Other",
+    "resourceTypes": [
+      "enterpriseSupports",
+      "register",
+      "services"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.EventGrid",
+    "displayName": "Event Grid",
+    "category": "Integration",
+    "resourceTypes": [
+      "*",
+      "domains",
+      "eventSubscriptions",
+      "events",
+      "locations",
+      "namespaces",
+      "partnerNamespaces",
+      "systemTopics",
+      "topicSpaces",
+      "topicTypes",
+      "topics"
+    ],
+    "actionCount": 44
+  },
+  {
+    "name": "Microsoft.EventHub",
+    "displayName": "Event Hub",
+    "category": "Integration",
+    "resourceTypes": [
+      "*",
+      "namespaces"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.Experimentation",
+    "displayName": "Experimentation",
+    "category": "Other",
+    "resourceTypes": [
+      "experimentWorkspaces"
+    ],
+    "actionCount": 32
+  },
+  {
+    "name": "Microsoft.ExtendedLocation",
+    "displayName": "Extended Location",
+    "category": "Other",
+    "resourceTypes": [
+      "customLocations",
+      "register"
+    ],
+    "actionCount": 40
+  },
+  {
+    "name": "Microsoft.Features",
+    "displayName": "Features",
+    "category": "Other",
+    "resourceTypes": [
+      "features",
+      "providers"
+    ],
+    "actionCount": 32
+  },
+  {
+    "name": "Microsoft.GuestConfiguration",
+    "displayName": "Guest Configuration",
+    "category": "Other",
+    "resourceTypes": [
+      "guestConfigurationAssignments",
+      "register"
+    ],
+    "actionCount": 13
+  },
+  {
+    "name": "Microsoft.Hdinsight",
+    "displayName": "Hdinsight",
+    "category": "Other",
+    "resourceTypes": [
+      "clusterpools"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.HDInsight",
+    "displayName": "H D Insight",
+    "category": "Analytics",
+    "resourceTypes": [
+      "*",
+      "clusterPools",
+      "clusters"
+    ],
+    "actionCount": 36
+  },
+  {
+    "name": "MICROSOFT.HDINSIGHT",
+    "displayName": "M I C R O S O F T. H D I N S I G H T",
+    "category": "Other",
+    "resourceTypes": [
+      "CLUSTERS",
+      "LOCATIONS",
+      "OPERATIONS",
+      "REGISTER",
+      "RESOURCETYPES",
+      "UNREGISTER"
+    ],
+    "actionCount": 41
+  },
+  {
+    "name": "Microsoft.HealthBot",
+    "displayName": "Health Bot",
+    "category": "Other",
+    "resourceTypes": [
+      "healthBots"
+    ],
+    "actionCount": 67
+  },
+  {
+    "name": "Microsoft.HealthcareApis",
+    "displayName": "Healthcare Apis",
+    "category": "Other",
+    "resourceTypes": [
+      "services",
+      "workspaces"
+    ],
+    "actionCount": 62
+  },
+  {
+    "name": "Microsoft.HealthDataAIServices",
+    "displayName": "Health Data A I Services",
+    "category": "Other",
+    "resourceTypes": [
+      "DeidServices"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.HybridCompute",
+    "displayName": "Hybrid Compute",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "gateways",
+      "licenses",
+      "locations",
+      "machines",
+      "operations",
+      "osType",
+      "privateLinkScopes",
+      "register",
+      "settings"
+    ],
+    "actionCount": 274
+  },
+  {
+    "name": "Microsoft.HybridConnectivity",
+    "displayName": "Hybrid Connectivity",
+    "category": "Other",
+    "resourceTypes": [
+      "endpoints",
+      "publicCloudConnectors",
+      "register",
+      "solutionConfigurations"
+    ],
+    "actionCount": 30
+  },
+  {
+    "name": "Microsoft.HybridContainerService",
+    "displayName": "Hybrid Container Service",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "Operations",
+      "kubernetesVersions",
+      "provisionedClusterInstances",
+      "register",
+      "skus",
+      "virtualNetworks"
+    ],
+    "actionCount": 58
+  },
+  {
+    "name": "Microsoft.HybridNetwork",
+    "displayName": "Hybrid Network",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Impact",
+    "displayName": "Impact",
+    "category": "Other",
+    "resourceTypes": [
+      "Connectors",
+      "ImpactCategories",
+      "TopologyImpacts",
+      "WorkloadImpacts",
+      "getUploadToken"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "Microsoft.IndustryDataLifecycle",
+    "displayName": "Industry Data Lifecycle",
+    "category": "Other",
+    "resourceTypes": [
+      "custodianCollaboratives",
+      "derivedModels",
+      "locations",
+      "memberCollaboratives",
+      "modelMappings",
+      "pipelineSets"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "microsoft.insights",
+    "displayName": "microsoft.insights",
+    "category": "Other",
+    "resourceTypes": [
+      "workbooks",
+      "workbooktemplates"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.insights",
+    "displayName": "insights",
+    "category": "Other",
+    "resourceTypes": [
+      "logs"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.Insights",
+    "displayName": "Insights",
+    "category": "Monitoring",
+    "resourceTypes": [
+      "ActionGroups",
+      "ActivityLogAlerts",
+      "DiagnosticSettingsCategories",
+      "Logs",
+      "Register",
+      "Telemetry",
+      "alertRules",
+      "autoscalesettings",
+      "components",
+      "createNotifications",
+      "dataCollectionEndpoints",
+      "dataCollectionRuleAssociations",
+      "dataCollectionRules",
+      "diagnosticSettings",
+      "eventtypes",
+      "generateLiveToken",
+      "logDefinitions",
+      "metricAlerts",
+      "metricdefinitions",
+      "metrics",
+      "myworkbooks",
+      "notificationStatus",
+      "privateLinkScopeOperationStatuses",
+      "privateLinkScopes",
+      "scheduledqueryrules",
+      "snapshots",
+      "topology",
+      "transactions",
+      "webtests",
+      "workbooks",
+      "workbooktemplates"
+    ],
+    "actionCount": 542
+  },
+  {
+    "name": "Microsoft.IntelligentSystems",
+    "displayName": "Intelligent Systems",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.IoTFirmwareDefense",
+    "displayName": "Io T Firmware Defense",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "workspaces"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Microsoft.IoTOperations",
+    "displayName": "Io T Operations",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.IoTSecurity",
+    "displayName": "Io T Security",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "defenderSettings"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.KeyVault",
+    "displayName": "Key Vault",
+    "category": "Security",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "deletedManagedHsms",
+      "deletedVaults",
+      "locations",
+      "managedHSMs",
+      "operations",
+      "register",
+      "vaults"
+    ],
+    "actionCount": 79
+  },
+  {
+    "name": "Microsoft.Kubernetes",
+    "displayName": "Kubernetes",
+    "category": "Compute",
+    "resourceTypes": [
+      "connectedClusters",
+      "register",
+      "registeredSubscriptions"
+    ],
+    "actionCount": 119
+  },
+  {
+    "name": "Microsoft.KubernetesConfiguration",
+    "displayName": "Kubernetes Configuration",
+    "category": "Other",
+    "resourceTypes": [
+      "extensions",
+      "fluxConfigurations",
+      "namespaces",
+      "operations",
+      "register"
+    ],
+    "actionCount": 59
+  },
+  {
+    "name": "Microsoft.KubernetesRuntime",
+    "displayName": "Kubernetes Runtime",
+    "category": "Other",
+    "resourceTypes": [
+      "bfdProfiles",
+      "bgpPeers",
+      "loadBalancers",
+      "locations",
+      "services",
+      "storageClasses"
+    ],
+    "actionCount": 14
+  },
+  {
+    "name": "Microsoft.LabServices",
+    "displayName": "Lab Services",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "labAccounts",
+      "labPlans",
+      "labs",
+      "locations",
+      "skus"
+    ],
+    "actionCount": 74
+  },
+  {
+    "name": "Microsoft.LoadTestService",
+    "displayName": "Load Test Service",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "loadtests",
+      "testProfileRuns",
+      "testProfiles"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.Logic",
+    "displayName": "Logic",
+    "category": "Integration",
+    "resourceTypes": [
+      "*",
+      "integrationServiceEnvironments",
+      "workflows"
+    ],
+    "actionCount": 13
+  },
+  {
+    "name": "Microsoft.MachineLearningServices",
+    "displayName": "Machine Learning Services",
+    "category": "AI & ML",
+    "resourceTypes": [
+      "locations",
+      "registries",
+      "workspaces"
+    ],
+    "actionCount": 46
+  },
+  {
+    "name": "Microsoft.Maintenance",
+    "displayName": "Maintenance",
+    "category": "Other",
+    "resourceTypes": [
+      "applyUpdates",
+      "configurationAssignments",
+      "maintenanceConfigurations",
+      "scheduledevents",
+      "updates"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.ManagedIdentity",
+    "displayName": "Managed Identity",
+    "category": "Identity",
+    "resourceTypes": [
+      "userAssignedIdentities"
+    ],
+    "actionCount": 20
+  },
+  {
+    "name": "Microsoft.ManagedNetworkFabric",
+    "displayName": "Managed Network Fabric",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "networkFabricControllers",
+      "networkFabrics",
+      "networkRacks"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.ManagedOps",
+    "displayName": "Managed Ops",
+    "category": "Other",
+    "resourceTypes": [
+      "managedOps"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.ManagedServices",
+    "displayName": "Managed Services",
+    "category": "Other",
+    "resourceTypes": [
+      "operationStatuses",
+      "registrationAssignments"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.Management",
+    "displayName": "Management",
+    "category": "Management",
+    "resourceTypes": [
+      "ServiceGroups",
+      "getEntities",
+      "managementGroups"
+    ],
+    "actionCount": 33
+  },
+  {
+    "name": "Microsoft.Maps",
+    "displayName": "Maps",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.Marketplace",
+    "displayName": "Marketplace",
+    "category": "Other",
+    "resourceTypes": [
+      "offerTypes"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.MessagingCatalog",
+    "displayName": "Messaging Catalog",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.MessagingConnectors",
+    "displayName": "Messaging Connectors",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Migrate",
+    "displayName": "Migrate",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.Mission",
+    "displayName": "Mission",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "Operations",
+      "approvals",
+      "communities",
+      "enclaveConnections",
+      "register",
+      "unregister",
+      "virtualEnclaves"
+    ],
+    "actionCount": 150
+  },
+  {
+    "name": "Microsoft.MixedReality",
+    "displayName": "Mixed Reality",
+    "category": "Other",
+    "resourceTypes": [
+      "ObjectAnchorsAccounts",
+      "ObjectUnderstandingAccounts",
+      "RemoteRenderingAccounts",
+      "SpatialAnchorsAccounts",
+      "spatialMapsAccounts"
+    ],
+    "actionCount": 39
+  },
+  {
+    "name": "microsoft.monitor",
+    "displayName": "microsoft.monitor",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Monitor",
+    "displayName": "Monitor",
+    "category": "Monitoring",
+    "resourceTypes": [
+      "accounts",
+      "investigations",
+      "pipelineGroups",
+      "settings",
+      "slis"
+    ],
+    "actionCount": 16
+  },
+  {
+    "name": "Microsoft.MySQLDiscovery",
+    "displayName": "My S Q L Discovery",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.Network",
+    "displayName": "Network",
+    "category": "Networking",
+    "resourceTypes": [
+      "*",
+      "applicationGateways",
+      "applicationSecurityGroups",
+      "azureFirewalls",
+      "ddosProtectionPlans",
+      "dnsForwardingRulesets",
+      "dnsResolvers",
+      "dnsZones",
+      "expressRouteCrossConnections",
+      "loadBalancers",
+      "locations",
+      "natGateways",
+      "networkIntentPolicies",
+      "networkInterfaces",
+      "networkManagers",
+      "networkSecurityGroups",
+      "networkVirtualAppliances",
+      "networkWatchers",
+      "privateDnsOperationResults",
+      "privateDnsOperationStatuses",
+      "privateDnsZones",
+      "privateEndpoints",
+      "privatelinkservices",
+      "publicIPAddresses",
+      "publicIPPrefixes",
+      "register",
+      "routeTables",
+      "serviceEndpointPolicies",
+      "trafficManagerProfiles",
+      "unregister",
+      "virtualHubs",
+      "virtualNetworks",
+      "virtualWans"
+    ],
+    "actionCount": 599
+  },
+  {
+    "name": "Microsoft.NetworkCloud",
+    "displayName": "Network Cloud",
+    "category": "Other",
+    "resourceTypes": [
+      "bareMetalMachines",
+      "clusterManagers",
+      "clusters",
+      "locations",
+      "operations",
+      "rackSkus",
+      "racks",
+      "register",
+      "registeredSubscriptions",
+      "storageAppliances",
+      "unregister"
+    ],
+    "actionCount": 39
+  },
+  {
+    "name": "Microsoft.NexusIdentity",
+    "displayName": "Nexus Identity",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.OffAzure",
+    "displayName": "Off Azure",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.OffAzureSpringBoot",
+    "displayName": "Off Azure Spring Boot",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.OnlineExperimentation",
+    "displayName": "Online Experimentation",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "workspaces"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.operationalinsights",
+    "displayName": "operationalinsights",
+    "category": "Other",
+    "resourceTypes": [
+      "workspaces"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Microsoft.operationalInsights",
+    "displayName": "operational Insights",
+    "category": "Other",
+    "resourceTypes": [
+      "workspaces"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.OperationalInsights",
+    "displayName": "Operational Insights",
+    "category": "Monitoring",
+    "resourceTypes": [
+      "locations",
+      "querypacks",
+      "workspaces"
+    ],
+    "actionCount": 98
+  },
+  {
+    "name": "Microsoft.OperationsManagement",
+    "displayName": "Operations Management",
+    "category": "Other",
+    "resourceTypes": [
+      "solutions"
+    ],
+    "actionCount": 9
+  },
+  {
+    "name": "Microsoft.Orbital",
+    "displayName": "Orbital",
+    "category": "Other",
+    "resourceTypes": [
+      "geoCatalogs",
+      "operations"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.PlayFab",
+    "displayName": "Play Fab",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.PolicyInsights",
+    "displayName": "Policy Insights",
+    "category": "Other",
+    "resourceTypes": [
+      "checkDataPolicyCompliance",
+      "policyEvents",
+      "policyStates",
+      "remediations"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.Portal",
+    "displayName": "Portal",
+    "category": "Other",
+    "resourceTypes": [
+      "dashboards"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.PowerBI",
+    "displayName": "Power B I",
+    "category": "Other",
+    "resourceTypes": [
+      "tenants"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.PowerPlatform",
+    "displayName": "Power Platform",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts",
+      "enterprisePolicies"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.ProfessionalService",
+    "displayName": "Professional Service",
+    "category": "Other",
+    "resourceTypes": [
+      "register",
+      "resources"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.ProgrammableConnectivity",
+    "displayName": "Programmable Connectivity",
+    "category": "Other",
+    "resourceTypes": [
+      "Gateways"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.ProjectBabylon",
+    "displayName": "Project Babylon",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.ProviderHub",
+    "displayName": "Provider Hub",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Purview",
+    "displayName": "Purview",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.Quantum",
+    "displayName": "Quantum",
+    "category": "Other",
+    "resourceTypes": [
+      "Workspaces",
+      "locations"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.Quota",
+    "displayName": "Quota",
+    "category": "Other",
+    "resourceTypes": [
+      "GROUPQUOTAS",
+      "quotaRequests",
+      "quotas",
+      "register",
+      "usages"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "MICROSOFT.QUOTA",
+    "displayName": "M I C R O S O F T. Q U O T A",
+    "category": "Other",
+    "resourceTypes": [
+      "QUOTAREQUESTS",
+      "QUOTAS",
+      "REGISTER",
+      "USAGES"
+    ],
+    "actionCount": 9
+  },
+  {
+    "name": "Microsoft.RecoveryServices",
+    "displayName": "Recovery Services",
+    "category": "Other",
+    "resourceTypes": [
+      "Vaults",
+      "locations",
+      "operations",
+      "register"
+    ],
+    "actionCount": 269
+  },
+  {
+    "name": "Microsoft.Relationships",
+    "displayName": "Relationships",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "ServiceGroupMember"
+    ],
+    "actionCount": 18
+  },
+  {
+    "name": "Microsoft.Relay",
+    "displayName": "Relay",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.ResourceConnector",
+    "displayName": "Resource Connector",
+    "category": "Other",
+    "resourceTypes": [
+      "appliances",
+      "locations",
+      "operations",
+      "register",
+      "telemetryconfig"
+    ],
+    "actionCount": 34
+  },
+  {
+    "name": "Microsoft.ResourceHealth",
+    "displayName": "Resource Health",
+    "category": "Other",
+    "resourceTypes": [
+      "Operations",
+      "availabilityStatuses",
+      "emergingissues",
+      "events",
+      "metadata",
+      "potentialoutages"
+    ],
+    "actionCount": 98
+  },
+  {
+    "name": "Microsoft.ResourceNotifications",
+    "displayName": "Resource Notifications",
+    "category": "Other",
+    "resourceTypes": [
+      "systemTopics"
+    ],
+    "actionCount": 8
+  },
+  {
+    "name": "Microsoft.Resources",
+    "displayName": "Resources",
+    "category": "Management",
+    "resourceTypes": [
+      "checkResourceName",
+      "dataBoundaries",
+      "deploymentScripts",
+      "deploymentStacks",
+      "deployments",
+      "links",
+      "resources",
+      "subscriptions",
+      "tags",
+      "templateSpecs"
+    ],
+    "actionCount": 1069
+  },
+  {
+    "name": "Microsoft.SaaS",
+    "displayName": "Saa S",
+    "category": "Other",
+    "resourceTypes": [
+      "register",
+      "resources"
+    ],
+    "actionCount": 4
+  },
+  {
+    "name": "Microsoft.SaaSHub",
+    "displayName": "Saa S Hub",
+    "category": "Other",
+    "resourceTypes": [
+      "cloudservices",
+      "register"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.Scheduler",
+    "displayName": "Scheduler",
+    "category": "Other",
+    "resourceTypes": [
+      "jobcollections"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "microsoft.scvmm",
+    "displayName": "microsoft.scvmm",
+    "category": "Other",
+    "resourceTypes": [
+      "clouds",
+      "virtualMachineInstances",
+      "virtualmachines",
+      "virtualmachinetemplates",
+      "virtualnetworks",
+      "vmmservers"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "Microsoft.ScVmm",
+    "displayName": "Sc Vmm",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Search",
+    "displayName": "Search",
+    "category": "Other",
+    "resourceTypes": [
+      "searchServices"
+    ],
+    "actionCount": 14
+  },
+  {
+    "name": "Microsoft.SecretSyncController",
+    "displayName": "Secret Sync Controller",
+    "category": "Other",
+    "resourceTypes": [
+      "azureKeyVaultSecretProviderClasses",
+      "locations",
+      "operations",
+      "register",
+      "secretSyncs",
+      "unregister"
+    ],
+    "actionCount": 11
+  },
+  {
+    "name": "Microsoft.Security",
+    "displayName": "Security",
+    "category": "Security",
+    "resourceTypes": [
+      "*",
+      "advancedThreatProtectionSettings",
+      "assessments",
+      "automations",
+      "datascanners",
+      "defenderforstoragesettings",
+      "iotDefenderSettings",
+      "iotSensors",
+      "pricings",
+      "register",
+      "sqlVulnerabilityAssessments",
+      "unregister"
+    ],
+    "actionCount": 28
+  },
+  {
+    "name": "Microsoft.SecurityDetonation",
+    "displayName": "Security Detonation",
+    "category": "Other",
+    "resourceTypes": [
+      "chambers"
+    ],
+    "actionCount": 35
+  },
+  {
+    "name": "Microsoft.SecurityInsights",
+    "displayName": "Security Insights",
+    "category": "Security",
+    "resourceTypes": [
+      "*",
+      "automationRules",
+      "businessApplicationAgents",
+      "cases",
+      "dataConnectorsCheckRequirements",
+      "entities",
+      "incidents",
+      "threatIntelligence"
+    ],
+    "actionCount": 54
+  },
+  {
+    "name": "Microsoft.SerialConsole",
+    "displayName": "Serial Console",
+    "category": "Other",
+    "resourceTypes": [
+      "serialPorts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.ServiceBus",
+    "displayName": "Service Bus",
+    "category": "Integration",
+    "resourceTypes": [
+      "*",
+      "namespaces"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.ServiceFabric",
+    "displayName": "Service Fabric",
+    "category": "Compute",
+    "resourceTypes": [
+      "clusters",
+      "locations",
+      "managedclusters",
+      "operations"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.ServiceLinker",
+    "displayName": "Service Linker",
+    "category": "Other",
+    "resourceTypes": [
+      "dryruns",
+      "linkers",
+      "locations"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.ServiceNetworking",
+    "displayName": "Service Networking",
+    "category": "Other",
+    "resourceTypes": [
+      "trafficControllers"
+    ],
+    "actionCount": 15
+  },
+  {
+    "name": "Microsoft.ServicesHub",
+    "displayName": "Services Hub",
+    "category": "Other",
+    "resourceTypes": [
+      "connectors",
+      "supportOfferingEntitlement",
+      "workspaces"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.SignalRService",
+    "displayName": "Signal R Service",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "SignalR",
+      "WebPubSub"
+    ],
+    "actionCount": 17
+  },
+  {
+    "name": "Microsoft.SoftwarePlan",
+    "displayName": "Software Plan",
+    "category": "Other",
+    "resourceTypes": [
+      "register",
+      "softwareSubscriptions",
+      "validateSoftwareSubscriptionCreate"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.Solutions",
+    "displayName": "Solutions",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "applications",
+      "jitRequests",
+      "register"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Microsoft.Sovereign",
+    "displayName": "Sovereign",
+    "category": "Other",
+    "resourceTypes": [
+      "landingZoneAccounts",
+      "landingZoneConfigurations",
+      "landingZoneRegistrations",
+      "transparencyLogs"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.Sql",
+    "displayName": "Sql",
+    "category": "Database",
+    "resourceTypes": [
+      "locations",
+      "managedInstances",
+      "servers"
+    ],
+    "actionCount": 95
+  },
+  {
+    "name": "Microsoft.SQL",
+    "displayName": "S Q L",
+    "category": "Other",
+    "resourceTypes": [
+      "register"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.SqlVirtualMachine",
+    "displayName": "Sql Virtual Machine",
+    "category": "Other",
+    "resourceTypes": [
+      "sqlVirtualMachines"
+    ],
+    "actionCount": 3
+  },
+  {
+    "name": "Microsoft.StandbyPool",
+    "displayName": "Standby Pool",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "Operations",
+      "standbyContainerGroupPools"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.Storage",
+    "displayName": "Storage",
+    "category": "Storage",
+    "resourceTypes": [
+      "*",
+      "checkNameAvailability",
+      "operations",
+      "storageAccounts"
+    ],
+    "actionCount": 250
+  },
+  {
+    "name": "Microsoft.StorageActions",
+    "displayName": "Storage Actions",
+    "category": "Other",
+    "resourceTypes": [
+      "locations",
+      "storageTasks"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.StorageSync",
+    "displayName": "Storage Sync",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "deployments",
+      "locations",
+      "operations",
+      "register",
+      "storageSyncServices",
+      "unregister"
+    ],
+    "actionCount": 7
+  },
+  {
+    "name": "Microsoft.StreamAnalytics",
+    "displayName": "Stream Analytics",
+    "category": "Analytics",
+    "resourceTypes": [
+      "clusters",
+      "locations",
+      "operations",
+      "streamingjobs"
+    ],
+    "actionCount": 12
+  },
+  {
+    "name": "Microsoft.SupercomputerInfrastructure",
+    "displayName": "Supercomputer Infrastructure",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.Support",
+    "displayName": "Support",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "supporttickets"
+    ],
+    "actionCount": 141
+  },
+  {
+    "name": "Microsoft.TestBase",
+    "displayName": "Test Base",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "testBaseAccounts"
+    ],
+    "actionCount": 6
+  },
+  {
+    "name": "Microsoft.ToolchainOrchestrator",
+    "displayName": "Toolchain Orchestrator",
+    "category": "Other",
+    "resourceTypes": [
+      "*"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.UsageBilling",
+    "displayName": "Usage Billing",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.VideoIndexer",
+    "displayName": "Video Indexer",
+    "category": "Other",
+    "resourceTypes": [
+      "*",
+      "accounts",
+      "checknameavailability",
+      "locations",
+      "operations"
+    ],
+    "actionCount": 18
+  },
+  {
+    "name": "microsoft.web",
+    "displayName": "microsoft.web",
+    "category": "Other",
+    "resourceTypes": [
+      "sites"
+    ],
+    "actionCount": 17
+  },
+  {
+    "name": "Microsoft.Web",
+    "displayName": "Web",
+    "category": "Web",
+    "resourceTypes": [
+      "*",
+      "certificates",
+      "connectionGateways",
+      "connections",
+      "customApis",
+      "hostingEnvironments",
+      "listSitesAssignedToHostName",
+      "register",
+      "serverFarms",
+      "sites"
+    ],
+    "actionCount": 51
+  },
+  {
+    "name": "Microsoft.WeightsAndBiases",
+    "displayName": "Weights And Biases",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "instances",
+      "locations",
+      "operations",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "Microsoft.Windows365",
+    "displayName": "Windows365",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "Microsoft.WorkloadBuilder",
+    "displayName": "Workload Builder",
+    "category": "Other",
+    "resourceTypes": [
+      "migrationAgents"
+    ],
+    "actionCount": 2
+  },
+  {
+    "name": "Microsoft.Workloads",
+    "displayName": "Workloads",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "Operations",
+      "connectors",
+      "sapvirtualInstances"
+    ],
+    "actionCount": 14
+  },
+  {
+    "name": "NewRelic.APM",
+    "displayName": "New Relic. A P M",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts"
+    ],
+    "actionCount": 1
+  },
+  {
+    "name": "NewRelic.Observability",
+    "displayName": "New Relic. Observability",
+    "category": "Other",
+    "resourceTypes": [
+      "accounts",
+      "locations",
+      "monitors",
+      "operations",
+      "organizations",
+      "plans",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 31
+  },
+  {
+    "name": "NGINX.NGINXPLUS",
+    "displayName": "N G I N X. N G I N X P L U S",
+    "category": "Other",
+    "resourceTypes": [
+      "locations",
+      "nginxDeployments",
+      "operations",
+      "register",
+      "unregister"
+    ],
+    "actionCount": 21
+  },
+  {
+    "name": "Oracle.Database",
+    "displayName": "Oracle. Database",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "Operations",
+      "autonomousDatabases",
+      "cloudExadataInfrastructures",
+      "cloudVmClusters",
+      "exadbVmClusters",
+      "exascaleDbStorageVaults",
+      "networkAnchors",
+      "oracleSubscriptions",
+      "resourceAnchors"
+    ],
+    "actionCount": 75
+  },
+  {
+    "name": "PaloAltoNetworks.Cloudngfw",
+    "displayName": "Palo Alto Networks. Cloudngfw",
+    "category": "Other",
+    "resourceTypes": [
+      "Locations",
+      "firewalls",
+      "globalRulestacks",
+      "localRulestacks"
+    ],
+    "actionCount": 5
+  },
+  {
+    "name": "Pinecone.VectorDb",
+    "displayName": "Pinecone. Vector Db",
+    "category": "Other",
+    "resourceTypes": [
+      "checkNameAvailability",
+      "locations",
+      "operations",
+      "organizations",
+      "register",
+      "registeredSubscriptions",
+      "unregister"
+    ],
+    "actionCount": 10
+  },
+  {
+    "name": "PureStorage.Block",
+    "displayName": "Pure Storage. Block",
+    "category": "Other",
+    "resourceTypes": [],
+    "actionCount": 1
+  },
+  {
+    "name": "successbricks.cleardb",
+    "displayName": "successbricks.cleardb",
+    "category": "Other",
+    "resourceTypes": [
+      "databases"
+    ],
+    "actionCount": 1
+  }
+]

@@ -8,7 +8,8 @@
     "analyze": "ANALYZE=true npm run build",
     "start": "next start",
     "lint": "next lint",
-    "update-ip-data": "ts-node scripts/update-ip-data.ts"
+    "update-ip-data": "ts-node scripts/update-ip-data.ts",
+    "update-rbac-data": "ts-node scripts/update-rbac-data.ts && ts-node scripts/process-rbac-permissions.ts"
   },
   "dependencies": {
     "@azure/identity": "^4.5.0",
@@ -29,6 +30,7 @@
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
+    "dotenv": "^17.2.3",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.33",
     "postcss": "^8.4.32",

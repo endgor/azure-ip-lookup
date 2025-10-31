@@ -29,6 +29,19 @@ const CORE_TOOLS = [
     )
   },
   {
+    title: 'RBAC Calculator',
+    description: 'Find Azure RBAC roles with least privilege permissions for your specific needs.',
+    href: '/tools/rbac-calculator',
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6 text-sky-600 dark:text-sky-300" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 3.18l7 3.12V11c0 4.52-2.98 8.69-7 9.93-4.02-1.24-7-5.41-7-9.93V7.3l7-3.12zM11 8v2H9v2h2v2h2v-2h2v-2h-2V8h-2z"
+        />
+      </svg>
+    )
+  },
+  {
     title: 'Tenant Lookup',
     description: 'Discover tenant IDs, default domains, and Azure AD region scope by domain.',
     href: '/tools/tenant-lookup',
